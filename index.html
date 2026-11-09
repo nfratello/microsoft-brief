@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en-US" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>The Microsoft Brief · What's new from Microsoft, and why it matters to you</title>
+<meta name="description" content="A free weekly, 5-minute digest of public Microsoft updates curated for your industry. Opt in with your work email.">
+<style>
+:root{--bg:#ffffff;--fg:#1b1b1b;--muted:#5c5c5c;--card:#f5f7fa;--line:#e3e6ea;--accent:#0067b8;--accent-fg:#ffffff;--hero1:#0b2a4a;--hero2:#0067b8;--chip:#e8f1fb;}
+@media (prefers-color-scheme: dark){:root{--bg:#111418;--fg:#f2f2f2;--muted:#b3b8bf;--card:#1b2027;--line:#2b323b;--accent:#4aa3ff;--accent-fg:#0b1320;--hero1:#06182b;--hero2:#0b4f8f;--chip:#16263a;}}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",system-ui,-apple-system,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.5}
+a{color:var(--accent)}
+.wrap{max-inline-size:1080px;margin-inline:auto;padding-inline:24px}
+.top{display:flex;align-items:center;justify-content:space-between;padding-block:16px;border-block-end:1px solid var(--line)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px}
+.sq{display:grid;grid-template-columns:9px 9px;gap:2px}.sq i{display:block;inline-size:9px;block-size:9px}
+.sq i:nth-child(1){background:#f25022}.sq i:nth-child(2){background:#7fba00}.sq i:nth-child(3){background:#00a4ef}.sq i:nth-child(4){background:#ffb900}
+.top nav a{margin-inline-start:20px;text-decoration:none;color:var(--muted);font-size:14px}
+.hero{background:linear-gradient(135deg,var(--hero1),var(--hero2));color:#fff;padding-block:72px 64px}
+.kicker{text-transform:uppercase;letter-spacing:.12em;font-size:13px;opacity:.85;font-weight:600}
+.hero h1{font-size:clamp(34px,5vw,56px);line-height:1.08;margin-block:12px 16px;max-inline-size:820px}
+.hero p.lede{font-size:20px;max-inline-size:720px;opacity:.95;margin:0}
+.hero .cta{display:inline-block;margin-block-start:28px;background:#fff;color:#0b2a4a;padding:14px 26px;border-radius:6px;font-weight:700;text-decoration:none}
+.hero .note{font-size:13px;opacity:.8;margin-block-start:12px}
+section{padding-block:56px}
+h2{font-size:30px;margin-block:0 8px}
+.sub{color:var(--muted);margin-block:0 28px;max-inline-size:720px}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.why div{border-block-start:3px solid var(--accent);padding-block-start:14px}
+.why b{display:block;font-size:17px;margin-block-end:4px}
+.sample{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:28px;max-inline-size:640px}
+.sample .lbl{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.sample h3{margin-block:6px 14px;font-size:22px}
+.sample ol{margin:0;padding-inline-start:20px}.sample li{margin-block-end:10px}
+.chip{display:inline-block;background:var(--chip);color:var(--accent);font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;margin-inline-end:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.ed{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px;display:flex;flex-direction:column}
+.ed{position:relative}.ed.feat{border:2px solid var(--accent)}.badge{position:absolute;inset-block-start:14px;inset-inline-end:14px;background:var(--accent);color:var(--accent-fg);font-size:12px;font-weight:700;padding:2px 10px;border-radius:999px}
+.ed .ico{font-size:28px}.ed h3{margin-block:8px 4px;font-size:18px}.ed p{color:var(--muted);font-size:14px;flex:1;margin-block:0 16px}
+.pk{display:flex;gap:16px;flex-wrap:wrap;margin-block-end:10px;font-weight:600}.pk label{display:flex;gap:6px;align-items:center;cursor:pointer}.pri{color:var(--muted);font-weight:500}.solo{font-size:13px}
+.ed.on{outline:3px solid var(--accent)}
+.tray{position:sticky;inset-block-end:0;background:var(--hero1);color:#fff;padding:14px 0;margin-block-start:24px;z-index:5}.tray .wrap{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}.tray .exec{display:flex;gap:6px;align-items:center;font-size:14px;cursor:pointer}
+.tray a.go{background:#fff;color:#0b2a4a;font-weight:700;text-decoration:none;padding:10px 20px;border-radius:6px}.tray a.go[aria-disabled=true]{opacity:.5;pointer-events:none}
+.fic{display:inline-block;inline-size:1em;block-size:1em;background:var(--accent);vertical-align:-0.12em;-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat}.ico .fic{inline-size:32px;block-size:32px}
+.btn{align-self:flex-start;background:var(--accent);color:var(--accent-fg);text-decoration:none;font-weight:700;padding:10px 18px;border-radius:6px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;counter-reset:s}
+.steps div{counter-increment:s;padding:20px;border:1px solid var(--line);border-radius:10px}
+.steps div::before{content:counter(s);display:inline-grid;place-items:center;inline-size:30px;block-size:30px;border-radius:50%;background:var(--accent);color:var(--accent-fg);font-weight:700;margin-block-end:8px}
+.build{background:var(--card)}
+.flow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-block:18px}
+.flow span{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 14px;font-weight:600;font-size:14px}
+.flow em{color:var(--muted);font-style:normal}
+.trust{border-inline-start:4px solid var(--accent);padding:14px 18px;background:var(--card);border-radius:4px}
+footer{border-block-start:1px solid var(--line);padding-block:28px;color:var(--muted);font-size:13px}
+footer p{margin-block:4px}
+.hero{position:relative;overflow:hidden;color:#fff;display:flex;align-items:center;min-block-size:clamp(560px,86vh,860px);padding-block:72px 64px;background:#0b2a4a}.hero>img.bg{position:absolute;inset:0;inline-size:100%;block-size:100%;object-fit:cover;object-position:100% 22%;transform-origin:100% 35%;animation:kb 28s ease-in-out infinite alternate}.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,42,74,.35) 0%,rgba(11,42,74,0) 16%,rgba(11,42,74,0) 72%,rgba(11,42,74,.55) 100%),linear-gradient(90deg,rgba(11,42,74,.95) 0%,rgba(11,42,74,.9) 30%,rgba(11,42,74,.72) 42%,rgba(11,42,74,.35) 53%,rgba(11,42,74,0) 66%)}.hero::before{content:"";position:absolute;inset-inline:0;inset-block-end:0;block-size:4px;z-index:2;background:linear-gradient(90deg,#f25022 0 25%,#7fba00 25% 50%,#00a4ef 50% 75%,#ffb900 75%)}.hero>.wrap{position:relative;z-index:1;max-inline-size:none;padding-inline:7vw;inline-size:100%}.hero h1{max-inline-size:min(620px,41vw);font-size:clamp(30px,3.4vw,56px);font-weight:800;text-wrap:balance}.hero p.lede{max-inline-size:min(560px,39vw)}@keyframes kb{from{transform:scale(1)}to{transform:scale(1.06)}}@media (prefers-reduced-motion:reduce){.hero>img.bg{animation:none}}@media (max-width:760px){.hero{align-items:flex-end;min-block-size:clamp(620px,92svh,760px);padding-block:0}.hero>img.bg{object-position:82% 12%}.hero::after{background:linear-gradient(180deg,rgba(11,42,74,.15) 0%,rgba(11,42,74,0) 18%,rgba(11,42,74,.35) 40%,rgba(11,42,74,.88) 60%,rgba(11,42,74,.97) 100%)}.hero h1,.hero p.lede{max-inline-size:none}.hero h1{font-size:clamp(28px,7.4vw,36px)}.hero>.wrap{padding-block:24px 30px}}.hero h1::after{content:"";display:block;block-size:2px;inline-size:64px;margin-top:16px;background:linear-gradient(90deg,#ffb900,rgba(255,185,0,0))}.hero .cta{border-radius:12px}img[src*="assets/icons/"]{flex:none;flex-shrink:0;min-inline-size:0;aspect-ratio:1/1;object-fit:contain;block-size:auto;max-inline-size:none}</style></head><body>
+<header class="wrap top"><div class="logo"><span class="sq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>The Microsoft Brief</div>
+<nav><a href="#editions">Editions</a><a href="#products">Products</a><a href="executive/">Executive</a><a href="issues/">Past issues</a><a href="#how">How it works</a><a href="#built">How we built it</a></nav></header>
+
+<div class="hero"><img class="bg" src="assets/img/pg-copilot-wide.jpg" alt="" width="1920" height="1000"><div class="wrap">
+<div class="kicker">Free · Weekly · 5-minute read</div>
+<h1>What's new from Microsoft, and why it matters to you.</h1>
+<p class="lede">Copilot, agents, Dynamics 365, Power Platform, Security and Azure, filtered for your industry and your role. One email every Tuesday. No noise.</p>
+<a class="cta" href="#editions">Choose your edition</a>
+<div class="note">Opt in with your work email. Unsubscribe anytime with one reply.</div>
+</div></div>
+
+<section class="wrap"><h2>Why subscribe</h2><p class="sub">Microsoft ships updates every week. Most of them don't apply to you. The Brief keeps the ones that do.</p>
+<div class="why">
+<div><b><span class="fi" data-fi="sparkle">✨</span> What's new, in one line</b>Each update in a sentence. No marketing speak.</div>
+<div><b><span class="fi" data-fi="lightbulb">💡</span> Why it matters</b>A clear "so what" for your industry and role.</div>
+<div><b><span class="fi" data-fi="arrow_right">➡️</span> What to do next</b>One link: read, watch, register or talk to us.</div>
+<div><b><span class="fi" data-fi="location">📍</span> Events near you</b>Major events, events in your metro area and webinars worth your time.</div>
+</div></section>
+
+<section class="wrap"><h2>A look inside</h2><p class="sub">Every issue opens with three must-reads, then the details for readers who want more.</p>
+<div class="sample"><div class="lbl">Manufacturing &amp; Mobility edition · Issue No. 1 · <a href="issues/2026-11-09-manufacturing-mobility-001.html">Read it</a></div><h3>3 things that matter this week</h3>
+<ol><li><span class="chip">Copilot Studio</span>The week's biggest agent update, and what it means for your operations team.</li>
+<li><span class="chip">Dynamics 365</span>A supply chain or field service change your planners will notice.</li>
+<li><span class="chip">Events</span>The event in your metro worth a seat this month.</li></ol>
+<p style="margin-block:14px 0;color:var(--muted);font-size:14px">Plus: a customer success story from your industry, upcoming webinars, and one quick question so future issues fit you better.</p></div>
+</section>
+
+<section class="wrap" id="editions"><h2>Choose your edition</h2><p class="sub">Pick up to <b>3 industries</b> and mark one as your <b>primary</b>; it leads your weekly email. Then press Subscribe: a pre-filled email opens. Send it from your <b>work</b> email and you're in, starting with next Tuesday's issue.</p>
+<div class="grid">
+<article class="ed feat"><span class="badge">Featured</span><div class="ico" aria-hidden="true" data-fi="airplane">✈️</div><h3>Hospitality &amp; Travel</h3><p>Airlines, hotels, cruise lines, travel and leisure</p><a href="hospitality/" style="display:inline-block;margin:2px 0 8px;font-weight:700;font-size:14px;text-decoration:none;">Explore the Hospitality &amp; Travel page →</a>
+<div class="pk"><label class="add"><input type="checkbox" class="pick" value="Hospitality &amp; Travel"> Add to my Brief</label><label class="pri"><input type="radio" name="primary" class="prim" value="Hospitality &amp; Travel" disabled> Primary</label></div>
+<a class="solo" href="mailto:Nick.Fratello@microsoft.com?subject=Subscribe%3A%20The%20Microsoft%20Brief%20-%20Hospitality%20%26%20Travel&amp;body=Please%20add%20me%20to%20The%20Microsoft%20Brief%20%28Hospitality%20%26%20Travel%20edition%29.%0A%0AFirst%20name%3A%20%0ACompany%3A%20%0AMy%20role%20%28optional%20-%20Sales%2C%20Service%2C%20Finance%2C%20Operations%2C%20IT%2C%20Maker%2C%20Executive...%29%3A%20%0AMy%20focus%20%28optional%20-%20Airlines%2C%20Hotels%2C%20Cruise%20lines%2C%20Travel%29%3A%20%0AMy%20metro%20%28optional%20-%20e.g.%2C%20Houston%2C%20Dallas%2C%20New%20York%2C%20Boston%2C%20Global%29%3A%20%0A%0AI%20confirm%20I%27m%20opting%20in%20with%20my%20work%20email.%20I%20can%20reply%20STOP%20anytime%20to%20unsubscribe.">Or subscribe to just this edition →</a></article>
+<article class="ed"><div class="ico" aria-hidden="true" data-fi="building_factory">🏭</div><h3>Manufacturing &amp; Mobility</h3><p>Discrete and process manufacturing, automotive, transportation and logistics</p><a href="manufacturing/" style="display:inline-block;margin:2px 0 8px;font-weight:700;font-size:14px;text-decoration:none;">Explore the Manufacturing &amp; Mobility page →</a>
+<div class="pk"><label class="add"><input type="checkbox" class="pick" value="Manufacturing &amp; Mobility"> Add to my Brief</label><label class="pri"><input type="radio" name="primary" class="prim" value="Manufacturing &amp; Mobility" disabled> Primary</label></div>
+<a class="solo" href="mailto:Nick.Fratello@microsoft.com?subject=Subscribe%3A%20The%20Microsoft%20Brief%20-%20Manufacturing%20%26%20Mobility&amp;body=Please%20add%20me%20to%20The%20Microsoft%20Brief%20%28Manufacturing%20%26%20Mobility%20edition%29.%0A%0AFirst%20name%3A%20%0ACompany%3A%20%0AMy%20role%20%28optional%20-%20Sales%2C%20Service%2C%20Finance%2C%20Operations%2C%20IT%2C%20Maker%2C%20Executive...%29%3A%20%0AMy%20metro%20%28optional%20-%20e.g.%2C%20Houston%2C%20Dallas%2C%20New%20York%2C%20Boston%2C%20Global%29%3A%20%0A%0AI%20confirm%20I%27m%20opting%20in%20with%20my%20work%20email.%20I%20can%20reply%20STOP%20anytime%20to%20unsubscribe.">Or subscribe to just this edition →</a></article>
+<article class="ed"><div class="ico" aria-hidden="true" data-fi="laptop">💻</div><h3>High Tech &amp; Software</h3><p>Software companies, SaaS, cloud and digital platforms</p><a href="high-tech/" style="display:inline-block;margin:2px 0 8px;font-weight:700;font-size:14px;text-decoration:none;">Explore the High Tech &amp; Software page →</a>
+<div class="pk"><label class="add"><input type="checkbox" class="pick" value="High Tech &amp; Software"> Add to my Brief</label><label class="pri"><input type="radio" name="primary" class="prim" value="High Tech &amp; Software" disabled> Primary</label></div>
+<a class="solo" href="mailto:Nick.Fratello@microsoft.com?subject=Subscribe%3A%20The%20Microsoft%20Brief%20-%20High%20Tech%20%26%20Software&amp;body=Please%20add%20me%20to%20The%20Microsoft%20Brief%20%28High%20Tech%20%26%20Software%20edition%29.%0A%0AFirst%20name%3A%20%0ACompany%3A%20%0AMy%20role%20%28optional%20-%20Sales%2C%20Service%2C%20Finance%2C%20Operations%2C%20IT%2C%20Maker%2C%20Executive...%29%3A%20%0AMy%20metro%20%28optional%20-%20e.g.%2C%20Houston%2C%20Dallas%2C%20New%20York%2C%20Boston%2C%20Global%29%3A%20%0A%0AI%20confirm%20I%27m%20opting%20in%20with%20my%20work%20email.%20I%20can%20reply%20STOP%20anytime%20to%20unsubscribe.">Or subscribe to just this edition →</a></article>
+<article class="ed"><div class="ico" aria-hidden="true" data-fi="tv">📡</div><h3>Telecommunications, Media &amp; Gaming</h3><p>Carriers, broadcast, streaming, publishing, sports, gaming</p><a href="telecom-media/" style="display:inline-block;margin:2px 0 8px;font-weight:700;font-size:14px;text-decoration:none;">Explore the Telecommunications, Media &amp; Gaming page →</a>
+<div class="pk"><label class="add"><input type="checkbox" class="pick" value="Telecommunications, Media &amp; Gaming"> Add to my Brief</label><label class="pri"><input type="radio" name="primary" class="prim" value="Telecommunications, Media &amp; Gaming" disabled> Primary</label></div>
+<a class="solo" href="mailto:Nick.Fratello@microsoft.com?subject=Subscribe%3A%20The%20Microsoft%20Brief%20-%20Telecommunications%2C%20Media%20%26%20Gaming&amp;body=Please%20add%20me%20to%20The%20Microsoft%20Brief%20%28Telecommunications%2C%20Media%20%26%20Gaming%20edition%29.%0A%0AFirst%20name%3A%20%0ACompany%3A%20%0AMy%20role%20%28optional%20-%20Sales%2C%20Service%2C%20Finance%2C%20Operations%2C%20IT%2C%20Maker%2C%20Executive...%29%3A%20%0AMy%20metro%20%28optional%20-%20e.g.%2C%20Houston%2C%20Dallas%2C%20New%20York%2C%20Boston%2C%20Global%29%3A%20%0A%0AI%20confirm%20I%27m%20opting%20in%20with%20my%20work%20email.%20I%20can%20reply%20STOP%20anytime%20to%20unsubscribe.">Or subscribe to just this edition →</a></article>
+<article class="ed"><div class="ico" aria-hidden="true" data-fi="heart_pulse">🩺</div><h3>Healthcare &amp; Life Sciences</h3><p>Providers, payors, pharma, biotech, med-tech</p><a href="healthcare/" style="display:inline-block;margin:2px 0 8px;font-weight:700;font-size:14px;text-decoration:none;">Explore the Healthcare &amp; Life Sciences page →</a>
+<div class="pk"><label class="add"><input type="checkbox" class="pick" value="Healthcare &amp; Life Sciences"> Add to my Brief</label><label class="pri"><input type="radio" name="primary" class="prim" value="Healthcare &amp; Life Sciences" disabled> Primary</label></div>
+<a class="solo" href="mailto:Nick.Fratello@microsoft.com?subject=Subscribe%3A%20The%20Microsoft%20Brief%20-%20Healthcare%20%26%20Life%20Sciences&amp;body=Please%20add%20me%20to%20The%20Microsoft%20Brief%20%28Healthcare%20%26%20Life%20Sciences%20edition%29.%0A%0AFirst%20name%3A%20%0ACompany%3A%20%0AMy%20role%20%28optional%20-%20Sales%2C%20Service%2C%20Finance%2C%20Operations%2C%20IT%2C%20Maker%2C%20Executive...%29%3A%20%0AMy%20metro%20%28optional%20-%20e.g.%2C%20Houston%2C%20Dallas%2C%20New%20York%2C%20Boston%2C%20Global%29%3A%20%0A%0AI%20confirm%20I%27m%20opting%20in%20with%20my%20work%20email.%20I%20can%20reply%20STOP%20anytime%20to%20unsubscribe.">Or subscribe to just this edition →</a></article>
+<article class="ed"><div class="ico" aria-hidden="true" data-fi="building_bank">🏦</div><h3>Financial Services</h3><p>Banking, insurance, capital markets, risk</p><a href="financial-services/" style="display:inline-block;margin:2px 0 8px;font-weight:700;font-size:14px;text-decoration:none;">Explore the Financial Services page →</a>
+<div class="pk"><label class="add"><input type="checkbox" class="pick" value="Financial Services"> Add to my Brief</label><label class="pri"><input type="radio" name="primary" class="prim" value="Financial Services" disabled> Primary</label></div>
+<a class="solo" href="mailto:Nick.Fratello@microsoft.com?subject=Subscribe%3A%20The%20Microsoft%20Brief%20-%20Financial%20Services&amp;body=Please%20add%20me%20to%20The%20Microsoft%20Brief%20%28Financial%20Services%20edition%29.%0A%0AFirst%20name%3A%20%0ACompany%3A%20%0AMy%20role%20%28optional%20-%20Sales%2C%20Service%2C%20Finance%2C%20Operations%2C%20IT%2C%20Maker%2C%20Executive...%29%3A%20%0AMy%20metro%20%28optional%20-%20e.g.%2C%20Houston%2C%20Dallas%2C%20New%20York%2C%20Boston%2C%20Global%29%3A%20%0A%0AI%20confirm%20I%27m%20opting%20in%20with%20my%20work%20email.%20I%20can%20reply%20STOP%20anytime%20to%20unsubscribe.">Or subscribe to just this edition →</a></article>
+<article class="ed"><div class="ico" aria-hidden="true" data-fi="shopping_bag">🛍️</div><h3>Retail &amp; Consumer Goods</h3><p>Stores, e-commerce, CPG, customer loyalty</p><a href="retail/" style="display:inline-block;margin:2px 0 8px;font-weight:700;font-size:14px;text-decoration:none;">Explore the Retail &amp; Consumer Goods page →</a>
+<div class="pk"><label class="add"><input type="checkbox" class="pick" value="Retail &amp; Consumer Goods"> Add to my Brief</label><label class="pri"><input type="radio" name="primary" class="prim" value="Retail &amp; Consumer Goods" disabled> Primary</label></div>
+<a class="solo" href="mailto:Nick.Fratello@microsoft.com?subject=Subscribe%3A%20The%20Microsoft%20Brief%20-%20Retail%20%26%20Consumer%20Goods&amp;body=Please%20add%20me%20to%20The%20Microsoft%20Brief%20%28Retail%20%26%20Consumer%20Goods%20edition%29.%0A%0AFirst%20name%3A%20%0ACompany%3A%20%0AMy%20role%20%28optional%20-%20Sales%2C%20Service%2C%20Finance%2C%20Operations%2C%20IT%2C%20Maker%2C%20Executive...%29%3A%20%0AMy%20metro%20%28optional%20-%20e.g.%2C%20Houston%2C%20Dallas%2C%20New%20York%2C%20Boston%2C%20Global%29%3A%20%0A%0AI%20confirm%20I%27m%20opting%20in%20with%20my%20work%20email.%20I%20can%20reply%20STOP%20anytime%20to%20unsubscribe.">Or subscribe to just this edition →</a></article>
+<article class="ed"><div class="ico" aria-hidden="true" data-fi="flash">⚡</div><h3>Energy &amp; Utilities</h3><p>Oil, gas, power and utilities</p><a href="energy/" style="display:inline-block;margin:2px 0 8px;font-weight:700;font-size:14px;text-decoration:none;">Explore the Energy &amp; Utilities page →</a>
+<div class="pk"><label class="add"><input type="checkbox" class="pick" value="Energy &amp; Utilities"> Add to my Brief</label><label class="pri"><input type="radio" name="primary" class="prim" value="Energy &amp; Utilities" disabled> Primary</label></div>
+<a class="solo" href="mailto:Nick.Fratello@microsoft.com?subject=Subscribe%3A%20The%20Microsoft%20Brief%20-%20Energy%20%26%20Utilities&amp;body=Please%20add%20me%20to%20The%20Microsoft%20Brief%20%28Energy%20%26%20Utilities%20edition%29.%0A%0AFirst%20name%3A%20%0ACompany%3A%20%0AMy%20role%20%28optional%20-%20Sales%2C%20Service%2C%20Finance%2C%20Operations%2C%20IT%2C%20Maker%2C%20Executive...%29%3A%20%0AMy%20metro%20%28optional%20-%20e.g.%2C%20Houston%2C%20Dallas%2C%20New%20York%2C%20Boston%2C%20Global%29%3A%20%0A%0AI%20confirm%20I%27m%20opting%20in%20with%20my%20work%20email.%20I%20can%20reply%20STOP%20anytime%20to%20unsubscribe.">Or subscribe to just this edition →</a></article>
+<article class="ed"><div class="ico" aria-hidden="true" data-fi="briefcase">💼</div><h3>Professional Services</h3><p>Consulting, legal, accounting, engineering firms</p><a href="professional-services/" style="display:inline-block;margin:2px 0 8px;font-weight:700;font-size:14px;text-decoration:none;">Explore the Professional Services page →</a>
+<div class="pk"><label class="add"><input type="checkbox" class="pick" value="Professional Services"> Add to my Brief</label><label class="pri"><input type="radio" name="primary" class="prim" value="Professional Services" disabled> Primary</label></div>
+<a class="solo" href="mailto:Nick.Fratello@microsoft.com?subject=Subscribe%3A%20The%20Microsoft%20Brief%20-%20Professional%20Services&amp;body=Please%20add%20me%20to%20The%20Microsoft%20Brief%20%28Professional%20Services%20edition%29.%0A%0AFirst%20name%3A%20%0ACompany%3A%20%0AMy%20role%20%28optional%20-%20Sales%2C%20Service%2C%20Finance%2C%20Operations%2C%20IT%2C%20Maker%2C%20Executive...%29%3A%20%0AMy%20metro%20%28optional%20-%20e.g.%2C%20Houston%2C%20Dallas%2C%20New%20York%2C%20Boston%2C%20Global%29%3A%20%0A%0AI%20confirm%20I%27m%20opting%20in%20with%20my%20work%20email.%20I%20can%20reply%20STOP%20anytime%20to%20unsubscribe.">Or subscribe to just this edition →</a></article>
+<article class="ed"><div class="ico" aria-hidden="true" data-fi="building_government">🏛️</div><h3>State &amp; Local Government and Education</h3><p>States, cities, counties, K-12 and higher education</p><a href="state-local-edu/" style="display:inline-block;margin:2px 0 8px;font-weight:700;font-size:14px;text-decoration:none;">Explore the State &amp; Local Government and Education page →</a>
+<div class="pk"><label class="add"><input type="checkbox" class="pick" value="State &amp; Local Government and Education"> Add to my Brief</label><label class="pri"><input type="radio" name="primary" class="prim" value="State &amp; Local Government and Education" disabled> Primary</label></div>
+<a class="solo" href="mailto:Nick.Fratello@microsoft.com?subject=Subscribe%3A%20The%20Microsoft%20Brief%20-%20State%20%26%20Local%20Government%20and%20Education&amp;body=Please%20add%20me%20to%20The%20Microsoft%20Brief%20%28State%20%26%20Local%20Government%20and%20Education%20edition%29.%0A%0AFirst%20name%3A%20%0ACompany%3A%20%0AMy%20role%20%28optional%20-%20Sales%2C%20Service%2C%20Finance%2C%20Operations%2C%20IT%2C%20Maker%2C%20Executive...%29%3A%20%0AMy%20metro%20%28optional%20-%20e.g.%2C%20Houston%2C%20Dallas%2C%20New%20York%2C%20Boston%2C%20Global%29%3A%20%0A%0AI%20confirm%20I%27m%20opting%20in%20with%20my%20work%20email.%20I%20can%20reply%20STOP%20anytime%20to%20unsubscribe.">Or subscribe to just this edition →</a></article>
+<article class="ed"><div class="ico" aria-hidden="true" data-fi="flag">🦅</div><h3>Federal Government</h3><p>Federal agencies and civilian departments</p><a href="federal/" style="display:inline-block;margin:2px 0 8px;font-weight:700;font-size:14px;text-decoration:none;">Explore the Federal Government page →</a>
+<div class="pk"><label class="add"><input type="checkbox" class="pick" value="Federal Government"> Add to my Brief</label><label class="pri"><input type="radio" name="primary" class="prim" value="Federal Government" disabled> Primary</label></div>
+<a class="solo" href="mailto:Nick.Fratello@microsoft.com?subject=Subscribe%3A%20The%20Microsoft%20Brief%20-%20Federal%20Government&amp;body=Please%20add%20me%20to%20The%20Microsoft%20Brief%20%28Federal%20Government%20edition%29.%0A%0AFirst%20name%3A%20%0ACompany%3A%20%0AMy%20role%20%28optional%20-%20Sales%2C%20Service%2C%20Finance%2C%20Operations%2C%20IT%2C%20Maker%2C%20Executive...%29%3A%20%0AMy%20metro%20%28optional%20-%20e.g.%2C%20Houston%2C%20Dallas%2C%20New%20York%2C%20Boston%2C%20Global%29%3A%20%0A%0AI%20confirm%20I%27m%20opting%20in%20with%20my%20work%20email.%20I%20can%20reply%20STOP%20anytime%20to%20unsubscribe.">Or subscribe to just this edition →</a></article>
+<article class="ed"><div class="ico" aria-hidden="true" data-fi="shield">🛡️</div><h3>Defense Industry</h3><p>Defense contractors and aerospace and defense suppliers</p><a href="defense/" style="display:inline-block;margin:2px 0 8px;font-weight:700;font-size:14px;text-decoration:none;">Explore the Defense Industry page →</a>
+<div class="pk"><label class="add"><input type="checkbox" class="pick" value="Defense Industry"> Add to my Brief</label><label class="pri"><input type="radio" name="primary" class="prim" value="Defense Industry" disabled> Primary</label></div>
+<a class="solo" href="mailto:Nick.Fratello@microsoft.com?subject=Subscribe%3A%20The%20Microsoft%20Brief%20-%20Defense%20Industry&amp;body=Please%20add%20me%20to%20The%20Microsoft%20Brief%20%28Defense%20Industry%20edition%29.%0A%0AFirst%20name%3A%20%0ACompany%3A%20%0AMy%20role%20%28optional%20-%20Sales%2C%20Service%2C%20Finance%2C%20Operations%2C%20IT%2C%20Maker%2C%20Executive...%29%3A%20%0AMy%20metro%20%28optional%20-%20e.g.%2C%20Houston%2C%20Dallas%2C%20New%20York%2C%20Boston%2C%20Global%29%3A%20%0A%0AI%20confirm%20I%27m%20opting%20in%20with%20my%20work%20email.%20I%20can%20reply%20STOP%20anytime%20to%20unsubscribe.">Or subscribe to just this edition →</a></article>
+<article class="ed"><div class="ico" aria-hidden="true" data-fi="globe">🌐</div><h3>All Industries</h3><p>The cross-industry essentials, every week, including nonprofits</p>
+<div class="pk"><label class="add"><input type="checkbox" class="pick" value="All Industries"> Add to my Brief</label><label class="pri"><input type="radio" name="primary" class="prim" value="All Industries" disabled> Primary</label></div>
+<a class="solo" href="mailto:Nick.Fratello@microsoft.com?subject=Subscribe%3A%20The%20Microsoft%20Brief%20-%20All%20Industries&amp;body=Please%20add%20me%20to%20The%20Microsoft%20Brief%20%28All%20Industries%20edition%29.%0A%0AFirst%20name%3A%20%0ACompany%3A%20%0AMy%20role%20%28optional%20-%20Sales%2C%20Service%2C%20Finance%2C%20Operations%2C%20IT%2C%20Maker%2C%20Executive...%29%3A%20%0AMy%20metro%20%28optional%20-%20e.g.%2C%20Houston%2C%20Dallas%2C%20New%20York%2C%20Boston%2C%20Global%29%3A%20%0A%0AI%20confirm%20I%27m%20opting%20in%20with%20my%20work%20email.%20I%20can%20reply%20STOP%20anytime%20to%20unsubscribe.">Or subscribe to just this edition →</a></article>
+</div>
+<div class="tray" id="tray" aria-live="polite"><div class="wrap"><span id="picks">Pick up to 3 industries to build your Brief.</span><label class="exec"><input type="checkbox" id="execv"> Send me the Executive version (90-second read, every 2 weeks)</label><a class="go" id="go" href="#editions" aria-disabled="true">Subscribe →</a></div></div>
+<p class="sub" style="margin-block-start:22px"><b>Microsoft specialist?</b> Share The Brief with your customers. <a href="mailto:Nick.Fratello@microsoft.com?subject=Specialist%3A%20The%20Microsoft%20Brief%20-%20%5BEdition%5D">Email "Specialist: [Edition]"</a> and you'll get the weekly issue to forward. When a customer joins from your share, we'll let you know.</p></section>
+<section class="wrap" id="products"><h2>Explore by product</h2><p class="sub">The latest news, customer results and events for each Microsoft platform, in one place.</p><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px"><a href="products/copilot/" style="display:flex;gap:10px;align-items:center;padding:12px 14px;border:1px solid #e1dfdd;border-radius:14px;text-decoration:none;font-weight:700;background:#fff;color:#1b1b1b"><img src="assets/icons/copilot.png" alt="" width="28" height="28">Microsoft 365 Copilot</a><a href="products/copilot-studio/" style="display:flex;gap:10px;align-items:center;padding:12px 14px;border:1px solid #e1dfdd;border-radius:14px;text-decoration:none;font-weight:700;background:#fff;color:#1b1b1b"><img src="assets/icons/cs.png" alt="" width="28" height="28">Copilot Studio</a><a href="products/dynamics-365/" style="display:flex;gap:10px;align-items:center;padding:12px 14px;border:1px solid #e1dfdd;border-radius:14px;text-decoration:none;font-weight:700;background:#fff;color:#1b1b1b"><img src="assets/icons/d365.png" alt="" width="28" height="28">Dynamics 365</a><a href="products/power-platform/" style="display:flex;gap:10px;align-items:center;padding:12px 14px;border:1px solid #e1dfdd;border-radius:14px;text-decoration:none;font-weight:700;background:#fff;color:#1b1b1b"><img src="assets/icons/pp.png" alt="" width="28" height="28">Power Platform</a><a href="products/azure/" style="display:flex;gap:10px;align-items:center;padding:12px 14px;border:1px solid #e1dfdd;border-radius:14px;text-decoration:none;font-weight:700;background:#fff;color:#1b1b1b"><img src="assets/icons/azure.png" alt="" width="28" height="28">Azure</a><a href="products/security/" style="display:flex;gap:10px;align-items:center;padding:12px 14px;border:1px solid #e1dfdd;border-radius:14px;text-decoration:none;font-weight:700;background:#fff;color:#1b1b1b"><img src="assets/icons/defender.png" alt="" width="28" height="28">Microsoft Security</a></div></section>
+
+
+<section class="wrap" id="exec"><h2>For executives: The Microsoft Brief · Executive</h2><p class="sub">Same trusted sources, built for the C-suite. Tick <b>Send me the Executive version</b> when you subscribe.</p>
+<div class="why"><div><b><span class="fi" data-fi="timer">⏱</span> 90 seconds</b><br>Three items, not six. What changed, and what it's worth: revenue, cost, risk or talent.</div><div><b><span class="fi" data-fi="data_trending">📈</span> One proof point</b><br>A published customer result from your industry, with the number.</div><div><b><span class="fi" data-fi="chat">💬</span> One question for your team</b><br>Turn the news into a conversation at your next leadership meeting.</div><div><b><span class="fi" data-fi="headphones">🎧</span> Listen in 2 minutes</b><br>An optional audio recap for the commute. Every 2 weeks by default.</div></div></section>
+<section class="wrap" id="how"><h2>How it works</h2><p class="sub">No account or password, and no forms to fill out.</p>
+<div class="steps">
+<div><b>Subscribe by email</b><br>Sending from your work address confirms it's really you. Personal addresses aren't accepted.</div>
+<div><b>Get the Brief on Tuesdays</b><br>Five minutes covers what's new, why it matters and what's coming up.</div>
+<div><b>Tune it by replying</b><br>Each issue asks one quick question, such as your role, your metro or the products you use. Reply and future issues adjust.</div>
+<div><b>Leave anytime</b><br>Reply STOP and you're removed right away.</div>
+</div></section>
+
+<section class="build" id="built"><div class="wrap"><h2>How we built this with Copilot Cowork</h2>
+<p class="sub">The Brief also shows how AI changes everyday work. A small group of AI agents in Microsoft 365 Copilot Cowork does the collecting, writing and sending. A person reviews every issue.</p>
+<div class="flow"><span><span class="fi" data-fi="search">🔎</span> Scout<br><em>finds public updates daily</em></span>→<span><span class="fi" data-fi="edit">✍️</span> Editor<br><em>writes each story once</em></span>→<span><span class="fi" data-fi="calendar_ltr">📅</span> Events<br><em>big, local, webinars</em></span>→<span><span class="fi" data-fi="puzzle_piece">🧩</span> Composer<br><em>builds each edition</em></span>→<span><span class="fi" data-fi="mail">📬</span> Mailer<br><em>sends Tuesdays</em></span>→<span><span class="fi" data-fi="data_bar_vertical">📊</span> Analyst<br><em>learns what's useful</em></span></div>
+<p class="sub" style="margin:0">Want to build something like this for your own team? Reply to any issue with "Show me how" and we'll walk you through it.</p>
+</div></section>
+
+<section class="wrap"><div class="trust"><b>Our promise.</b> Everything in The Microsoft Brief comes from public Microsoft sources: Microsoft Learn, official blogs and YouTube channels, Microsoft Inside Track, customer stories and Microsoft Events. We store only what we need to send your edition, never sell or share your information, and honor every unsubscribe right away. See the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>.</div></section>
+
+<footer><div class="wrap">
+<p><b>The Microsoft Brief</b> · Curated by Nick Fratello, Microsoft · <a href="https://www.linkedin.com/in/nickfratello" style="color:#0067b8;">Connect on LinkedIn</a> · Made with Microsoft Copilot Cowork + Power Platform</p>
+<p>All content is publicly available from Microsoft. Microsoft Corporation, One Microsoft Way, Redmond, WA 98052</p>
+</div></footer>
+<script>
+/* Share links: ?ref=CODE (specialist or subscriber) or ?src=SPARK (campaign) is carried into every Subscribe email so sign-ups are credited. */
+(()=>{const p=new URLSearchParams(location.search);const raw=(p.get('ref')||p.get('src')||'').replace(/[^A-Za-z0-9-]/g,'').slice(0,24);if(!raw)return;
+const tag=' ['+(p.get('ref')?'ref ':'src ')+raw+']';window.BRIEF_TAG=tag;
+document.querySelectorAll('a[href^="mailto:"]').forEach(a=>{const h=a.getAttribute('href');const m=h.match(/subject=([^&]*)/);if(!m)return;
+const s=decodeURIComponent(m[1]);if(/^(Subscribe|Specialist)/.test(s)&&!s.includes('['))a.setAttribute('href',h.replace(m[0],'subject='+encodeURIComponent(s+tag)))})})();
+</script>
+<script>
+(()=>{const TO="Nick.Fratello@microsoft.com",MAX=3;
+const picks=[...document.querySelectorAll('.pick')],prims=[...document.querySelectorAll('.prim')];
+const out=document.getElementById('picks'),go=document.getElementById('go'),ex=document.getElementById('execv');let order=[];
+function primary(){const r=prims.find(p=>p.checked&&!p.disabled);return r?r.value:order[0]}
+function update(){
+ picks.forEach(p=>{const on=p.checked;p.closest('.ed').classList.toggle('on',on);
+  const r=prims.find(x=>x.value===p.value);r.disabled=!on;if(!on)r.checked=false;
+  p.disabled=!on&&order.length>=MAX});
+ if(!order.length){out.textContent='Pick up to 3 industries to build your Brief.';go.setAttribute('aria-disabled','true');go.href='#editions';return}
+ const pr=primary();prims.forEach(r=>{if(r.value===pr&&!r.disabled)r.checked=true});
+ const also=order.filter(x=>x!==pr);
+ out.textContent='Your Brief: \u2605 '+pr+(also.length?' + '+also.join(' + '):'')+(order.length>=MAX?' (max 3)':'');
+ const subj='Subscribe: The Microsoft Brief'+(ex.checked?' · Executive':'')+' - '+pr+(also.length?' + '+also.join(' + '):'')+(window.BRIEF_TAG||'');
+ let body='Please add me to The Microsoft Brief.\n\nPrimary industry: '+pr+'\n'+(also.length?'Also: '+also.join(', ')+'\n':'')+'\nFirst name: \nCompany: \nMy role (optional - Sales, Service, Finance, Operations, IT, Maker, Executive...): \n';
+ if(order.some(x=>x.startsWith('Hospitality')))body+='My focus (optional - Airlines, Hotels, Cruise lines, Travel): \n';
+ body+=(ex.checked?'Executive version: Yes\nMy function (optional - CEO, CFO, COO, CIO/CTO, CISO, CMO, CHRO, Chief Customer Officer): \n':'');
+ body+='My metro (optional - e.g., Houston, Dallas, New York, Boston, Global): \n\nI confirm I\'m opting in with my work email. I can reply STOP anytime to unsubscribe.';
+ go.href='mailto:'+TO+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);go.setAttribute('aria-disabled','false')}
+picks.forEach(p=>p.addEventListener('change',()=>{if(p.checked){if(order.length>=MAX){p.checked=false;return}order.push(p.value)}else order=order.filter(x=>x!==p.value);update()}));
+prims.forEach(r=>r.addEventListener('change',update));ex.addEventListener('change',update);update()})();
+</script>
+<script>
+/* Fluent UI System Icons (MIT, Microsoft). Emoji stay as the fallback if an icon can't load. */
+(()=>{const B='https://cdn.jsdelivr.net/npm/@fluentui/svg-icons@1.1.341/icons/';
+document.querySelectorAll('[data-fi]').forEach(el=>{const n=el.dataset.fi;if(!n)return;const u=B+n+'_24_regular.svg';const im=new Image();
+im.addEventListener('load',()=>{const sp=document.createElement('span');sp.className='fic';sp.style.setProperty('--m','url("'+u+'")');el.textContent='';el.appendChild(sp)});im.src=u})})();
+</script>
+</body></html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en-US" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark">
+<title>Past issues · The Microsoft Brief</title>
+<style>
+:root{--bg:#fff;--fg:#1b1b1b;--muted:#5c5c5c;--card:#f5f7fa;--line:#e3e6ea;--accent:#0067b8;--hero1:#0b2a4a;--hero2:#0067b8}
+@media (prefers-color-scheme: dark){:root{--bg:#111418;--fg:#f2f2f2;--muted:#b3b8bf;--card:#1b2027;--line:#2b323b;--accent:#4aa3ff;--hero1:#06182b;--hero2:#0b4f8f}}
+body{margin:0;font-family:"Segoe UI",system-ui,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.5}
+a{color:var(--accent)}.wrap{max-inline-size:900px;margin-inline:auto;padding-inline:24px}
+header{background:linear-gradient(135deg,var(--hero1),var(--hero2));color:#fff;padding-block:48px}header a{color:#fff}
+h1{margin:0 0 6px;font-size:34px}.bar{display:flex;gap:12px;flex-wrap:wrap;margin-block:24px}
+input,select{font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);flex:1;min-inline-size:220px}
+.it{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin-block-end:14px;text-decoration:none;color:var(--fg)}
+.it small{color:var(--muted)}.it b{display:block;font-size:18px;margin-block:4px}
+footer{color:var(--muted);font-size:13px;padding-block:30px;border-block-start:1px solid var(--line);margin-block-start:30px}
+</style></head><body>
+<header><div class="wrap"><a href="../">← The Microsoft Brief</a><h1>Past issues</h1><div>Every edition, searchable. What's new from Microsoft, and why it matters.</div></div></header>
+<main class="wrap">
+<div class="bar"><input id="q" type="search" placeholder="Search issues (e.g., agents, Copilot Studio, ERP)" aria-label="Search issues"><select id="ed" aria-label="Filter by edition"><option value="">All editions</option><option>Hospitality &amp; Travel</option><option>Manufacturing &amp; Mobility</option><option>High Tech &amp; Software</option><option>Telecommunications, Media &amp; Gaming</option><option>Healthcare &amp; Life Sciences</option><option>Financial Services</option><option>Retail &amp; Consumer Goods</option><option>Energy &amp; Utilities</option><option>Professional Services</option><option>State &amp; Local Government and Education</option><option>Federal Government</option><option>Defense Industry</option><option>All Industries</option></select></div>
+<div id="list"></div><p id="none" hidden>No issues match yet. New editions publish weekly.</p>
+</main>
+<footer class="wrap">All content in The Microsoft Brief is publicly available from Microsoft. <b>Made with Microsoft Copilot Cowork + Power Platform.</b> Curated by Nick Fratello, Microsoft · <a href="https://www.linkedin.com/in/nickfratello" style="color:#0067b8;">Connect on LinkedIn</a> · One Microsoft Way, Redmond, WA 98052 · <a href="https://privacy.microsoft.com/privacystatement">Privacy</a></footer>
+<script>
+const ISSUES=[{"date": "2026-11-09", "edition": "Manufacturing & Mobility", "no": 1, "title": "Machines as a subscription, supplier slips caught by agents, and agents that start themselves", "url": "2026-11-09-manufacturing-mobility-001.html"}, {"date": "2026-11-09", "edition": "Hospitality & Travel", "no": 1, "title": "Executive: AI agents in the reservations center, the booking path and guest data", "url": "2026-11-09-hospitality-travel-001-executive.html"}, {"date": "2026-11-09", "edition": "Hospitality & Travel", "no": 1, "title": "AI agents in the reservations center, the booking path and guest data", "url": "2026-11-09-hospitality-travel-001.html"}, {"date": "2026-11-02", "edition": "All Industries", "label": "Week in review · Nov 2–8, 2026", "title": "Agents that remember, carbon in your ERP, and tighter limits on what agents can do", "url": "2026-11-02-all-industries-week-in-review.html"}, {"date": "2026-10-26", "edition": "All Industries", "label": "Week in review · Oct 26 – Nov 1, 2026", "title": "Copilot closes the books, CRM opens to agents, and shadow AI comes into view", "url": "2026-10-26-all-industries-week-in-review.html"}, {"date": "2026-10-19", "edition": "All Industries", "label": "Week in review · Oct 19–25, 2026", "title": "Anyone can build an app, agents get an ID badge, and Copilot reads your business data", "url": "2026-10-19-all-industries-week-in-review.html"}, {"date": "2026-10-12", "edition": "All Industries", "label": "Week in review · Oct 12–18, 2026", "title": "Copilot learns the law, an ERP Leader nod, and faster access shut-off", "url": "2026-10-12-all-industries-week-in-review.html"}];
+const list=document.getElementById('list'),q=document.getElementById('q'),ed=document.getElementById('ed'),none=document.getElementById('none');
+function esc(t){const d=document.createElement('div');d.textContent=t;return d.innerHTML}
+function render(){const t=q.value.toLowerCase(),e=ed.value;
+const r=ISSUES.filter(i=>(!e||i.edition===e)&&(!t||(i.title+' '+i.edition+' '+(i.label||'')).toLowerCase().includes(t))).sort((a,b)=>b.date.localeCompare(a.date));
+list.innerHTML=r.map(i=>`<a class="it" href="${i.url}"><small>${esc(i.edition)} · ${i.label?esc(i.label):'Issue No. '+i.no+' · '+new Date(i.date+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'})}</small><b>${esc(i.title)}</b></a>`).join('');none.hidden=r.length>0}
+q.addEventListener('input',render);ed.addEventListener('change',render);render();
+</script></body></html>

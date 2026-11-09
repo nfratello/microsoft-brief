@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Microsoft Brief//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ceraweek-2027@microsoft-brief
+DTSTAMP:20261109T190000Z
+DTSTART;VALUE=DATE:20270308
+DTEND;VALUE=DATE:20270313
+SUMMARY:CERAWeek 2027
+LOCATION:Houston\, TX
+DESCRIPTION:Register: https://www.ceraweek.com/en\n\nShared by The Microsoft Brief · https://nfratello.github.io/microsoft-brief/
+URL:https://www.ceraweek.com/en
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

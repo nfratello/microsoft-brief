@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Microsoft Brief//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ignite-2026@microsoft-brief
+DTSTAMP:20261109T190000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261121
+SUMMARY:Microsoft Ignite 2026
+LOCATION:Moscone Center\, San Francisco\, CA + free online
+DESCRIPTION:Register: https://ignite.microsoft.com/en-US/home\n\nShared by The Microsoft Brief · https://nfratello.github.io/microsoft-brief/
+URL:https://ignite.microsoft.com/en-US/home
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

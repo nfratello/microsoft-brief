@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Microsoft Brief//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:nrf-2027@microsoft-brief
+DTSTAMP:20261109T190000Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270113
+SUMMARY:NRF 2027: Retail's Big Show
+LOCATION:Javits Center\, New York\, NY
+DESCRIPTION:Register: https://nrfbigshow.nrf.com/agenda\n\nShared by The Microsoft Brief · https://nfratello.github.io/microsoft-brief/
+URL:https://nrfbigshow.nrf.com/agenda
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

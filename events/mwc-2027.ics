@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Microsoft Brief//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:mwc-2027@microsoft-brief
+DTSTAMP:20261109T190000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270305
+SUMMARY:MWC Barcelona 2027
+LOCATION:Barcelona\, Spain
+DESCRIPTION:Register: https://www.mwcbarcelona.com/mwc-barcelona\n\nShared by The Microsoft Brief · https://nfratello.github.io/microsoft-brief/
+URL:https://www.mwcbarcelona.com/mwc-barcelona
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

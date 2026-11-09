@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Microsoft Brief//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:convergence-2026@microsoft-brief
+DTSTAMP:20261109T190000Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261212
+SUMMARY:Convergence 2026
+LOCATION:Miami Beach\, FL
+DESCRIPTION:Register: https://convergence365.com/register/\n\nShared by The Microsoft Brief · https://nfratello.github.io/microsoft-brief/
+URL:https://convergence365.com/register/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

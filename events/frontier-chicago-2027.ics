@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Microsoft Brief//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:frontier-chicago-2027@microsoft-brief
+DTSTAMP:20261109T190000Z
+DTSTART;VALUE=DATE:20270202
+DTEND;VALUE=DATE:20270203
+SUMMARY:Microsoft Frontier Tour · Chicago
+LOCATION:McCormick Place\, Chicago\, IL
+DESCRIPTION:Register: https://frontiertour.microsoft.com/flow/microsoft/chicago26/agenda/page/agenda\n\nShared by The Microsoft Brief · https://nfratello.github.io/microsoft-brief/
+URL:https://frontiertour.microsoft.com/flow/microsoft/chicago26/agenda/page/agenda
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

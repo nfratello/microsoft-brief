@@ -1,0 +1,21 @@
+The Microsoft Brief Executive: Hospitality & Travel, Issue No. 1
+
+Host: Welcome to The Microsoft Brief, Executive edition, for hospitality and travel leaders. Three moves, about three minutes.
+Guest: And everything we cover is public information from Microsoft. So, let's get into it.
+Host: Move one: the reservations center. Microsoft Contact Center Intelligence is now in public preview.
+Guest: Right, and the key detail is that it plugs into the contact center you already run. Customer-assist agents, quality-review agents, no platform migration.
+Host: So what's it worth?
+Guest: Cost and risk. Self-service that scales when a storm or a disruption floods the phones, and every call reviewed for quality. For a CFO, that's lower cost per contact without a rip-and-replace project.
+Host: Move two is about revenue, and honestly it's the one I'd lose sleep over. Microsoft Clarity can now show what AI agents do on your website.
+Guest: And it tests whether those agents can actually finish key tasks, starting with commerce and travel.
+Host: Which matters because travelers are starting to hand booking to AI assistants.
+Guest: Exactly. If an assistant can't find, compare and book your rooms, fares or sailings, that booking goes somewhere else, and you never see it happen. That's a CMO conversation.
+Host: Move three: risk. Microsoft Defender can now discover AI agents running on employee devices, and the tools they connect to. It's generally available.
+Guest: Travel brands hold passports, payment cards and loyalty data. Knowing which agents can reach that data lowers breach and compliance exposure. The CISO lens is simple: start with an inventory before you set policy.
+Host: Now a proof point. Air India's virtual assistant handles about forty thousand customer queries a day, across more than thirteen hundred types of questions.
+Guest: That's the scale question answered. It's already working in airlines.
+Host: And here's a question to take to your team this week.
+Guest: If a traveler's AI assistant tried to book with us tonight, would it succeed, and would we even know?
+Host: Good one. If you want to go deeper, reply to the email and request a thirty-minute executive briefing with Microsoft.
+Guest: And a fun fact: this Brief was assembled by AI agents in Microsoft 365 Copilot Cowork, then reviewed by a person before it went out.
+Host: That's the Brief. See you next edition.
