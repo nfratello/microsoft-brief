@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Microsoft Brief//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:makercon-2027@microsoft-brief
+DTSTAMP:20261110T130000Z
+DTSTART;VALUE=DATE:20271102
+DTEND;VALUE=DATE:20271105
+SUMMARY:Maker Con 2027 (formerly Power Platform Community Conference)
+LOCATION:Chicago\, IL
+DESCRIPTION:Details and registration: https://www.microsoft.com/en-us/power-platform/blog/2026/10/29/built-by-makers-five-years-of-power-platform-community-conference/\n\nShared by The Microsoft Brief · https://nfratello.github.io/microsoft-brief/
+URL:https://www.microsoft.com/en-us/power-platform/blog/2026/10/29/built-by-makers-five-years-of-power-platform-community-conference/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
