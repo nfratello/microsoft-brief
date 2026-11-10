@@ -1,0 +1,418 @@
+[
+ {
+  "id": "1747349596437245542",
+  "company": "Evergy",
+  "url": "https://www.microsoft.com/en/customers/story/1747349596437245542-evergy-power-apps-energy-en-united-states",
+  "hero": "assets/img/customers/1747349596437245542-hero.jpg",
+  "logo": null,
+  "industry": "energy",
+  "industry_source": "public story page",
+  "product": "power-platform",
+  "label": "Power Platform",
+  "number": "120,000+",
+  "number_label": "hours saved per year",
+  "headline": "",
+  "summary": "The utility has built more than 275 Power Platform solutions that save over 120,000 hours a year.",
+  "pages": [
+   "products/power-platform"
+  ]
+ },
+ {
+  "id": "23284",
+  "company": "Miami Dade College",
+  "url": "https://www.microsoft.com/en/customers/story/23284-miami-dade-college-microsoft-365-copilot",
+  "hero": "assets/img/customers/23284-hero.jpg",
+  "logo": "assets/img/customers/23284-logo.png",
+  "industry": "state-local-edu",
+  "industry_source": "page",
+  "product": "copilot",
+  "label": "Microsoft 365 Copilot",
+  "number": "",
+  "number_label": "",
+  "headline": "Student pass rates up 15%",
+  "summary": "Copilot and Copilot Studio study assistants drove a 15% increase in pass rates and a 12% drop in dropout rates in STEM courses.",
+  "pages": [
+   "state-local-edu"
+  ]
+ },
+ {
+  "id": "24992",
+  "company": "Vera Bradley",
+  "url": "https://www.microsoft.com/en/customers/story/24992-vera-bradley-dynamics-365-finance",
+  "hero": "assets/img/customers/24992-hero.jpg",
+  "logo": "assets/img/customers/24992-logo.png",
+  "industry": "retail",
+  "industry_source": "page",
+  "product": "dynamics-365",
+  "label": "Dynamics 365",
+  "number": "25%",
+  "number_label": "Fewer live agent chat escalations",
+  "headline": "",
+  "summary": "Vera Bradley unified finance, commerce, supply chain and service on Dynamics 365 with a Copilot Studio self-service agent. It saved millions and cut live agent chat escalations by 25%.",
+  "pages": [
+   "retail"
+  ]
+ },
+ {
+  "id": "25672",
+  "company": "Ahold Delhaize USA",
+  "url": "https://www.microsoft.com/en/customers/story/25672-ahold-delhaize-usa-azure",
+  "hero": "assets/img/customers/25672-hero.jpg",
+  "logo": "assets/img/customers/25672-logo.png",
+  "industry": "retail",
+  "industry_source": "page",
+  "product": "azure",
+  "label": "Azure",
+  "number": "",
+  "number_label": "",
+  "headline": "Up to 40% faster engineering delivery",
+  "summary": "Moving 3,000+ virtual machines and about 300 PostgreSQL workloads to Azure improved engineering delivery speed by up to 40%, shipping features in hours instead of weeks.",
+  "pages": [
+   "retail"
+  ]
+ },
+ {
+  "id": "25679",
+  "company": "AT&T",
+  "url": "https://www.microsoft.com/en/customers/story/25679-at-and-t-azure",
+  "hero": "assets/img/customers/25679-hero.jpg",
+  "logo": "assets/img/customers/25679-logo.png",
+  "industry": "telecom-media",
+  "industry_source": "page",
+  "product": "azure",
+  "label": "Azure",
+  "number": "33%",
+  "number_label": "Faster resolution for customer care",
+  "headline": "",
+  "summary": "AT&T built an agentic AI framework on Azure, Foundry and Azure OpenAI, deploying 71 generative AI solutions to 100,000+ employees. Customer care resolution time fell 33%.",
+  "pages": [
+   "telecom-media"
+  ]
+ },
+ {
+  "id": "25865",
+  "company": "Iveco Defence Vehicles",
+  "url": "https://www.microsoft.com/en/customers/story/25865-idv-dynamics-365-customer-service",
+  "hero": "assets/img/customers/25865-hero.jpg",
+  "logo": "assets/img/customers/25865-logo.png",
+  "industry": "defense",
+  "industry_source": "page",
+  "product": "dynamics-365",
+  "label": "Dynamics 365",
+  "number": "",
+  "number_label": "",
+  "headline": "One control room for fleet care",
+  "summary": "IDV built a customer-care control room on Dynamics 365 Customer Service and Contact Center for military vehicle maintenance and service-level monitoring.",
+  "pages": [
+   "defense"
+  ]
+ },
+ {
+  "id": "25879",
+  "company": "Dunaway",
+  "url": "https://www.microsoft.com/en/customers/story/25879-dunaway-microsoft-copilot-studio",
+  "hero": "assets/img/customers/25879-hero.jpg",
+  "logo": "assets/img/customers/25879-logo.png",
+  "industry": "professional-services",
+  "industry_source": "page",
+  "product": "copilot-studio",
+  "label": "Copilot Studio",
+  "number": "90%",
+  "number_label": "Less manual regulatory research time",
+  "headline": "",
+  "summary": "Engineering firm Dunaway built a Copilot Studio agent with Power Automate to search regulatory codes across Texas jurisdictions. It cut manual research time 90% and saves 10,000+ hours a year.",
+  "pages": [
+   "professional-services"
+  ]
+ },
+ {
+  "id": "26024",
+  "company": "Snohomish County",
+  "url": "https://www.microsoft.com/en/customers/story/26024-snohomish-county-azure-speech-in-foundry-tools",
+  "hero": "assets/img/customers/26024-hero.jpg",
+  "logo": "assets/img/customers/26024-logo.png",
+  "industry": "state-local-edu",
+  "industry_source": "page",
+  "product": "azure",
+  "label": "Azure",
+  "number": "",
+  "number_label": "",
+  "headline": "Training video production time cut 87.5%",
+  "summary": "Azure Speech cut training-video production time 87.5% and frees about 840 hours a year.",
+  "pages": [
+   "state-local-edu"
+  ]
+ },
+ {
+  "id": "26034",
+  "company": "KONE",
+  "url": "https://www.microsoft.com/en/customers/story/26034-kone-power-apps",
+  "hero": "assets/img/customers/26034-hero.jpg",
+  "logo": "assets/img/customers/26034-logo.png",
+  "industry": "manufacturing",
+  "industry_source": "public story page",
+  "product": "power-platform",
+  "label": "Power Platform",
+  "number": "",
+  "number_label": "",
+  "headline": "Contract handling time cut 33%",
+  "summary": "KONE has built 32,000+ apps on Power Platform. One AI workflow connected to SAP processes 54,000+ contracts a year and cuts handling time 33% per contract.",
+  "pages": [
+   "products/power-platform"
+  ]
+ },
+ {
+  "id": "26047",
+  "company": "Air India",
+  "url": "https://www.microsoft.com/en/customers/story/26047-air-india-azure-openai-in-foundry-models",
+  "hero": "assets/img/customers/26047-hero.jpg",
+  "logo": "assets/img/customers/26047-logo.png",
+  "industry": "hospitality",
+  "industry_source": "page",
+  "product": "azure",
+  "label": "Azure",
+  "number": "97%",
+  "number_label": "success rate across 13M+ customer conversations",
+  "headline": "",
+  "summary": "The airline's AI assistant handles about 40,000 queries a day on Azure OpenAI, so human agents can focus on the hard cases.",
+  "pages": [
+   "hospitality"
+  ]
+ },
+ {
+  "id": "26197",
+  "company": "Regal Rexnord",
+  "url": "https://www.microsoft.com/en/customers/story/26197-regal-rexnord-microsoft-copilot-studio",
+  "hero": "assets/img/customers/26197-hero.jpg",
+  "logo": "assets/img/customers/26197-logo.png",
+  "industry": "manufacturing",
+  "industry_source": "public story page",
+  "product": "copilot-studio",
+  "label": "Copilot Studio",
+  "number": "",
+  "number_label": "",
+  "headline": "2,400 hours saved a year",
+  "summary": "Its employee agent handles 2,000+ inquiries a month and saves an estimated 2,400 hours a year; its customer agent serves 1,000+ weekly users with satisfaction above 80%.",
+  "pages": [
+   "products/copilot-studio"
+  ]
+ },
+ {
+  "id": "26352",
+  "company": "Vanguard Lawyers Tokyo",
+  "url": "https://www.microsoft.com/en/customers/story/26352-vanguard-tokyo-microsoft-365-copilot",
+  "hero": "assets/img/customers/26352-hero.jpg",
+  "logo": "assets/img/customers/26352-logo.png",
+  "industry": "professional-services",
+  "industry_source": "page",
+  "product": "copilot",
+  "label": "Microsoft 365 Copilot",
+  "number": "",
+  "number_label": "",
+  "headline": "Email drafting time cut nearly 50%",
+  "summary": "Firm-wide Copilot cut email drafting time by nearly 50% and saves about 75 minutes a day per associate.",
+  "pages": [
+   "professional-services"
+  ]
+ },
+ {
+  "id": "26754",
+  "company": "SOCAR Türkiye",
+  "url": "https://www.microsoft.com/en/customers/story/26754-socar-turkiye-microsoft-copilot-studio",
+  "hero": "assets/img/customers/26754-hero.jpg",
+  "logo": "assets/img/customers/26754-logo.png",
+  "industry": "energy",
+  "industry_source": "page",
+  "product": "copilot-studio",
+  "label": "Copilot Studio",
+  "number": "7,500+",
+  "number_label": "hours saved each year",
+  "headline": "7,500+ hours saved a year",
+  "summary": "Its assistant and discipline agents built with Copilot Studio and Foundry cover 40+ scenarios and save more than 7,500 hours a year.",
+  "pages": [
+   "energy",
+   "products/copilot-studio"
+  ]
+ },
+ {
+  "id": "26762",
+  "company": "Grupo Bimbo",
+  "url": "https://www.microsoft.com/en/customers/story/26762-grupo-bimbo-microsoft-365-copilot",
+  "hero": "assets/img/customers/26762-hero.jpg",
+  "logo": "assets/img/customers/26762-logo.png",
+  "industry": "retail",
+  "industry_source": "page",
+  "product": "copilot-studio",
+  "label": "Copilot Studio",
+  "number": "",
+  "number_label": "",
+  "headline": "Audit planning time cut 20%",
+  "summary": "Audit agents built in Copilot Studio and used in Microsoft 365 Copilot cut planning-phase audit time 20% and matrix creation from days to seconds.",
+  "pages": [
+   "retail"
+  ]
+ },
+ {
+  "id": "26765",
+  "company": "Brown University Health",
+  "url": "https://www.microsoft.com/en/customers/story/26765-brown-university-health-microsoft-365-copilot",
+  "hero": "assets/img/customers/26765-hero.jpg",
+  "logo": "assets/img/customers/26765-logo.png",
+  "industry": "healthcare",
+  "industry_source": "page",
+  "product": "copilot-studio",
+  "label": "Copilot Studio",
+  "number": "",
+  "number_label": "",
+  "headline": "24+ AI agents built for care delivery",
+  "summary": "Dragon Copilot helped 400+ clinicians reduce documentation and after-hours work, and Copilot Studio enabled 24+ agents for emergency department guidance, routing, translation and scheduling.",
+  "pages": [
+   "healthcare"
+  ]
+ },
+ {
+  "id": "26768",
+  "company": "Centrica",
+  "url": "https://www.microsoft.com/en/customers/story/26768-centrica-microsoft-power-platform",
+  "hero": "assets/img/customers/26768-hero.jpg",
+  "logo": "assets/img/customers/26768-logo.png",
+  "industry": "energy",
+  "industry_source": "page",
+  "product": "power-platform",
+  "label": "Power Platform",
+  "number": "$10M+",
+  "number_label": "Estimated savings from Power Platform",
+  "headline": "",
+  "summary": "Centrica's 430+ makers built 1,100+ Power Platform apps and moved into multi-agent solutions with Copilot Studio. Together these have driven over $10M in estimated savings.",
+  "pages": [
+   "energy"
+  ]
+ },
+ {
+  "id": "26969",
+  "company": "Banco Hipotecario",
+  "url": "https://www.microsoft.com/en/customers/story/26969-banco-hipotecario-github-copilot",
+  "hero": "assets/img/customers/26969-hero.jpg",
+  "logo": "assets/img/customers/26969-logo.png",
+  "industry": "financial-services",
+  "industry_source": "page",
+  "product": "dynamics-365",
+  "label": "Dynamics 365",
+  "number": "",
+  "number_label": "",
+  "headline": "NPS up 114% after cloud CRM move",
+  "summary": "Moving to Dynamics 365 Online unlocked Copilot Studio agents; NPS rose 114% and database storage dropped 92%.",
+  "pages": [
+   "financial-services"
+  ]
+ },
+ {
+  "id": "27037",
+  "company": "COSMO CONSULT",
+  "url": "https://www.microsoft.com/en/customers/story/27037-cosmo-consult-microsoft-copilot-studio",
+  "hero": "assets/img/customers/27037-hero.jpg",
+  "logo": "assets/img/customers/27037-logo.png",
+  "industry": "professional-services",
+  "industry_source": "page",
+  "product": "dynamics-365",
+  "label": "Dynamics 365",
+  "number": "",
+  "number_label": "",
+  "headline": "Sales pipeline quadrupled in three years",
+  "summary": "A unified Dynamics 365 and Power Platform strategy with Copilot Studio agents grew pipeline from €30M to €124M in three years.",
+  "pages": [
+   "professional-services"
+  ]
+ },
+ {
+  "id": "27087",
+  "company": "Lifetime Products",
+  "url": "https://www.microsoft.com/en/customers/story/27087-lifetime-products-microsoft-copilot-studio",
+  "hero": "assets/img/customers/27087-hero.jpg",
+  "logo": "assets/img/customers/27087-logo.png",
+  "industry": "manufacturing",
+  "industry_source": "page",
+  "product": "copilot-studio",
+  "label": "Copilot Studio",
+  "number": "",
+  "number_label": "",
+  "headline": "Order handling drops to zero manual touches",
+  "summary": "With Copilot Studio, Dynamics 365 and Power Automate, retail order closing now runs overnight; daily order handling fell from 50–80 manual touches to zero and 45 employees moved into new roles.",
+  "pages": [
+   "manufacturing",
+   "products/dynamics-365"
+  ]
+ },
+ {
+  "id": "27102",
+  "company": "Harris County, Texas",
+  "url": "https://www.microsoft.com/en/customers/story/27102-tx-county-of-harris-microsoft-foundry",
+  "hero": "assets/img/customers/27102-hero.jpg",
+  "logo": "assets/img/customers/27102-logo.png",
+  "industry": "state-local-edu",
+  "industry_source": "page",
+  "product": "azure",
+  "label": "Azure",
+  "number": "$2.5M+",
+  "number_label": "Saved through AI license optimization",
+  "headline": "",
+  "summary": "Harris County built its PRISM solution on Microsoft Foundry in three weeks and analyzed 1M+ procurement lines. License optimization saved about $2.5 million.",
+  "pages": [
+   "state-local-edu"
+  ]
+ },
+ {
+  "id": "27209",
+  "company": "Williams",
+  "url": "https://www.microsoft.com/en/customers/story/27209-williams-microsoft-365-copilot",
+  "hero": "assets/img/customers/27209-hero.jpg",
+  "logo": "assets/img/customers/27209-logo.png",
+  "industry": "energy",
+  "industry_source": "page",
+  "product": "copilot",
+  "label": "Microsoft 365 Copilot",
+  "number": "",
+  "number_label": "",
+  "headline": "Frontline AI adoption jumps above 90%",
+  "summary": "Bringing Copilot to frontline natural gas workers lifted AI adoption from single digits to 90%+, including a Copilot-built equipment anomaly detector.",
+  "pages": [
+   "energy"
+  ]
+ },
+ {
+  "id": "27237",
+  "company": "pladis",
+  "url": "https://www.microsoft.com/en/customers/story/27237-pladis-global-microsoft-365-copilot",
+  "hero": "assets/img/customers/27237-hero.jpg",
+  "logo": "assets/img/customers/27237-logo.png",
+  "industry": "retail",
+  "industry_source": "public story page",
+  "product": "copilot",
+  "label": "Copilot",
+  "number": "12+ hrs",
+  "number_label": "saved per engaged user each month",
+  "headline": "",
+  "summary": "The 48 colleagues who finished pladis's 'Steal Back 10 Hours' program reported saving 580 hours a month with Microsoft 365 Copilot, just over 12 hours each.",
+  "pages": [
+   "products/copilot"
+  ]
+ },
+ {
+  "id": "27299",
+  "company": "Docusign",
+  "url": "https://www.microsoft.com/en/customers/story/27299-docusign-microsoft-foundry",
+  "hero": "assets/img/customers/27299-hero.jpg",
+  "logo": "assets/img/customers/27299-logo.png",
+  "industry": "high-tech",
+  "industry_source": "page",
+  "product": "azure",
+  "label": "Azure",
+  "number": "90%",
+  "number_label": "Lower AI processing costs",
+  "headline": "",
+  "summary": "Docusign moved from general-purpose to task-specific models on Microsoft Foundry and Azure, now processing 1M+ agreements daily. AI processing costs fell 90% and throughput rose eightfold.",
+  "pages": [
+   "high-tech"
+  ]
+ }
+]
