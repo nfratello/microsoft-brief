@@ -7,11 +7,25 @@
   "logo": "assets/img/customers/1747349596437245542-logo.png"
  },
  {
+  "id": "23024",
+  "company": "",
+  "story": "https://www.microsoft.com/en/customers/story/23024-textron-aviation-azure-open-ai-service",
+  "hero": "assets/img/customers/23024-hero.jpg",
+  "logo": "assets/img/customers/23024-logo.png"
+ },
+ {
   "id": "23284",
   "company": "Miami Dade College",
   "story": "https://www.microsoft.com/en/customers/story/23284-miami-dade-college-microsoft-365-copilot",
   "hero": "assets/img/customers/23284-hero.jpg",
   "logo": "assets/img/customers/23284-logo.png"
+ },
+ {
+  "id": "24581",
+  "company": "",
+  "story": "https://www.microsoft.com/en/customers/story/24581-sandia-national-laboratories-azure",
+  "hero": "assets/img/customers/24581-hero.jpg",
+  "logo": "assets/img/customers/24581-logo.png"
  },
  {
   "id": "24992",
@@ -70,6 +84,13 @@
   "logo": "assets/img/customers/26047-logo.png"
  },
  {
+  "id": "26160",
+  "company": "",
+  "story": "https://www.microsoft.com/en/customers/story/26160-pwc-microsoft-365-enterprise",
+  "hero": "assets/img/customers/26160-hero.jpg",
+  "logo": "assets/img/customers/26160-logo.png"
+ },
+ {
   "id": "26197",
   "company": "Regal Rexnord",
   "story": "https://www.microsoft.com/en/customers/story/26197-regal-rexnord-microsoft-copilot-studio",
@@ -77,11 +98,32 @@
   "logo": "assets/img/customers/26197-logo.png"
  },
  {
+  "id": "26258",
+  "company": "",
+  "story": "https://www.microsoft.com/en/customers/story/26258-broward-county-public-schools-microsoft-365-copilot",
+  "hero": "assets/img/customers/26258-hero.jpg",
+  "logo": "assets/img/customers/26258-logo.png"
+ },
+ {
+  "id": "26266",
+  "company": "",
+  "story": "https://www.microsoft.com/en/customers/story/26266-aalo-atomics-azure",
+  "hero": "assets/img/customers/26266-hero.jpg",
+  "logo": "assets/img/customers/26266-logo.png"
+ },
+ {
   "id": "26352",
   "company": "Vanguard Lawyers Tokyo",
   "story": "https://www.microsoft.com/en/customers/story/26352-vanguard-tokyo-microsoft-365-copilot",
   "hero": "assets/img/customers/26352-hero.jpg",
   "logo": "assets/img/customers/26352-logo.png"
+ },
+ {
+  "id": "26644",
+  "company": "",
+  "story": "https://www.microsoft.com/en/customers/story/26644-marlabs-microsoft-365-copilot",
+  "hero": "assets/img/customers/26644-hero.jpg",
+  "logo": "assets/img/customers/26644-logo.png"
  },
  {
   "id": "26754",
