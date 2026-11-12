@@ -1,0 +1,32 @@
+[
+ {
+  "company": "Lumen",
+  "file": "assets/img/customers/news-lumen-logo.png",
+  "cited": "https://news.microsoft.com/source/2026/11/02/lumen-and-microsoft-expand-collaboration-to-co-sell-enterprise-ai-ready-networks/",
+  "edition": "telecom-media"
+ },
+ {
+  "company": "Boehringer Ingelheim",
+  "file": "assets/img/customers/news-boehringer-ingelheim-logo.png",
+  "cited": "https://news.microsoft.com/source/emea/2026/10/boehringer-ingelheim-and-microsoft-partner-to-drive-patient-centric-and-ai-backed-clinical-development/",
+  "edition": "healthcare"
+ },
+ {
+  "company": "SickKids",
+  "file": "assets/img/customers/news-sickkids-logo.png",
+  "cited": "https://news.microsoft.com/source/canada/2026/10/20/sickkids-and-microsoft-canada-join-together-to-help-teams-diagnose-faster-treat-smarter-and-predict-better/",
+  "edition": "healthcare"
+ },
+ {
+  "company": "Northern Trust",
+  "file": "assets/img/customers/news-northern-trust-logo.png",
+  "cited": "https://news.microsoft.com/source/2026/11/09/northern-trust-and-microsoft-frontier-company-collaborate-to-transform-client-onboarding-through-ai/",
+  "edition": "financial-services"
+ },
+ {
+  "company": "The Estée Lauder Companies",
+  "file": "assets/img/customers/news-the-estee-lauder-companies-logo.png",
+  "cited": "https://news.microsoft.com/source/features/digital-transformation/estee-lauder-expands-ai-across-beauty-business/",
+  "edition": "retail"
+ }
+]
