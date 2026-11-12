@@ -126,7 +126,7 @@ const tag=raw?' ['+(p.get('ref')?'ref ':'src ')+raw+']':' [src D365-PAGE]';
 const go=document.getElementById('go'),ind=document.getElementById('ind'),fo=[...document.querySelectorAll('.foc')];
 function upd(){const f=fo.filter(x=>x.checked).map(x=>x.value);const subj=('Subscribe: Microsoft Brief · '+ind.value+' · '+NM).replace('Telecommunications, Media & Gaming','Telecom, Media & Gaming').replace('State & Local Government and Education','State, Local & Education').replace('Manufacturing & Mobility','Manufacturing');
 const body='Please add me to The Microsoft Brief.\n\nPrimary industry: '+ind.value+'\nProduct focus: '+NM+(f.length?' ('+f.join(', ')+')':'')+'\n\nOptional, to tailor your Brief:\nMy metro (e.g., New York, Chicago, Los Angeles, Toronto, Mexico City, London, or Global): \n\nI confirm I\'m opting in with my work email. I can reply STOP anytime to unsubscribe.';
-go.href='mailto:'+TO+'?subject=%27%2BencodeURIComponent%28subj%29%2B%27&body='+encodeURIComponent(body+(tag?'\n\n'+(tag).trim():''))}
+go.href='mailto:'+TO+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body+(tag?'\n\n'+(tag).trim():''))}
 fo.forEach(x=>x.addEventListener('change',upd));ind.addEventListener('change',upd);upd();
 document.querySelectorAll('.flt button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.flt button').forEach(x=>x.setAttribute('aria-pressed',x===b));const f=b.dataset.f;document.querySelectorAll('.nw').forEach(n=>{n.hidden=!(f==='all'||n.dataset.a===f)})}));
 const share=URL0+(raw&&p.get('ref')?'?ref='+raw:'');document.getElementById('lnk').value=share;

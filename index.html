@@ -208,7 +208,7 @@ function update(){
  if(order.some(x=>x.startsWith('Hospitality')))body+='My focus (optional - Airlines, Hotels, Cruise lines, Travel): \n';
  body+=(ex.checked?'Executive version: Yes\nMy function (optional - CEO, CFO, COO, CIO/CTO, CISO, CMO, CHRO, Chief Customer Officer): \n':'');
  body+='My metro (e.g., New York, Chicago, Los Angeles, Toronto, Mexico City, London, or Global): \n\nI confirm I\'m opting in with my work email. I can reply STOP anytime to unsubscribe.';
- go.href='mailto:'+TO+'?subject=%27%2BencodeURIComponent%28subj%29%2B%27&body='+encodeURIComponent(body+((window.BRIEF_TAG||'')?'\n\n'+(window.BRIEF_TAG||'').trim():''));go.setAttribute('aria-disabled','false')}
+ go.href='mailto:'+TO+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body+((window.BRIEF_TAG||'')?'\n\n'+(window.BRIEF_TAG||'').trim():''));go.setAttribute('aria-disabled','false')}
 picks.forEach(p=>p.addEventListener('change',()=>{if(p.checked){if(order.length>=MAX){p.checked=false;return}order.push(p.value)}else order=order.filter(x=>x!==p.value);update()}));
 prims.forEach(r=>r.addEventListener('change',update));ex.addEventListener('change',update);update()})();
 </script>

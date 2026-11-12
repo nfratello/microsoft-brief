@@ -163,7 +163,7 @@ function val(n){const r=document.querySelector('input[name="'+n+'"]:checked');re
 function upd(){const fn=val('fn'),cad=val('cad'),ed=ind.value;lnm.textContent=fn?'Your lens: '+fn:'Tip: pick your lens above so we lead with what you own.';
 const subj=('Subscribe: Microsoft Brief · '+ed+' · Executive').replace('Telecommunications, Media & Gaming','Telecom, Media & Gaming').replace('State & Local Government and Education','State, Local & Education').replace('Manufacturing & Mobility','Manufacturing');
 const body='Please add me to The Microsoft Brief · Executive.\n\nPrimary industry: '+ed+'\nExecutive version: Yes\nMy function: '+(fn||'')+'\nCadence: '+cad+'\n'+(brf.checked?'Briefing request: Yes, I would like a 30-minute executive briefing.\n':'')+'\nOptional, to tailor your Brief:\nMy metro (e.g., New York, Chicago, Los Angeles, Toronto, Mexico City, London, or Global): \n\nI confirm I\'m opting in with my work email. I can reply STOP anytime to unsubscribe.';
-go.href='mailto:'+TO+'?subject=%27%2BencodeURIComponent%28subj%29%2B%27&body='+encodeURIComponent(body+(tag?'\n\n'+(tag).trim():''))}
+go.href='mailto:'+TO+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body+(tag?'\n\n'+(tag).trim():''))}
 document.querySelectorAll('input[name="fn"],input[name="cad"]').forEach(x=>x.addEventListener('change',upd));ind.addEventListener('change',upd);brf.addEventListener('change',upd);upd();
 const share=URL0+(raw&&p.get('ref')?'?ref='+raw:'');document.getElementById('lnk').value=share;
 document.getElementById('copy').addEventListener('click',async()=>{const m=document.getElementById('cmsg');try{await navigator.clipboard.writeText(share);m.textContent='Link copied.'}catch(err){document.getElementById('lnk').select();m.textContent='Select and copy the link above.'}});
@@ -174,7 +174,7 @@ staff:"Team, please read this before our next staff meeting (3 minutes): The Mic
 act:"Team, one of the moves in this edition is worth acting on now. Please read it (3 minutes) and send me your take on what we should do next and who should own it.\n\n"+I+"\n\nSubscribe free so you get the next one: "+L};
 const n=document.getElementById('tnote'),dl=document.getElementById('tdl'),m=document.getElementById('tmail'),tm=document.getElementById('tteams'),msg=document.getElementById('tmsg');
 const SUBJ='Worth 3 minutes: The Microsoft Brief (Executive)';
-function upd(){const to=dl.value.replace(/[^A-Za-z0-9@._+,;-]/g,'');m.href='mailto:'+encodeURIComponent(to).replace(/%40/g,'@').replace(/%2C/g,',')+'?subject=%27%2BencodeURIComponent%28SUBJ%29%2B%27&body='+encodeURIComponent(n.value);
+function upd(){const to=dl.value.replace(/[^A-Za-z0-9@._+,;-]/g,'');m.href='mailto:'+encodeURIComponent(to).replace(/%40/g,'@').replace(/%2C/g,',')+'?subject='+encodeURIComponent(SUBJ)+'&body='+encodeURIComponent(n.value);
 tm.href='https://teams.microsoft.com/share?href='+encodeURIComponent(I)+'&msgText='+encodeURIComponent(n.value.slice(0,900))}
 function pick(k){document.querySelectorAll('.chip').forEach(c=>c.setAttribute('aria-pressed',c.dataset.t===k));n.value=T[k];upd()}
 document.querySelectorAll('.chip').forEach(c=>c.addEventListener('click',()=>pick(c.dataset.t)));n.addEventListener('input',upd);dl.addEventListener('input',upd);pick('fyi');
