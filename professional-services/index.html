@@ -164,9 +164,9 @@ const p=new URLSearchParams(location.search);const raw=(p.get('ref')||p.get('src
 const tag=raw?' ['+(p.get('ref')?'ref ':'src ')+raw+']':' [src PROFESSIONAL-SERVICES-PAGE]';
 const go=document.getElementById('go'),ex=document.getElementById('exec'),fo=[...document.querySelectorAll('.foc')];
 function upd(){const f=fo.filter(x=>x.checked).map(x=>x.value);
-const subj='Subscribe: The Microsoft Brief'+(ex.checked?' · Executive':'')+' - '+ED+tag;
+const subj=('Subscribe: Microsoft Brief · '+ED+(ex.checked?' · Executive':'')).replace('Telecommunications, Media & Gaming','Telecom, Media & Gaming').replace('State & Local Government and Education','State, Local & Education').replace('Manufacturing & Mobility','Manufacturing');
 let body='Please add me to The Microsoft Brief.\n\nPrimary industry: '+ED+'\n'+(f.length?'My focus: '+f.join(', ')+'\n':'')+(ex.checked?'Executive version: Yes\nMy function (optional - CEO, CFO, COO, CIO/CTO, CISO, CMO, CHRO, Chief Customer Officer): \n':'')+'\nOptional, to tailor your Brief:\nMy role (e.g., Sales, Service, Finance, Operations, IT, Maker, Executive): \nMy metro (e.g., New York, Chicago, Los Angeles, Toronto, Mexico City, London, or Global): \n\nI confirm I\'m opting in with my work email. I can reply STOP anytime to unsubscribe.';
-go.href='mailto:'+TO+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body)}
+go.href='mailto:'+TO+'?subject=%27%2BencodeURIComponent%28subj%29%2B%27&body='+encodeURIComponent(body+(tag?'\n\n'+(tag).trim():''))}
 fo.concat([ex]).forEach(x=>x.addEventListener('change',upd));upd();
 const share=URL0+(raw&&p.get('ref')?'?ref='+raw:'');document.getElementById('lnk').value=share;
 document.getElementById('copy').addEventListener('click',async()=>{const m=document.getElementById('cmsg');try{await navigator.clipboard.writeText(share);m.textContent='Link copied. Paste it anywhere.'}catch(err){const i=document.getElementById('lnk');i.select();m.textContent='Select and copy the link above.'}});
