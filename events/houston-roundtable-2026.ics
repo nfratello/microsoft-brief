@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Microsoft Brief//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:houston-roundtable-2026@microsoft-brief
+DTSTAMP:20261109T190000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261201
+SUMMARY:Executive Roundtable: Connecting Projects, Field Operations and AI in Energy
+LOCATION:Microsoft office\, Houston\, TX
+DESCRIPTION:Register: mailto:Nick.Fratello@microsoft.com?subject=Request%20an%20invitation%3A%20Houston%20Energy%20Executive%20Roundtable%20%C2%B7%20Dec%201&body=Please%20consider%20me%20for%20an%20invitation%20to%20the%20Dec%201%20Executive%20Roundtable%20in%20Houston.%0A%0AName%3A%20%0ATitle%3A%20%0ACompany%3A%20\n\nShared by The Microsoft Brief · https://nfratello.github.io/microsoft-brief/
+URL:mailto:Nick.Fratello@microsoft.com?subject=Request%20an%20invitation%3A%20Houston%20Energy%20Executive%20Roundtable%20%C2%B7%20Dec%201&body=Please%20consider%20me%20for%20an%20invitation%20to%20the%20Dec%201%20Executive%20Roundtable%20in%20Houston.%0A%0AName%3A%20%0ATitle%3A%20%0ACompany%3A%20
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

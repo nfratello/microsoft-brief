@@ -7,6 +7,20 @@
   "logo": "assets/img/customers/1747349596437245542-logo.png"
  },
  {
+  "id": "1790435165492425096",
+  "company": "E.ON",
+  "story": "https://www.microsoft.com/en/customers/story/1790435165492425096-eon-se-microsoft-copilot-for-microsoft-365-energy-en-germany",
+  "hero": "assets/img/customers/1790435165492425096-hero.jpg",
+  "logo": "assets/img/customers/1790435165492425096-logo.png"
+ },
+ {
+  "id": "22686",
+  "company": "Eneco",
+  "story": "https://www.microsoft.com/en/customers/story/22686-eneco-microsoft-copilot-studio",
+  "hero": "assets/img/customers/22686-hero.jpg",
+  "logo": "assets/img/customers/22686-logo.png"
+ },
+ {
   "id": "23024",
   "company": "",
   "story": "https://www.microsoft.com/en/customers/story/23024-textron-aviation-azure-open-ai-service",
@@ -33,6 +47,20 @@
   "story": "https://www.microsoft.com/en/customers/story/24992-vera-bradley-dynamics-365-finance",
   "hero": "assets/img/customers/24992-hero.jpg",
   "logo": "assets/img/customers/24992-logo.png"
+ },
+ {
+  "id": "25242",
+  "company": "ENGIE Impact",
+  "story": "https://www.microsoft.com/en/customers/story/25242-engie-impact-azure-ai-foundry",
+  "hero": "assets/img/customers/25242-hero.jpg",
+  "logo": "assets/img/customers/25242-logo.png"
+ },
+ {
+  "id": "25505",
+  "company": "TotalEnergies",
+  "story": "https://www.microsoft.com/en/customers/story/25505-totalenergies-agents",
+  "hero": "assets/img/customers/25505-hero.jpg",
+  "logo": "assets/img/customers/25505-logo.png"
  },
  {
   "id": "25672",
