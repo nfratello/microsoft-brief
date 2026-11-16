@@ -1,0 +1,148 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Microsoft Brief: what's new from Microsoft, and why it matters to you</title>
+<meta name="description" content="One short email a week with the public Microsoft updates that matter to your industry. Free. 3-minute read.">
+<meta property="og:title" content="The Microsoft Brief"><meta property="og:description" content="What's new from Microsoft, and why it matters to you. One short email a week, tailored to your industry.">
+<link rel="icon" href="../favicon-32.png"><style id="welcome-css">
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;overflow-x:clip}
+body{font-family:"Segoe UI",SegoeUI,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;color:#0b1b33;background:#fff;-webkit-font-smoothing:antialiased}
+:root{--navy:#071a33;--blue:#0067b8;--or:#e8774a;--or2:#d4663b;--ink:#0b1b33;--mut:#5b6b80;--line:#dfe5ee}
+.wrap{max-inline-size:1200px;margin-inline:auto;padding-inline:clamp(18px,4vw,40px)}
+/* HERO: light, centred, lots of air */
+.hx{background:linear-gradient(180deg,#f5f7fa 0%,#eef2f7 100%);padding-block:clamp(56px,11vw,140px) clamp(56px,9vw,120px);text-align:center;border-block-end:1px solid var(--line)}
+.ey{display:inline-block;font-size:clamp(12px,1.1vw,14px);font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);margin:0 0 clamp(14px,2vw,22px)}
+.hx h1{font-family:"Segoe UI Black","Segoe UI",SegoeUI,-apple-system,Arial,sans-serif;font-weight:900;font-size:clamp(34px,6.4vw,84px);line-height:1.04;letter-spacing:-.025em;margin:0 auto;max-inline-size:15ch;color:var(--ink);text-wrap:balance}
+.hx h1 em{font-style:normal;background:linear-gradient(90deg,#0067b8,#2f8fdc 60%,#45b39d);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{font-size:clamp(17px,1.7vw,21px);line-height:1.5;color:var(--mut);max-inline-size:40ch;margin:clamp(18px,2.4vw,28px) auto 0;text-wrap:pretty}
+/* THE ONE BOX */
+.box{max-inline-size:560px;margin:clamp(30px,4vw,44px) auto 0}
+.f{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #cfd8e3;border-radius:999px;padding:7px;box-shadow:0 10px 30px rgba(7,26,51,.08);transition:border-color .2s,box-shadow .2s}
+.f:focus-within{border-color:var(--blue);box-shadow:0 0 0 4px rgba(0,103,184,.15),0 10px 30px rgba(7,26,51,.08)}
+.f input{flex:1;min-inline-size:0;border:0;outline:0;background:transparent;font:inherit;font-size:18px;padding:12px 8px 12px 18px;color:var(--ink)}
+.f input::placeholder{color:#8a97a8}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;cursor:pointer;font:inherit;font-weight:700;font-size:17px;color:#fff;background:var(--or);border-radius:999px;padding:14px 26px;white-space:nowrap;text-decoration:none;transition:background .2s,transform .1s}
+.btn:hover{background:var(--or2)}.btn:active{transform:translateY(1px)}
+.edtag{display:none;margin:0 0 12px;font-size:15px;color:var(--ink)}
+.edtag.on{display:block}.edtag b{display:inline-flex;align-items:center;gap:8px;padding:5px 8px 5px 14px;border-radius:999px;background:#e6f0fa;color:var(--blue)}
+.edtag button{border:0;background:rgba(0,103,184,.12);color:var(--blue);inline-size:22px;block-size:22px;border-radius:50%;cursor:pointer;font-size:13px;line-height:1}
+.fine{margin:16px 0 0;font-size:14px;color:var(--mut)}
+.err{min-block-size:22px;margin:10px 0 0;font-size:15px;color:#b42318;font-weight:600}
+.ghost{display:inline-flex;align-items:center;gap:8px;margin-top:clamp(22px,3vw,30px);padding:12px 22px;border-radius:999px;border:1px solid #c6d0dc;background:#fff;color:var(--ink);font-weight:600;font-size:16px;text-decoration:none;transition:border-color .2s,background .2s}
+.ghost:hover{border-color:var(--ink);background:#fafbfc}
+/* step 2 + 3 live inside the same box */
+.st{display:none;text-align:center}.st.on{display:block}
+.card2{background:#fff;border:1px solid #cfd8e3;border-radius:22px;padding:clamp(20px,3vw,28px);box-shadow:0 10px 30px rgba(7,26,51,.08);text-align:center}
+.card2 h2{margin:0 0 6px;font-size:clamp(20px,2.2vw,24px);letter-spacing:-.01em}
+.card2 p{margin:0 0 16px;color:var(--mut);font-size:15px;overflow-wrap:anywhere}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-block-end:18px}
+.chip{font:inherit;font-size:14.5px;padding:8px 14px;border-radius:999px;border:1px solid #cfd8e3;background:#fff;color:var(--ink);cursor:pointer;transition:all .15s}
+.chip:hover{border-color:var(--blue)}.chip[aria-pressed=true]{background:var(--blue);border-color:var(--blue);color:#fff}
+.row{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px 18px}
+.lnk{background:none;border:0;padding:4px;font:inherit;font-size:15px;color:var(--blue);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.ok{font-size:40px;line-height:1;margin-block-end:8px}
+/* EDITIONS BAND: full-bleed blue gradient */
+.eb{color:#fff;padding-block:clamp(60px,9vw,110px);background:radial-gradient(1200px 420px at 85% -10%,rgba(0,103,184,.45),transparent 60%),linear-gradient(135deg,#071a33,#0b2a4a 55%,#0d3560)}
+.eb h2{text-align:center;margin:0;font-size:clamp(28px,3.8vw,46px);font-weight:800;letter-spacing:-.02em;text-wrap:balance}
+.eb .sub{text-align:center;margin:14px auto clamp(34px,5vw,56px);max-inline-size:52ch;color:#b9c8dc;font-size:clamp(16px,1.5vw,19px);line-height:1.5}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,255px),1fr));gap:clamp(16px,2vw,24px)}
+.ec{position:relative;display:flex;flex-direction:column;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 14px 34px rgba(0,0,0,.25);transition:transform .2s,box-shadow .2s}
+.ec:hover{transform:translateY(-3px);box-shadow:0 20px 44px rgba(0,0,0,.32)}
+.pick{all:unset;display:flex;flex-direction:column;flex:1;cursor:pointer}
+.pick:focus-visible{outline:3px solid #7cc0ff;outline-offset:-3px;border-radius:18px}
+.ph{display:block;aspect-ratio:16/9;overflow:hidden;background:#0b2a4a}
+.ph img{display:block;inline-size:100%;block-size:100%;object-fit:cover;object-position:50% 40%}
+.tx{display:flex;flex-direction:column;gap:6px;padding:18px 20px 8px;color:var(--ink);flex:1}
+.tx b{font-size:18px;line-height:1.25;letter-spacing:-.01em}
+.tx small{font-size:14.5px;line-height:1.45;color:var(--mut)}
+.tx .go{margin-top:auto;padding-top:10px;font-weight:700;font-size:15px;color:var(--or2)}
+.pv{display:block;padding:0 20px 18px;font-size:14px;color:var(--blue);text-decoration:none}.pv:hover{text-decoration:underline}
+/* WHAT YOU GET: quiet, airy */
+.wy{padding-block:clamp(60px,9vw,110px);text-align:center}
+.wy h2{margin:0;font-size:clamp(26px,3.2vw,40px);font-weight:800;letter-spacing:-.02em}
+.three{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:clamp(22px,3vw,40px);margin:clamp(30px,4vw,48px) auto 0;max-inline-size:1000px;text-align:start}
+.three div{padding-block-start:18px;border-block-start:3px solid var(--blue)}
+.three div:nth-child(2){border-color:#45b39d}.three div:nth-child(3){border-color:var(--or)}
+.three b{display:block;font-size:19px;margin-bottom:6px}.three p{margin:0;color:var(--mut);line-height:1.55;font-size:16px}
+.wy .ghost{margin-top:clamp(36px,5vw,52px)}
+.ft{border-block-start:1px solid var(--line);padding-block:28px 40px;text-align:center;color:var(--mut);font-size:14px;line-height:1.6}
+.ft a{color:var(--blue)}
+/* PHONES: stack the box, keep it one action */
+@media (max-width:540px){.f{flex-direction:column;align-items:stretch;border-radius:20px;padding:8px;gap:8px}.f input{padding:14px 14px;text-align:center;font-size:17px}.btn{inline-size:100%;padding:15px 20px}.tx{padding:16px 18px 6px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style></head><body>
+<!--snav--><style id="snav-css">html{scroll-padding-top:84px}.snav{position:sticky;top:0;z-index:100;padding:0;margin:0;color:#1b1b1b;background:rgba(255,255,255,.92);-webkit-backdrop-filter:saturate(1.4) blur(10px);backdrop-filter:saturate(1.4) blur(10px);border-block-end:1px solid #e7e2da;font-family:"Segoe UI",SegoeUI,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}.snav .rb{display:flex;block-size:3px}.snav .rb i{flex:1}.snav .in{max-inline-size:1320px;margin-inline:auto;padding:14px 24px;display:flex;align-items:center;gap:18px}.snav .br{display:inline-flex;align-items:center;gap:16px;color:#262626;text-decoration:none;white-space:nowrap;margin-inline-end:auto}.snav .ml{display:block;block-size:26px;inline-size:auto;aspect-ratio:449/96}.snav .dv{display:block;inline-size:2px;block-size:30px;background:#262626;border-radius:1px}.snav .snbt{font-family:"Segoe UI Semibold","Segoe UI",SegoeUI,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;font-weight:600;font-size:22px;letter-spacing:-.2px;color:#737373}.bw{display:inline-flex;align-items:center;gap:6px}.bw img{inline-size:20px;block-size:20px;display:block}.snav nav{display:flex;align-items:center;gap:4px;overflow-x:auto;scrollbar-width:none}.snav nav::-webkit-scrollbar{display:none}.snav nav a{padding:8px 10px;border-radius:8px;color:#262626;text-decoration:none;font-size:15px;font-weight:400;white-space:nowrap}.snav nav a:hover{background:#f1efea;color:#1b1b1b}.snav nav a[aria-current=page]{color:#1b1b1b;box-shadow:inset 0 -2px 0 #0067b8}.snav nav a{transition:box-shadow .2s,color .2s}.snav nav a{display:inline-flex;align-items:center;block-size:36px;box-sizing:border-box;line-height:1;margin:0}.snav nav a.sub{margin:0 0 0 10px!important;max-inline-size:none!important;line-height:1!important;font-size:15px!important;block-size:36px;background:#e8774a;color:#fff!important;padding:0 16px!important;border-radius:999px;align-self:center}.snav nav a.sub:hover{background:#d4663b}@media (max-width:760px){.snav .in{flex-wrap:wrap;gap:6px;padding:8px 16px}.snav nav{inline-size:100%;margin-inline:0;flex-wrap:wrap;row-gap:4px;justify-content:flex-start;min-inline-size:0}.snav,.snav .in{max-inline-size:100vw;overflow-x:clip}.snav .in>*{min-inline-size:0}.snav nav a{padding:6px 8px;font-size:13px;block-size:32px}.snav nav a.sub{block-size:32px;font-size:13px!important;padding:0 12px!important}.snav .ml{block-size:20px}.snav .dv{block-size:22px}.snav .snbt{font-size:18px}.snav .br{gap:12px}html{scroll-padding-top:110px}html,body{overflow-x:clip!important;max-inline-size:100%}img,video,iframe,table{max-inline-size:100%}.pvf iframe{max-inline-size:none}}.cco{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;font-weight:700;color:#5b32b4;background:#f1ebfc;border:1px solid #d9ccf6}.cco img{display:block;inline-size:18px;block-size:18px}.snav nav a:hover .cco{background:#e6dbfb}.snav nav a{position:relative}.snav nav a[aria-current=page]{box-shadow:none!important}.snav nav a[aria-current=page]::after{content:"";position:absolute;inset-inline:8px;inset-block-end:-4px;block-size:3px;border-radius:3px;background:linear-gradient(90deg,#1aa3ff 0%,#6a5cff 35%,#c94ad8 65%,#ff7a59 85%,#ffb547 100%)}@media (max-width:1360px){.snav .in{gap:12px;padding-inline:18px}.snav nav{gap:2px}.snav nav a{padding:8px 8px;font-size:14.5px}.snav .snbt{font-size:20px}.snav .br{gap:12px}.cco{padding:5px 10px}}@media (max-width:1180px){.snav .bw img{display:none}.snav nav a{padding:8px 6px;font-size:14px}}@media print{.snav{position:static}}</style><header class="snav"><div class="rb" aria-hidden="true"><i style="background:#f25022"></i><i style="background:#7fba00"></i><i style="background:#00a4ef"></i><i style="background:#ffb900"></i></div><div class="in"><a class="br" href="../" aria-label="The Microsoft Brief, home"><img class="ml" src="../assets/brand/microsoft-logo.png" alt="Microsoft" width="449" height="96"><span class="dv" aria-hidden="true"></span><span class="snbt">The Brief</span></a><nav aria-label="Site"><a href="../coach/"><span class="cco"><img src="../assets/icons/copilot.png" alt="" width="18" height="18">Copilot Coach</span></a><a href="../#editions">Industries</a><a href="../#products">Products</a><a href="../stories/">Customer stories</a><a href="../events/">Events</a><a href="../issues/">Past issues</a><a href="../#built"><span class="bw">How it's built<img src="../assets/icons/copilot.png" alt="" width="20" height="20"></span></a><a class="sub" href="#join">Subscribe</a></nav></div></header><script id="snav-js">(function(){function init(){var nav=document.querySelector('.snav nav');if(!nav)return;var L=[].slice.call(nav.querySelectorAll('a:not(.sub)'));var S=[];L.forEach(function(a){var h=a.getAttribute('href')||'';if(h.charAt(0)==='#'&&h.length>1){var el=document.getElementById(h.slice(1));if(el)S.push([el,a])}});if(!S.length)return;var home=L.filter(function(a){return a.getAttribute('aria-current')==='page'})[0];function set(a){L.forEach(function(x){x.removeAttribute('aria-current')});if(a)a.setAttribute('aria-current','page')}function spy(){var y=(document.querySelector('.snav')||{}).offsetHeight||70;y+=24;var cur=null;S.forEach(function(p){if(p[0].getBoundingClientRect().top<=y)cur=p[1]});if((window.innerHeight+window.scrollY)>=document.documentElement.scrollHeight-2)cur=S[S.length-1][1];set(cur||home)}var t;window.addEventListener('scroll',function(){if(!t)t=requestAnimationFrame(function(){t=0;spy()})},{passive:true});window.addEventListener('hashchange',spy);L.forEach(function(a){a.addEventListener('click',function(){var h=a.getAttribute('href');if(h&&h.charAt(0)==='#')set(a)})});spy()}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init()})();</script><!--/snav-->
+<main>
+<section class="hx" id="join"><div class="wrap">
+<p class="ey">The Microsoft Brief</p>
+<h1>What's new from Microsoft, <em>and why it matters to you.</em></h1>
+<p class="lede">One short email every Tuesday with the Microsoft updates that matter to your industry. Three minutes. Free.</p>
+<div class="box" aria-live="polite">
+ <div class="st on" id="s1">
+  <p class="edtag" id="edtag">Edition: <b><span></span><button type="button" id="clr" aria-label="Clear edition">&#x2715;</button></b></p>
+  <form class="f" id="f1" novalidate><label for="em" class="sr" style="position:absolute;left:-9999px">Work email</label>
+   <input id="em" type="email" inputmode="email" autocomplete="email" placeholder="Enter your work email" required>
+   <button class="btn" type="submit">Subscribe <span aria-hidden="true">&rarr;</span></button></form>
+  <p class="err" id="err" role="alert"></p>
+  <p class="fine">Free &middot; Weekly &middot; Public information only &middot; Reply STOP anytime</p>
+ </div>
+ <div class="st" id="s2"><div class="card2">
+  <h2>One more tap: pick your edition</h2>
+  <p>For <b id="s2em"></b></p>
+  <div class="chips" role="group" aria-label="Edition"><button type="button" class="chip" data-ed="Defense Industry">Defense Industry</button><button type="button" class="chip" data-ed="Energy &amp; Utilities">Energy &amp; Utilities</button><button type="button" class="chip" data-ed="Federal Government">Federal Government</button><button type="button" class="chip" data-ed="Financial Services">Financial Services</button><button type="button" class="chip" data-ed="Healthcare &amp; Life Sciences">Healthcare &amp; Life Sciences</button><button type="button" class="chip" data-ed="High Tech &amp; Software">High Tech &amp; Software</button><button type="button" class="chip" data-ed="Hospitality &amp; Travel">Hospitality &amp; Travel</button><button type="button" class="chip" data-ed="Manufacturing">Manufacturing</button><button type="button" class="chip" data-ed="Professional Services">Professional Services</button><button type="button" class="chip" data-ed="Retail &amp; Consumer Goods">Retail &amp; Consumer Goods</button><button type="button" class="chip" data-ed="State, Local &amp; Education">State, Local &amp; Education</button><button type="button" class="chip" data-ed="Telecom, Media &amp; Gaming">Telecom, Media &amp; Gaming</button><button type="button" class="chip" data-ed="All Industries">All Industries</button></div>
+  <div class="row"><button type="button" class="btn" id="fin">Finish subscribing <span aria-hidden="true">&rarr;</span></button>
+  <button type="button" class="lnk" id="skip">Skip, send me All Industries</button></div>
+  <div class="row" style="margin-top:8px"><button type="button" class="lnk" id="back">Change email</button></div>
+ </div></div>
+ <div class="st" id="s3"><div class="card2">
+  <div class="ok" aria-hidden="true">&#x2709;&#xFE0F;</div>
+  <h2>Almost done: hit Send</h2>
+  <p>Your sign-up email for the <b id="s3ed"></b> edition just opened. Press Send and your first Brief arrives on Tuesday.</p>
+  <div class="row"><a class="lnk" id="again" href="#">Didn't open? Click here</a></div>
+ </div></div>
+</div>
+<a class="ghost" href="../">See the Brief <span aria-hidden="true">&rarr;</span></a>
+</div></section>
+
+<section class="eb" id="editions"><div class="wrap">
+<h2>Pick the edition built for your industry</h2>
+<p class="sub">Thirteen editions, each written for the people running that business. Choose one and we'll take you back to the sign-up box.</p>
+<div class="grid"><article class="ec"><button type="button" class="pick" data-ed="Defense Industry" aria-label="Choose the Defense Industry edition"><span class="ph"><img src="../assets/img/ed-defense.jpg" alt="" loading="lazy" width="1280" height="720"></span><span class="tx"><b>Defense Industry</b><small>For aerospace and defense companies</small><span class="go">Choose this edition <i aria-hidden="true">&rarr;</i></span></span></button><a class="pv" href="../defense/">See a sample</a></article><article class="ec"><button type="button" class="pick" data-ed="Energy &amp; Utilities" aria-label="Choose the Energy &amp; Utilities edition"><span class="ph"><img src="../assets/img/ed-energy.jpg" alt="" loading="lazy" width="1280" height="720"></span><span class="tx"><b>Energy &amp; Utilities</b><small>For oil and gas companies, utilities and renewable energy producers</small><span class="go">Choose this edition <i aria-hidden="true">&rarr;</i></span></span></button><a class="pv" href="../energy/">See a sample</a></article><article class="ec"><button type="button" class="pick" data-ed="Federal Government" aria-label="Choose the Federal Government edition"><span class="ph"><img src="../assets/img/ed-federal.jpg" alt="" loading="lazy" width="1280" height="720"></span><span class="tx"><b>Federal Government</b><small>For federal civilian agencies</small><span class="go">Choose this edition <i aria-hidden="true">&rarr;</i></span></span></button><a class="pv" href="../federal/">See a sample</a></article><article class="ec"><button type="button" class="pick" data-ed="Financial Services" aria-label="Choose the Financial Services edition"><span class="ph"><img src="../assets/img/ed-finserv.jpg" alt="" loading="lazy" width="1280" height="720"></span><span class="tx"><b>Financial Services</b><small>For banks, insurers and capital markets firms</small><span class="go">Choose this edition <i aria-hidden="true">&rarr;</i></span></span></button><a class="pv" href="../financial-services/">See a sample</a></article><article class="ec"><button type="button" class="pick" data-ed="Healthcare &amp; Life Sciences" aria-label="Choose the Healthcare &amp; Life Sciences edition"><span class="ph"><img src="../assets/img/ed-healthcare.jpg" alt="" loading="lazy" width="1280" height="720"></span><span class="tx"><b>Healthcare &amp; Life Sciences</b><small>For health systems, payers and life sciences companies</small><span class="go">Choose this edition <i aria-hidden="true">&rarr;</i></span></span></button><a class="pv" href="../healthcare/">See a sample</a></article><article class="ec"><button type="button" class="pick" data-ed="High Tech &amp; Software" aria-label="Choose the High Tech &amp; Software edition"><span class="ph"><img src="../assets/img/ed-hightech.jpg" alt="" loading="lazy" width="1280" height="720"></span><span class="tx"><b>High Tech &amp; Software</b><small>For software, SaaS, semiconductor and IT services companies</small><span class="go">Choose this edition <i aria-hidden="true">&rarr;</i></span></span></button><a class="pv" href="../high-tech/">See a sample</a></article><article class="ec"><button type="button" class="pick" data-ed="Hospitality &amp; Travel" aria-label="Choose the Hospitality &amp; Travel edition"><span class="ph"><img src="../assets/img/ed-hospitality.jpg" alt="" loading="lazy" width="1280" height="720"></span><span class="tx"><b>Hospitality &amp; Travel</b><small>For hotels, airlines, cruise lines and travel companies</small><span class="go">Choose this edition <i aria-hidden="true">&rarr;</i></span></span></button><a class="pv" href="../hospitality/">See a sample</a></article><article class="ec"><button type="button" class="pick" data-ed="Manufacturing" aria-label="Choose the Manufacturing &amp; Mobility edition"><span class="ph"><img src="../assets/img/ed-manufacturing.jpg" alt="" loading="lazy" width="1280" height="720"></span><span class="tx"><b>Manufacturing &amp; Mobility</b><small>For manufacturers, automakers and equipment companies</small><span class="go">Choose this edition <i aria-hidden="true">&rarr;</i></span></span></button><a class="pv" href="../manufacturing/">See a sample</a></article><article class="ec"><button type="button" class="pick" data-ed="Professional Services" aria-label="Choose the Professional Services edition"><span class="ph"><img src="../assets/img/ed-profserv.jpg" alt="" loading="lazy" width="1280" height="720"></span><span class="tx"><b>Professional Services</b><small>For consulting, legal, accounting and engineering firms</small><span class="go">Choose this edition <i aria-hidden="true">&rarr;</i></span></span></button><a class="pv" href="../professional-services/">See a sample</a></article><article class="ec"><button type="button" class="pick" data-ed="Retail &amp; Consumer Goods" aria-label="Choose the Retail &amp; Consumer Goods edition"><span class="ph"><img src="../assets/img/ed-retail.jpg" alt="" loading="lazy" width="1280" height="720"></span><span class="tx"><b>Retail &amp; Consumer Goods</b><small>For retailers and consumer brands</small><span class="go">Choose this edition <i aria-hidden="true">&rarr;</i></span></span></button><a class="pv" href="../retail/">See a sample</a></article><article class="ec"><button type="button" class="pick" data-ed="State, Local &amp; Education" aria-label="Choose the State &amp; Local Government and Education edition"><span class="ph"><img src="../assets/img/ed-sle.jpg" alt="" loading="lazy" width="1280" height="720"></span><span class="tx"><b>State &amp; Local Government and Education</b><small>For state and local governments, school districts and universities</small><span class="go">Choose this edition <i aria-hidden="true">&rarr;</i></span></span></button><a class="pv" href="../state-local-edu/">See a sample</a></article><article class="ec"><button type="button" class="pick" data-ed="Telecom, Media &amp; Gaming" aria-label="Choose the Telecommunications, Media &amp; Gaming edition"><span class="ph"><img src="../assets/img/ed-telecom.jpg" alt="" loading="lazy" width="1280" height="720"></span><span class="tx"><b>Telecommunications, Media &amp; Gaming</b><small>For carriers, broadcasters, publishers and game studios</small><span class="go">Choose this edition <i aria-hidden="true">&rarr;</i></span></span></button><a class="pv" href="../telecom-media/">See a sample</a></article></div>
+</div></section>
+
+<section class="wy" id="what"><div class="wrap">
+<h2>What lands in your inbox</h2>
+<div class="three">
+ <div><b>What's new</b><p>The handful of Microsoft updates that matter to your industry this week, across Copilot, AI agents, Dynamics 365, Power Platform, security and Azure.</p></div>
+ <div><b>Why it matters</b><p>One plain-language line on what each update changes for your business. No jargon.</p></div>
+ <div><b>What to do next</b><p>Customer stories, events near you and one practical Copilot tip to try that day.</p></div>
+</div>
+<a class="ghost" href="../">See the Brief <span aria-hidden="true">&rarr;</span></a>
+</div></section>
+</main>
+<footer class="ft"><div class="wrap">All information in the Brief is publicly available. You opt in, and you can reply STOP anytime.<br>
+Made with Microsoft Copilot Cowork + Power Platform &middot; <a href="../#built">How it's built</a></div></footer>
+<script id="welcome-js">(function(){
+var TO='Nick.Fratello@microsoft.com',ED='',EM='';
+var P=new URLSearchParams(location.search),raw=P.get('ref')||P.get('src');
+var TAG=raw?'['+(P.get('ref')?'ref ':'src ')+raw+']':'[src WELCOME-PAGE]';
+var PERSONAL=/@(gmail|googlemail|yahoo|ymail|hotmail|outlook|live|msn|icloud|me|mac|aol|proton|protonmail|gmx|mail|zoho|yandex|comcast|att|verizon)\./i;
+function $(i){return document.getElementById(i)}
+function show(n){['s1','s2','s3'].forEach(function(i){$(i).classList.toggle('on',i===n)})}
+function setEd(e){ED=e;var t=$('edtag');if(e){t.querySelector('span').textContent=e;t.classList.add('on')}else t.classList.remove('on');
+ [].forEach.call(document.querySelectorAll('.chip'),function(c){c.setAttribute('aria-pressed',c.dataset.ed===(e||'All Industries')?'true':'false')})}
+function link(){var e=ED||'All Industries';return 'mailto:'+TO+'?subject='+encodeURIComponent('Subscribe: Microsoft Brief \u00b7 '+e)+'&body='+encodeURIComponent('Please add me to the Microsoft Brief ('+e+').\nWork email: '+EM+'\nI\'m opting in with my work email. I can reply STOP anytime.\n\n'+TAG)}
+function finish(){var h=link();$('again').href=h;$('s3ed').textContent=ED||'All Industries';show('s3');location.href=h}
+$('f1').addEventListener('submit',function(ev){ev.preventDefault();var v=$('em').value.trim(),er=$('err');
+ if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)){er.textContent='Please enter a valid email address.';$('em').focus();return}
+ if(PERSONAL.test(v)){er.textContent='Please use your work email so we can tailor the Brief to your company.';$('em').focus();return}
+ er.textContent='';EM=v;$('s2em').textContent=v;
+ if(ED){finish()}else{setEd('');show('s2');var c=document.querySelector('.chip[aria-pressed=true]');c&&c.focus()}});
+[].forEach.call(document.querySelectorAll('.chip'),function(c){c.addEventListener('click',function(){setEd(c.dataset.ed)})});
+$('fin').addEventListener('click',finish);
+$('skip').addEventListener('click',function(){setEd('');finish()});
+$('back').addEventListener('click',function(){show('s1');$('em').focus()});
+$('clr').addEventListener('click',function(){setEd('')});
+[].forEach.call(document.querySelectorAll('.pick'),function(b){b.addEventListener('click',function(){setEd(b.dataset.ed);
+ if(EM){show('s2')}else{show('s1')}
+ $('join').scrollIntoView({behavior:'smooth',block:'center'});setTimeout(function(){(EM?$('fin'):$('em')).focus({preventScroll:true})},450)})});
+setEd('');})();</script></body></html>
