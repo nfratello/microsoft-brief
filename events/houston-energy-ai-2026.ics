@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Microsoft Brief//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:houston-energy-ai-2026@microsoft-brief
+DTSTAMP:20261109T190000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261207
+SUMMARY:Powering Energy with AI: Turning Business Processes into Intelligent Workflows
+LOCATION:Houston\, TX
+DESCRIPTION:Register: https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/D0B01C4C-2DFE-461B-B3DC-6E54501CC471\n\nShared by The Microsoft Brief · https://nfratello.github.io/microsoft-brief/
+URL:https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/D0B01C4C-2DFE-461B-B3DC-6E54501CC471
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

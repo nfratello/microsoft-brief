@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Microsoft Brief//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ignite-unwrapped-2026@microsoft-brief
+DTSTAMP:20261109T190000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261210
+SUMMARY:Ignite Unwrapped: Your Year-End Wish List, Delivered (Microsoft Master Series)
+LOCATION:Online · free webinar
+DESCRIPTION:Register: https://aka.ms/MasterSeries/IgniteUnwrapped\n\nShared by The Microsoft Brief · https://nfratello.github.io/microsoft-brief/
+URL:https://aka.ms/MasterSeries/IgniteUnwrapped
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
