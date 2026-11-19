@@ -77,6 +77,13 @@
   "logo": "assets/img/customers/25679-logo.png"
  },
  {
+  "id": "25861",
+  "company": "",
+  "story": "https://www.microsoft.com/en/customers/story/25861-sno-hotels-dynamics-365-business-central",
+  "hero": "assets/img/customers/25861-hero.jpg",
+  "logo": "assets/img/customers/25861-logo.png"
+ },
+ {
   "id": "25865",
   "company": "Iveco Defence Vehicles",
   "story": "https://www.microsoft.com/en/customers/story/25865-idv-dynamics-365-customer-service",
@@ -89,6 +96,13 @@
   "story": "https://www.microsoft.com/en/customers/story/25879-dunaway-microsoft-copilot-studio",
   "hero": "assets/img/customers/25879-hero.jpg",
   "logo": "assets/img/customers/25879-logo.png"
+ },
+ {
+  "id": "25891",
+  "company": "",
+  "story": "https://www.microsoft.com/en/customers/story/25891-intermountain-health-microsoft-dragon-copilot",
+  "hero": "assets/img/customers/25891-hero.jpg",
+  "logo": "assets/img/customers/25891-logo.png"
  },
  {
   "id": "26024",
@@ -182,6 +196,13 @@
   "logo": "assets/img/customers/26768-logo.png"
  },
  {
+  "id": "26948",
+  "company": "",
+  "story": "https://www.microsoft.com/en/customers/story/26948-kohler-company-microsoft-365-copilot",
+  "hero": "assets/img/customers/26948-hero.jpg",
+  "logo": "assets/img/customers/26948-logo.png"
+ },
+ {
   "id": "26969",
   "company": "Banco Hipotecario",
   "story": "https://www.microsoft.com/en/customers/story/26969-banco-hipotecario-github-copilot",
@@ -194,6 +215,13 @@
   "story": "https://www.microsoft.com/en/customers/story/27037-cosmo-consult-microsoft-copilot-studio",
   "hero": "assets/img/customers/27037-hero.jpg",
   "logo": "assets/img/customers/27037-logo.png"
+ },
+ {
+  "id": "27078",
+  "company": "",
+  "story": "https://www.microsoft.com/en/customers/story/27078-citadele-banka-microsoft-365-copilot",
+  "hero": "assets/img/customers/27078-hero.jpg",
+  "logo": "assets/img/customers/27078-logo.png"
  },
  {
   "id": "27087",
@@ -224,10 +252,45 @@
   "logo": "assets/img/customers/27237-logo.png"
  },
  {
+  "id": "27280",
+  "company": "",
+  "story": "https://www.microsoft.com/en/customers/story/27280-get-ai-microsoft-365-copilot",
+  "hero": "assets/img/customers/27280-hero.jpg",
+  "logo": "assets/img/customers/27280-logo.png"
+ },
+ {
   "id": "27299",
   "company": "Docusign",
   "story": "https://www.microsoft.com/en/customers/story/27299-docusign-microsoft-foundry",
   "hero": "assets/img/customers/27299-hero.jpg",
   "logo": "assets/img/customers/27299-logo.png"
+ },
+ {
+  "id": "27511",
+  "company": "",
+  "story": "https://www.microsoft.com/en/customers/story/27511-mobilezone-microsoft-copilot-studio",
+  "hero": "assets/img/customers/27511-hero.jpg",
+  "logo": "assets/img/customers/27511-logo.png"
+ },
+ {
+  "id": "27526",
+  "company": "",
+  "story": "https://www.microsoft.com/en/customers/story/27526-canada-goose-dynamics-365-finance",
+  "hero": "assets/img/customers/27526-hero.jpg",
+  "logo": "assets/img/customers/27526-logo.png"
+ },
+ {
+  "id": "27653",
+  "company": "",
+  "story": "https://www.microsoft.com/en/customers/story/27653-ecopetrol-sa-iot-operations",
+  "hero": "assets/img/customers/27653-hero.jpg",
+  "logo": "assets/img/customers/27653-logo.png"
+ },
+ {
+  "id": "27675",
+  "company": "",
+  "story": "https://www.microsoft.com/en/customers/story/27675-servicenow-microsoft-copilot-studio",
+  "hero": "assets/img/customers/27675-hero.jpg",
+  "logo": "assets/img/customers/27675-logo.png"
  }
 ]
