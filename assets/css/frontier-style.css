@@ -25,7 +25,7 @@ html{scroll-padding-top:112px}
 .gh{position:sticky;top:0;z-index:200;background:#fff;border-bottom:1px solid #e0e0e0}
 .ghr{display:flex;align-items:center;height:60px;padding-inline:28px;max-width:1440px;margin:0 auto}
 .gh .lock{display:flex;align-items:center;gap:14px;text-decoration:none;color:#242424}
-.gh .mslogo{display:inline-flex;align-items:center;gap:8px}
+.gh .mslogo{display:inline-flex;align-items:center;gap:8px}.gh img.mslogo{display:block;height:20px;width:auto}
 .gh .msq{display:grid;grid-template-columns:10px 10px;gap:2px}.gh .msq i{display:block;width:10px;height:10px}
 .gh .mswm{font-family:"Segoe UI",system-ui,Arial,sans-serif;font-size:20px;font-weight:600;color:#737373;letter-spacing:-.01em}
 .gh .ldiv{width:1px;height:26px;background:#bdbdbd}
