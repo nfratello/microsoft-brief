@@ -45,8 +45,10 @@ html{scroll-padding-top:112px}
 .gh .lb a{color:#616161;text-decoration:none;font-weight:400;letter-spacing:normal;text-transform:none}.gh .lb a:hover{color:#242424;text-decoration:underline}
 .gh .lb .lbt{color:#242424;font-weight:700;font-size:15px;text-decoration:none}
 .gh .lb b{color:#242424}
+.gh .lb,.gh .ghr:last-child{position:relative}
+.mstrip{display:block;block-size:4px;background:linear-gradient(90deg,#f25022 0 25%,#7fba00 25% 50%,#00a4ef 50% 75%,#ffb900 75% 100%)}
 @media (max-width:760px){.gh .gnav{display:none}.gh .gmenu{display:block}.ghr{padding-inline:16px;height:56px}.gh .mswm{font-size:17px}.gh .site{font-size:16px}.gh .lock{gap:10px}.gh .lb{padding-inline:16px;gap:16px}}
-@media print{.gh{position:static}.gh .gnav,.gh .gmenu,.gh .lb{display:none}}
+@media print{.gh{position:static}.gh .gnav,.gh .gmenu,.gh .lb,.mstrip{display:none}}
 
 /* ---- 2. Sitewide type system -------------------------------------------- */
 body{
