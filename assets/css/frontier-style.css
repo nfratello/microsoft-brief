@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Frontier with Microsoft — shared site style v1.0
+   Linked from every page in this repo ("The Brief"). Scope of this file:
+     1) the shared top bar (.fw-bar) that replaces the old .snav header
+     2) sitewide type system (fonts + a 3-size type scale)
+     3) the 4px spacing grid as custom properties + a few utility classes
+     4) canvas utilities (.fw-alt off-white section background)
+     5) a shared footer line (.fw-foot)
+   This file intentionally does NOT touch hero sections (.hero) — those keep
+   their existing, page-authored typographic treatment. Selectors below that
+   could affect the hero explicitly exclude it with :not(.hero h1) etc.
+   ========================================================================== */
+
+:root{
+  --ink:#0b1b33;
+  --fw-navy:#081628;
+  --fw-off:#f6f7f9;
+  --fw-border:#e2e8f0;
+  --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:24px;--sp-6:32px;--sp-7:48px;--sp-8:64px;
+}
+
+/* ---- 1. Shared top bar -------------------------------------------------- */
+.fw-bar{position:sticky;top:0;z-index:200;background:#081628;color:#fff;font-family:"Segoe Sans Text","Segoe UI Variable Text","Segoe UI",Arial,sans-serif}
+.fw-bar .fw-in{max-width:1320px;margin-inline:auto;padding:10px 24px;display:flex;align-items:center;gap:20px}
+.fw-bar .fw-logo{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;white-space:nowrap;font-weight:600}
+.fw-bar .fw-mark{display:inline-grid;grid-template-columns:8px 8px;grid-template-rows:8px 8px;gap:2px;flex:none}
+.fw-bar .fw-mark i{display:block;width:8px;height:8px}
+.fw-bar .fw-mark i:nth-child(1){background:#f25022}
+.fw-bar .fw-mark i:nth-child(2){background:#7fba00}
+.fw-bar .fw-mark i:nth-child(3){background:#00a4ef}
+.fw-bar .fw-mark i:nth-child(4){background:#ffb900}
+.fw-bar .fw-name{font-size:16px;letter-spacing:-.1px}
+.fw-bar .fw-nav{display:flex;align-items:center;gap:2px;margin-inline-start:4px;overflow-x:auto;scrollbar-width:none}
+.fw-bar .fw-nav::-webkit-scrollbar{display:none}
+.fw-bar .fw-nav a{display:inline-flex;align-items:center;height:34px;padding:0 14px;border-radius:999px;color:#c7d2e3;text-decoration:none;font-size:14.5px;font-weight:600;white-space:nowrap}
+.fw-bar .fw-nav a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.fw-bar .fw-nav a.fw-active{color:#081628;background:#fff}
+.fw-bar .fw-nav a.fw-active:hover{background:#fff}
+.fw-bar .fw-tools{display:flex;align-items:center;gap:10px;margin-inline-start:auto}
+.fw-bar .fw-sub{display:inline-flex;align-items:center;height:34px;padding:0 16px;border-radius:999px;background:#e8774a;color:#fff!important;text-decoration:none;font-weight:700;font-size:14px;white-space:nowrap}
+.fw-bar .fw-sub:hover{background:#d4663b}
+.fw-bar .aka{all:unset;box-sizing:border-box;display:inline-flex;align-items:center;gap:6px;padding:4px 2px;color:#9fb0c7;font:400 12.5px/1 "Segoe Sans Text","Segoe UI",Arial,sans-serif;white-space:nowrap;cursor:pointer}
+.fw-bar .aka .ak{display:inline-grid;place-items:center}
+.fw-bar .aka svg{display:block;width:13px;height:13px}
+.fw-bar .aka .ok{display:none}
+.fw-bar .aka:hover{color:#fff}
+.fw-bar .aka.done,.fw-bar .aka.done .ak{color:#6fdc8c}
+.fw-bar .aka.done .cp{display:none}
+.fw-bar .aka.done .ok{display:block}
+@media (max-width:900px){
+  .fw-bar .fw-in{padding:8px 16px;flex-wrap:wrap;row-gap:6px}
+  .fw-bar .fw-name{display:none}
+  .fw-bar .aka{display:none}
+  .fw-bar .fw-nav a{padding:0 10px;font-size:13.5px}
+}
+
+/* ---- 2. Sitewide type system -------------------------------------------- */
+body{
+  font-family:"Segoe Sans Text","Segoe UI Variable Text","Segoe UI",Arial,sans-serif!important;
+  font-size:17px;
+  color:var(--ink);
+}
+h1:not(.hero h1),h2:not(.hero h2),h3:not(.hero h3){
+  font-family:"Segoe UI Variable Display","Segoe UI Variable Text","Segoe UI",Arial,sans-serif!important;
+  font-weight:600!important;
+}
+h1:not(.hero h1){font-size:clamp(34px,4.4vw,56px)!important;}
+h2:not(.hero h2){font-size:clamp(26px,3vw,34px)!important;}
+h3:not(.hero h3){font-size:clamp(20px,2.4vw,26px)!important;}
+
+/* ---- 3. 4px spacing grid + card/section utilities ----------------------- */
+.fw-card{border-radius:16px!important;padding:var(--sp-5)!important;border:1px solid var(--fw-border)!important}
+.fw-sec-pad{padding-block:56px!important} /* brief-specified section rhythm; not itself one of the --sp-N 4px-grid steps */
+
+/* ---- 4. Canvas: alternating section backgrounds -------------------------- */
+.fw-alt{background:var(--fw-off)}
+
+/* ---- 5. Shared footer line ------------------------------------------------ */
+.fw-foot{display:block;max-width:1320px;margin:0 auto;padding:16px 24px 32px;font-size:13px;color:#5f6368}
+.fw-foot a{color:inherit;text-decoration:underline}
+footer .fw-foot-line{display:block;margin-top:10px;font-size:inherit}
+
+/* ---- 6. Coach "Cowork track" cards --------------------------------------- */
+.fw-cowork{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--sp-5)}
+.fw-cowork .fw-card{background:var(--card,#fff)}
+.fw-cowork .fw-card b{display:block;font-size:17px;margin-bottom:6px}
+.fw-cowork .fw-card p{margin:0;color:var(--muted,#5f6368);font-size:15px}
+@media (max-width:760px){.fw-cowork{grid-template-columns:1fr}}
