@@ -1,7 +1,7 @@
 /* ==========================================================================
    Frontier with Microsoft — shared site style v1.0
    Linked from every page in this repo ("The Brief"). Scope of this file:
-     1) the shared top bar (.fw-bar) that replaces the old .snav header
+     1) the shared top bar (.gh, v0.5 unified Frontier header) and section row (.lb)
      2) sitewide type system (fonts + a 3-size type scale)
      3) the 4px spacing grid as custom properties + a few utility classes
      4) canvas utilities (.fw-alt off-white section background)
@@ -19,40 +19,34 @@
   --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:24px;--sp-6:32px;--sp-7:48px;--sp-8:64px;
 }
 
-/* ---- 1. Shared top bar -------------------------------------------------- */
-.fw-bar{position:sticky;top:0;z-index:200;background:#081628;color:#fff;font-family:"Segoe Sans Text","Segoe UI Variable Text","Segoe UI",Arial,sans-serif}
-.fw-bar .fw-in{max-width:1320px;margin-inline:auto;padding:10px 24px;display:flex;align-items:center;gap:20px}
-.fw-bar .fw-logo{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;white-space:nowrap;font-weight:600}
-.fw-bar .fw-mark{display:inline-grid;grid-template-columns:8px 8px;grid-template-rows:8px 8px;gap:2px;flex:none}
-.fw-bar .fw-mark i{display:block;width:8px;height:8px}
-.fw-bar .fw-mark i:nth-child(1){background:#f25022}
-.fw-bar .fw-mark i:nth-child(2){background:#7fba00}
-.fw-bar .fw-mark i:nth-child(3){background:#00a4ef}
-.fw-bar .fw-mark i:nth-child(4){background:#ffb900}
-.fw-bar .fw-name{font-size:16px;letter-spacing:-.1px}
-.fw-bar .fw-nav{display:flex;align-items:center;gap:2px;margin-inline-start:4px;overflow-x:auto;scrollbar-width:none}
-.fw-bar .fw-nav::-webkit-scrollbar{display:none}
-.fw-bar .fw-nav a{display:inline-flex;align-items:center;height:34px;padding:0 14px;border-radius:999px;color:#c7d2e3;text-decoration:none;font-size:14.5px;font-weight:600;white-space:nowrap}
-.fw-bar .fw-nav a:hover{color:#fff;background:rgba(255,255,255,.08)}
-.fw-bar .fw-nav a.fw-active{color:#081628;background:#fff}
-.fw-bar .fw-nav a.fw-active:hover{background:#fff}
-.fw-bar .fw-tools{display:flex;align-items:center;gap:10px;margin-inline-start:auto}
-.fw-bar .fw-sub{display:inline-flex;align-items:center;height:34px;padding:0 16px;border-radius:999px;background:#e8774a;color:#fff!important;text-decoration:none;font-weight:700;font-size:14px;white-space:nowrap}
-.fw-bar .fw-sub:hover{background:#d4663b}
-.fw-bar .aka{all:unset;box-sizing:border-box;display:inline-flex;align-items:center;gap:6px;padding:4px 2px;color:#9fb0c7;font:400 12.5px/1 "Segoe Sans Text","Segoe UI",Arial,sans-serif;white-space:nowrap;cursor:pointer}
-.fw-bar .aka .ak{display:inline-grid;place-items:center}
-.fw-bar .aka svg{display:block;width:13px;height:13px}
-.fw-bar .aka .ok{display:none}
-.fw-bar .aka:hover{color:#fff}
-.fw-bar .aka.done,.fw-bar .aka.done .ak{color:#6fdc8c}
-.fw-bar .aka.done .cp{display:none}
-.fw-bar .aka.done .ok{display:block}
-@media (max-width:900px){
-  .fw-bar .fw-in{padding:8px 16px;flex-wrap:wrap;row-gap:6px}
-  .fw-bar .fw-name{display:none}
-  .fw-bar .aka{display:none}
-  .fw-bar .fw-nav a{padding:0 10px;font-size:13.5px}
-}
+/* ---- 1. Shared top bar (v0.5 unified header, Design standards v1.2) ----- */
+html{scroll-padding-top:112px}
+[id]{scroll-margin-top:112px}
+.gh{position:sticky;top:0;z-index:200;background:#fff;border-bottom:1px solid #e0e0e0}
+.ghr{display:flex;align-items:center;height:60px;padding-inline:28px;max-width:1440px;margin:0 auto}
+.gh .lock{display:flex;align-items:center;gap:14px;text-decoration:none;color:#242424}
+.gh .mslogo{display:inline-flex;align-items:center;gap:8px}
+.gh .msq{display:grid;grid-template-columns:10px 10px;gap:2px}.gh .msq i{display:block;width:10px;height:10px}
+.gh .mswm{font-family:"Segoe UI",system-ui,Arial,sans-serif;font-size:20px;font-weight:600;color:#737373;letter-spacing:-.01em}
+.gh .ldiv{width:1px;height:26px;background:#bdbdbd}
+.gh .site{font-size:18px;font-weight:600;color:#242424}
+.gh .gnav{margin-inline-start:auto;display:flex;align-items:center;gap:4px}
+.gh .gnav a,.gh .gmenu nav a{font-size:15px;color:#242424;text-decoration:none;padding-block:19px 16px;padding-inline:12px;border-bottom:3px solid transparent}
+.gh .gnav a:hover{border-bottom-color:#bdbdbd}
+.gh .gnav a.on{border-bottom-color:#0e7490;font-weight:600}
+.gh a.cta{margin-inline-start:14px;background:#081628;color:#fff;border-radius:6px;padding-block:8px;padding-inline:14px;border:0;font-weight:600;font-size:14px}
+.gh .gmenu{display:none;margin-inline-start:auto;position:relative}
+.gh .gmenu summary{list-style:none;cursor:pointer;font-size:15px;font-weight:600;padding-block:8px;padding-inline:12px;border:1px solid #d1d1d1;border-radius:6px}
+.gh .gmenu summary::-webkit-details-marker{display:none}
+.gh .gmenu nav{position:absolute;inset-inline-end:0;top:44px;background:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.12);display:flex;flex-direction:column;min-width:200px;padding-block:6px}
+.gh .gmenu nav a{padding-block:10px;border-bottom:0}.gh .gmenu nav a.on{font-weight:600;color:#0e7490}
+.gh .gmenu nav a.cta{margin:8px 12px;text-align:center;color:#fff}
+.gh .lb{display:flex;align-items:center;gap:22px;height:44px;padding-inline:28px;background:#fafafa;border-top:1px solid #e0e0e0;font-size:14px;font-weight:400;letter-spacing:normal;text-transform:none;overflow-x:auto;white-space:nowrap;max-width:none}
+.gh .lb a{color:#616161;text-decoration:none;font-weight:400;letter-spacing:normal;text-transform:none}.gh .lb a:hover{color:#242424;text-decoration:underline}
+.gh .lb .lbt{color:#242424;font-weight:700;font-size:15px;text-decoration:none}
+.gh .lb b{color:#242424}
+@media (max-width:760px){.gh .gnav{display:none}.gh .gmenu{display:block}.ghr{padding-inline:16px;height:56px}.gh .mswm{font-size:17px}.gh .site{font-size:16px}.gh .lock{gap:10px}.gh .lb{padding-inline:16px;gap:16px}}
+@media print{.gh{position:static}.gh .gnav,.gh .gmenu,.gh .lb{display:none}}
 
 /* ---- 2. Sitewide type system -------------------------------------------- */
 body{
