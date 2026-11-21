@@ -19,6 +19,10 @@
   --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:24px;--sp-6:32px;--sp-7:48px;--sp-8:64px;
 }
 
+/* ---- 0. No orphan words (Design standards v1.4) ----- */
+h1,h2,h3,h4,.eb,.lede,.card h3,.btn,button{text-wrap:balance}
+p,li,figcaption,blockquote,q{text-wrap:pretty}
+
 /* ---- 1. Shared top bar (v0.5 unified header, Design standards v1.2) ----- */
 html{scroll-padding-top:112px}
 [id]{scroll-margin-top:112px}
