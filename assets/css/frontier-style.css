@@ -17,6 +17,7 @@
   --fw-off:#f6f7f9;
   --fw-border:#e2e8f0;
   --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:24px;--sp-6:32px;--sp-7:48px;--sp-8:64px;
+  --page-max:1240px;--page-pad:28px;
 }
 
 /* ---- 0. No orphan words (Design standards v1.4) ----- */
@@ -42,7 +43,7 @@ footer .fw-bar{display:flex;margin-block-start:14px}
 html{scroll-padding-top:112px}
 [id]{scroll-margin-top:112px}
 .gh{position:sticky;top:0;z-index:200;background:#fff;border-bottom:1px solid #e0e0e0}
-.ghr{display:flex;align-items:center;height:60px;padding-inline:28px;max-width:1440px;margin:0 auto}
+.ghr{display:flex;align-items:center;height:60px;padding-inline:var(--page-pad);max-width:var(--page-max);margin:0 auto}
 .gh .lock{display:flex;align-items:center;gap:14px;text-decoration:none;color:#242424}
 .gh .mslogo{display:inline-flex;align-items:center;gap:8px}.gh img.mslogo{display:block;height:20px;width:auto}
 .gh .msq{display:grid;grid-template-columns:10px 10px;gap:2px}.gh .msq i{display:block;width:10px;height:10px}
@@ -60,13 +61,14 @@ html{scroll-padding-top:112px}
 .gh .gmenu nav{position:absolute;inset-inline-end:0;top:44px;background:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.12);display:flex;flex-direction:column;min-width:200px;padding-block:6px}
 .gh .gmenu nav a{padding-block:10px;border-bottom:0}.gh .gmenu nav a.on{font-weight:600;color:#0e7490}
 .gh .gmenu nav a.cta{margin:8px 12px;text-align:center;color:#fff}
-.gh .lb{display:flex;align-items:center;gap:22px;height:44px;padding-inline:28px;background:#fafafa;border-top:1px solid #e0e0e0;font-size:14px;font-weight:400;letter-spacing:normal;text-transform:none;overflow-x:auto;white-space:nowrap;max-width:none}
+.gh .lb{display:block;height:44px;background:#fafafa;border-top:1px solid #e0e0e0;font-size:14px;font-weight:400;letter-spacing:normal;text-transform:none;max-width:none}
+.gh .lb .lbw{display:flex;align-items:center;gap:22px;height:44px;max-width:var(--page-max);margin-inline:auto;padding-inline:var(--page-pad);overflow-x:auto;white-space:nowrap}
 .gh .lb a{color:#616161;text-decoration:none;font-weight:400;letter-spacing:normal;text-transform:none}.gh .lb a:hover{color:#242424;text-decoration:underline}
 .gh .lb .lbt{color:#242424;font-weight:700;font-size:15px;text-decoration:none}
 .gh .lb b{color:#242424}
 .gh .lb,.gh .ghr:last-child{position:relative}
 .mstrip{display:block;block-size:4px;background:linear-gradient(90deg,#f25022 0 25%,#7fba00 25% 50%,#00a4ef 50% 75%,#ffb900 75% 100%)}
-@media (max-width:760px){.gh .gnav{display:none}.gh .gmenu{display:block}.ghr{padding-inline:16px;height:56px}.gh .mswm{font-size:17px}.gh .site{font-size:16px}.gh .lock{gap:10px}.gh .lb{padding-inline:16px;gap:16px}}
+@media (max-width:760px){.gh .gnav{display:none}.gh .gmenu{display:block}.ghr{padding-inline:16px;height:56px}.gh .mswm{font-size:17px}.gh .site{font-size:16px}.gh .lock{gap:10px}.gh .lb .lbw{padding-inline:16px;gap:16px}}
 @media print{.gh{position:static}.gh .gnav,.gh .gmenu,.gh .lb,.mstrip{display:none}}
 
 /* ---- 2. Sitewide type system -------------------------------------------- */
