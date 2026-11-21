@@ -9,9 +9,9 @@ All content is publicly available from Microsoft. Subscribers opt in with their 
 
 ---
 
-## How we built this with Microsoft 365 Copilot Cowork
+## How we built this with Microsoft Copilot Cowork
 
-This site and the weekly email are produced by a small team of AI agents in **Microsoft 365 Copilot Cowork**, with a person reviewing every issue before it goes out. It replaces a manual process (finding updates, writing summaries, tailoring by industry, tracking who's interested) with one that runs itself each week.
+This site and the weekly email are produced by a small team of AI agents in **Microsoft Copilot Cowork**, with a person reviewing every issue before it goes out. It replaces a manual process (finding updates, writing summaries, tailoring by industry, tracking who's interested) with one that runs itself each week.
 
 | Agent | What it does | When |
 |---|---|---|
