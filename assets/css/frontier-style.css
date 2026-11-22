@@ -24,7 +24,7 @@
 h1,h2,h3,h4,.eb,.lede,.card h3,.btn,button{text-wrap:balance}
 p,li,figcaption,blockquote,q{text-wrap:pretty}
 
-/* ---- 0b. Share line (Design standards v1.9) ----- */
+/* ---- 0b. Share line (Design standards v2.1) ----- */
 .fw-bar{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#6b7280;white-space:nowrap;line-height:1}
 .fw-bar .fwdiv{display:inline-block;width:1px;align-self:stretch;min-height:16px;background:#d1d5db}
 .fw-bar .fwt{display:inline-flex;align-items:center;gap:5px}
@@ -52,24 +52,28 @@ html{scroll-padding-top:112px}
 .gh .mswm{font-family:"Segoe UI",system-ui,Arial,sans-serif;font-size:20px;font-weight:600;color:#737373;letter-spacing:-.01em}
 .gh .ldiv{width:1px;height:26px;background:#bdbdbd}
 .gh .site{font-size:18px;font-weight:600;color:#242424}
+.gh .ghr{position:relative}
 .gh .gnav{margin-inline-start:auto;display:flex;align-items:center;gap:4px}
-.gh .gnav a,.gh .gmenu nav a{font-size:15px;color:#242424;text-decoration:none;padding-block:19px 16px;padding-inline:12px;border-bottom:3px solid transparent}
-.gh .gnav a:hover{border-bottom-color:#bdbdbd}
-.gh .gnav a.on{border-bottom-color:#0e7490;font-weight:600}
+.gh .gnav a,.gh .gmenu nav a{font-size:15px;color:#616161;font-weight:600;text-decoration:none;padding-block:19px 16px;padding-inline:12px;border-bottom:0;transition:color .2s}
+.gh .gnav a:hover{color:#242424}
+.gh .gnav a.on{color:#111827}
+.gh .hbar{position:absolute;left:0;bottom:6px;height:3px;border-radius:999px;background:#0f6cbd;opacity:0;transition:transform .2s ease,width .2s ease,opacity .2s ease;pointer-events:none}
 .gh a.cta{margin-inline-start:14px;background:#081628;color:#fff;border-radius:6px;padding-block:8px;padding-inline:14px;border:0;font-weight:600;font-size:14px}
 .gh .gmenu{display:none;margin-inline-start:auto;position:relative}
 .gh .gmenu summary{list-style:none;cursor:pointer;font-size:15px;font-weight:600;padding-block:8px;padding-inline:12px;border:1px solid #d1d1d1;border-radius:6px}
 .gh .gmenu summary::-webkit-details-marker{display:none}
 .gh .gmenu nav{position:absolute;inset-inline-end:0;top:44px;background:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.12);display:flex;flex-direction:column;min-width:200px;padding-block:6px}
-.gh .gmenu nav a{padding-block:10px;border-bottom:0}.gh .gmenu nav a.on{font-weight:600;color:#0e7490}
+.gh .gmenu nav a{padding-block:10px;border-bottom:0;border-inline-start:3px solid transparent}.gh .gmenu nav a.on{color:#111827;border-inline-start-color:#0f6cbd}
 .gh .gmenu nav a.cta{margin:8px 12px;text-align:center;color:#fff}
-.gh .lb{display:block;height:44px;background:#fafafa;border-top:1px solid #e0e0e0;font-size:14px;font-weight:400;letter-spacing:normal;text-transform:none;max-width:none}
-.gh .lb .lbw{display:flex;align-items:center;gap:22px;height:44px;max-width:var(--page-max);margin-inline:auto;padding-inline:var(--page-pad);overflow-x:auto;white-space:nowrap}
-.gh .lb a{color:#616161;text-decoration:none;font-weight:400;letter-spacing:normal;text-transform:none}.gh .lb a:hover{color:#242424;text-decoration:underline}
+.gh .lb{display:block;height:44px;background:#fafafa;border-top:1px solid #e0e0e0;font-size:14px;font-weight:400;letter-spacing:normal;text-transform:none;max-width:none;position:relative}
+.gh .lb .lbw{display:flex;align-items:center;gap:22px;height:44px;max-width:var(--page-max);margin-inline:auto;padding-inline:var(--page-pad);overflow-x:auto;white-space:nowrap;position:relative}
+.gh .lb a{color:#616161;text-decoration:none;font-weight:600;letter-spacing:normal;text-transform:none;transition:color .2s}.gh .lb a:hover{color:#242424;text-decoration:underline}
+.gh .lb a.on{color:#111827}
 .gh .lb .lbt{color:#242424;font-weight:700;font-size:15px;text-decoration:none}
 .gh .lb b{color:#242424}
-.gh .lb,.gh .ghr:last-child{position:relative}
+.gh .ghr:last-child{position:relative}
 .mstrip{display:block;block-size:4px;background:linear-gradient(90deg,#f25022 0 25%,#7fba00 25% 50%,#00a4ef 50% 75%,#ffb900 75% 100%)}
+@media (prefers-reduced-motion:reduce){.gh .hbar{transition:none}}
 @media (max-width:760px){.gh .gnav{display:none}.gh .gmenu{display:block}.ghr{padding-inline:16px;height:56px}.gh .mswm{font-size:17px}.gh .site{font-size:16px}.gh .lock{gap:10px}.gh .lb .lbw{padding-inline:16px;gap:16px}}
 @media print{.gh{position:static}.gh .gnav,.gh .gmenu,.gh .lb,.mstrip{display:none}}
 
