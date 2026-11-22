@@ -35,7 +35,8 @@ p,li,figcaption,blockquote,q{text-wrap:pretty}
 .fw-bar button.aka.done{color:#107c41;text-decoration:none}
 footer .fw-bar button.aka:hover,footer .fw-bar button.aka:focus-visible{color:#50e6ff}
 footer .fw-bar button.aka.done{color:#6ee7a8}
-.gh .gnav .fw-bar{margin-inline-start:2px}
+.gh .gnav .fw-bar{margin-inline-start:32px}
+@media (min-width:1960px){.gh .gnav .fw-bar{position:fixed;top:30px;right:48px;transform:translateY(-50%);margin:0;z-index:201}}
 .gh .gmenu nav .fw-bar{display:flex;width:100%;padding-block:10px 12px;margin-block-end:4px;border-block-end:1px solid #e5e7eb}
 footer .fw-bar{display:flex;margin-block-start:14px}
 @media (max-width:760px){.gh .gnav .fw-bar{display:none}}
