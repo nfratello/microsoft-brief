@@ -98,12 +98,12 @@ body{
   font-size:17px;
   color:var(--ink);
 }
-h1:not(.hero h1):not(table.wrap h1),h2:not(.hero h2):not(table.wrap h2),h3:not(.hero h3):not(table.wrap h3){
+h1:not(.hero h1):not(table.wrap h1):not(.llh1),h2:not(.hero h2):not(table.wrap h2):not(.llh2),h3:not(.hero h3):not(table.wrap h3){
   font-family:"Segoe UI Variable Display","Segoe UI Variable Text","Segoe UI",Arial,sans-serif!important;
   font-weight:600!important;
 }
-h1:not(.hero h1):not(table.wrap h1){font-size:clamp(34px,4.4vw,56px)!important;}
-h2:not(.hero h2):not(table.wrap h2){font-size:clamp(26px,3vw,34px)!important;}
+h1:not(.hero h1):not(table.wrap h1):not(.llh1){font-size:clamp(34px,4.4vw,56px)!important;}
+h2:not(.hero h2):not(table.wrap h2):not(.llh2){font-size:clamp(26px,3vw,34px)!important;}
 h3:not(.hero h3):not(table.wrap h3){font-size:clamp(20px,2.4vw,26px)!important;}
 
 /* ---- 0c. Issue / email pages (P44): exempt from the type-system clamp above.
@@ -128,6 +128,14 @@ h3:not(.hero h3):not(table.wrap h3){font-size:clamp(20px,2.4vw,26px)!important;}
 }
 table.wrap h2{line-height:1.3!important;}
 table.wrap h3{line-height:1.3!important;}
+
+/* ---- 0d. /brief/latest/ list+preview pane (P45): the page's own fixed-size
+   headline (H1 "Choose your edition") and the preview pane's own headline
+   (H2, the previewed issue's title) are likewise exempted above via
+   :not(.llh1)/:not(.llh2) and given their own fixed size + unitless
+   line-height in brief/latest/index.html's own injected <style id="llp-css">
+   block — same reasoning as 0c: a fluid clamp doesn't suit this page's
+   fixed ~480px list column or ~560px preview card. */
 
 /* ---- 3. 4px spacing grid + card/section utilities ----------------------- */
 .fw-card{border-radius:16px!important;padding:var(--sp-5)!important;border:1px solid var(--fw-border)!important}

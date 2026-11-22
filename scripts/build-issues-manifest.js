@@ -45,6 +45,33 @@ for (const issue of issues) {
   issue.week = weekLabel(issue.date);
 }
 
+// P45: extract each issue's own "why it matters for <industry>" opening
+// paragraph (the second of the two lede paragraphs under the headline —
+// the first is the generic "Morning. Microsoft shipped a lot..." line,
+// the second says what this week means for that specific industry) from
+// the issue's own HTML file, for the /brief/latest/ preview pane. Read
+// once here (the one source of truth) rather than re-parsed anywhere else.
+const issuesDir = path.join(__dirname, '..', 'issues');
+const LEDE_RE = /-min read<\/b>[^<]*<\/p><p style="margin:0 0 12px;">[\s\S]*?<\/p><p style="margin:0;">([\s\S]*?)<\/p>/;
+function stripTags(s) {
+  return s
+    .replace(/<[^>]+>/g, '')
+    .replace(/&amp;/g, '&')
+    .replace(/&#x27;/g, "'")
+    .replace(/&nbsp;/g, '\u00A0') // keep as a real non-breaking space, not a plain space, so product names stay unbreakable
+    .replace(/[ \t\n\r]+/g, ' ') // collapse runs of plain whitespace only — \u00A0 is untouched
+    .trim();
+}
+for (const issue of issues) {
+  try {
+    const issueHtml = fs.readFileSync(path.join(issuesDir, issue.url), 'utf-8');
+    const lm = issueHtml.match(LEDE_RE);
+    issue.lede = lm ? stripTags(lm[1]) : issue.title;
+  } catch (e) {
+    issue.lede = issue.title; // safe fallback if a file is missing or the pattern doesn't match
+  }
+}
+
 console.log(`Parsed ${issues.length} issues from embedded ISSUES array`);
 fs.writeFileSync(
   path.join(__dirname, '..', 'issues', 'issues.json'),

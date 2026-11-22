@@ -39,7 +39,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For telecom and media companies, this week brings an AI network operations story from KT and a court ruling that matters to every newsroom."
  },
  {
   "url": "2026-11-18-state-local-edu-002.html",
@@ -80,7 +81,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For state and local government and education, this week brings a new teaching platform, a five-year university partnership, and Copilot Cowork inside the GCC boundary."
  },
  {
   "url": "2026-11-18-retail-002.html",
@@ -121,7 +123,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For retailers and consumer goods companies, this week's news covers AI in production and supply chains, and new data on what AI costs and returns."
  },
  {
   "url": "2026-11-18-professional-services-002.html",
@@ -161,7 +164,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For law, accounting and consulting firms, this week's news is about grounding AI in your own expertise and in trusted third-party data, and keeping costs in check."
  },
  {
   "url": "2026-11-18-manufacturing-002.html",
@@ -202,7 +206,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For manufacturers, this week's news shows AI moving into R&D and plant operations, with Microsoft engineers working side by side with customer teams."
  },
  {
   "url": "2026-11-18-hospitality-002.html",
@@ -243,7 +248,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For hotels, airlines and travel firms, this week's news is about getting real value from AI: who is scaling it, what it costs, and how to make it stick with staff."
  },
  {
   "url": "2026-11-18-high-tech-002.html",
@@ -284,7 +290,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For software and tech companies, this week's news spans the chips under Azure, giving agents their own PCs, and hard numbers on what AI tools cost to run."
  },
  {
   "url": "2026-11-18-healthcare-002.html",
@@ -325,7 +332,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For health systems, this week's news is about AI in the operational core: patient safety reviews, a five-year academic medical center partnership, and work context inside Dragon Copilot."
  },
  {
   "url": "2026-11-18-financial-services-002.html",
@@ -366,7 +374,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For banks, insurers and capital markets firms, this week's news shows AI moving into governed production, with trusted data and people in charge of the decisions."
  },
  {
   "url": "2026-11-18-federal-002.html",
@@ -407,7 +416,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For federal civilian agencies, this week's news shows employees building mission tools themselves, and agentic AI arriving inside the government cloud boundary."
  },
  {
   "url": "2026-11-18-energy-002.html",
@@ -447,7 +457,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For energy companies, this week's news includes a new AI model for carbon removal and fresh data on how leading firms get value from AI."
  },
  {
   "url": "2026-11-18-defense-002.html",
@@ -488,7 +499,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For aerospace and defense organizations, this week's news is about running cloud and AI where connectivity is limited, and keeping systems current as threats speed up."
  },
  {
   "url": "2026-11-17-telecom-media-ignite-recap.html",
@@ -530,7 +542,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For carriers, media and gaming companies, Ignite brought AI to the contact center, the sales floor and the network operations team."
  },
  {
   "url": "2026-11-17-state-local-edu-ignite-recap.html",
@@ -571,7 +584,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For state and local government and education, Ignite paired more capable AI with the governance and security public institutions need."
  },
  {
   "url": "2026-11-17-retail-ignite-recap.html",
@@ -613,7 +627,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For retailers and consumer brands, Ignite brought customer data, service and sales into Copilot, ahead of the busiest season."
  },
  {
   "url": "2026-11-17-professional-services-ignite-recap.html",
@@ -654,7 +669,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For consulting, legal, accounting and engineering firms, Ignite made Copilot the place client work gets done, and showed how to measure what AI returns."
  },
  {
   "url": "2026-11-17-manufacturing-ignite-recap.html",
@@ -696,7 +712,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For manufacturers, Ignite put ERP, the shop floor and the supply chain inside Copilot and Excel, with agents that can carry work from quote to purchase order."
  },
  {
   "url": "2026-11-17-hospitality-ignite-recap.html",
@@ -737,7 +754,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For airlines, hotels and cruise lines, Ignite was about putting AI where guests and crews already are: the contact center, the front desk and the sales team."
  },
  {
   "url": "2026-11-17-high-tech-ignite-recap.html",
@@ -779,7 +797,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For software and tech companies, Ignite was a builder's event: new models, agents that improve in production, and Copilot Code for everyone."
  },
  {
   "url": "2026-11-17-healthcare-ignite-recap.html",
@@ -820,7 +839,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For health and life sciences organizations, Ignite focused on giving clinicians and staff time back, with governance and security built in."
  },
  {
   "url": "2026-11-17-financial-services-ignite-recap.html",
@@ -861,7 +881,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For banks, insurers and capital markets firms, Ignite paired new AI for advisors and sellers with the governance regulators expect."
  },
  {
   "url": "2026-11-17-federal-ignite-recap.html",
@@ -902,7 +923,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For federal agencies, Ignite emphasized governance, security and cost control as AI takes on more mission work."
  },
  {
   "url": "2026-11-17-energy-ignite-recap.html",
@@ -943,7 +965,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For oil and gas, power and utilities, Ignite connected field operations, finance and projects to Copilot, with tighter control of AI spend."
  },
  {
   "url": "2026-11-17-defense-ignite-recap.html",
@@ -984,7 +1007,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "For defense companies, Ignite focused on securing AI agents and modernizing engineering and operations systems."
  },
  {
   "url": "2026-11-17-ignite-recap.html",
@@ -1026,7 +1050,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 16, 2026"
+  "week": "Week of November 16, 2026",
+  "lede": "The short version: Copilot becomes the place work gets done, Microsoft IQ gives AI your business context, and Agent 365 helps you govern AI and see what it delivers."
  },
  {
   "url": "2026-11-09-telecom-media-001.html",
@@ -1066,7 +1091,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 9, 2026"
+  "week": "Week of November 9, 2026",
+  "lede": "Operators and media companies are moving from AI pilots to the connective work: the networks and audience data that let AI produce real business results."
  },
  {
   "url": "2026-11-09-state-local-edu-001.html",
@@ -1106,7 +1132,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 9, 2026"
+  "week": "Week of November 9, 2026",
+  "lede": "This period brought new controls for safer student AI and fresh research showing how people-first cities are getting more out of AI."
  },
  {
   "url": "2026-11-09-retail-001.html",
@@ -1147,7 +1174,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 9, 2026"
+  "week": "Week of November 9, 2026",
+  "lede": "Ahead of the holiday rush, consumer brands are connecting their data to AI and moving customer service to agents that work around the clock."
  },
  {
   "url": "2026-11-09-professional-services-001.html",
@@ -1187,7 +1215,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 9, 2026"
+  "week": "Week of November 9, 2026",
+  "lede": "Microsoft launched dedicated Copilot skills for lawyers and accountants this month, bringing AI built for their profession into Word and Excel."
  },
  {
   "url": "2026-11-09-manufacturing-mobility-001.html",
@@ -1229,7 +1258,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 9, 2026"
+  "week": "Week of November 9, 2026",
+  "lede": "Dynamics 365 made big moves for manufacturers this week. Here's what matters."
  },
  {
   "url": "2026-11-09-hospitality-travel-001.html",
@@ -1271,7 +1301,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 9, 2026"
+  "week": "Week of November 9, 2026",
+  "lede": "AI agents in the reservations center, the booking path and guest data"
  },
  {
   "url": "2026-11-09-high-tech-001.html",
@@ -1313,7 +1344,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 9, 2026"
+  "week": "Week of November 9, 2026",
+  "lede": "For software builders, the big change this month is that the agent engine behind Microsoft's own Copilots is now available to use in your products and dev tools."
  },
  {
   "url": "2026-11-09-healthcare-001.html",
@@ -1353,7 +1385,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 9, 2026"
+  "week": "Week of November 9, 2026",
+  "lede": "Healthcare AI this month moved into the clinical core, from digital patient twins in drug trials to hospitals rebuilding their data foundations on Azure."
  },
  {
   "url": "2026-11-09-financial-services-001.html",
@@ -1395,7 +1428,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 9, 2026"
+  "week": "Week of November 9, 2026",
+  "lede": "For financial institutions, AI agents are moving into core operations like client onboarding and claims, with human sign-off and data control built in."
  },
  {
   "url": "2026-11-09-federal-001.html",
@@ -1436,7 +1470,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 9, 2026"
+  "week": "Week of November 9, 2026",
+  "lede": "Federal clouds got the same AI model as commercial Copilot this month, plus a new managed way to isolate sensitive workloads in Azure."
  },
  {
   "url": "2026-11-09-energy-001.html",
@@ -1475,7 +1510,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 9, 2026"
+  "week": "Week of November 9, 2026",
+  "lede": "This month, Microsoft opened up governed energy data to more analytics tools and laid out how AI can help operators prevent problems before they happen."
  },
  {
   "url": "2026-11-09-defense-001.html",
@@ -1516,7 +1552,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 9, 2026"
+  "week": "Week of November 9, 2026",
+  "lede": "Microsoft finished a three-part playbook on securing and governing AI in GCC High, and launched a managed way to isolate sensitive program work."
  },
  {
   "url": "2026-11-09-hospitality-travel-001-executive.html",
@@ -1552,7 +1589,8 @@
   ],
   "cta": "Read the 90-second brief",
   "first": false,
-  "week": "Week of November 9, 2026"
+  "week": "Week of November 9, 2026",
+  "lede": "AI agents in the reservations center, the booking path and guest data"
  },
  {
   "url": "2026-11-02-all-industries-week-in-review.html",
@@ -1594,7 +1632,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of November 2, 2026"
+  "week": "Week of November 2, 2026",
+  "lede": "Agents that remember, carbon in your ERP, and tighter limits on what agents can do"
  },
  {
   "url": "2026-10-26-all-industries-week-in-review.html",
@@ -1636,7 +1675,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of October 26, 2026"
+  "week": "Week of October 26, 2026",
+  "lede": "Copilot closes the books, CRM opens to agents, and shadow AI comes into view"
  },
  {
   "url": "2026-10-19-all-industries-week-in-review.html",
@@ -1678,7 +1718,8 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of October 19, 2026"
+  "week": "Week of October 19, 2026",
+  "lede": "Anyone can build an app, agents get an ID badge, and Copilot reads your business data"
  },
  {
   "url": "2026-10-12-all-industries-week-in-review.html",
@@ -1720,6 +1761,7 @@
   ],
   "cta": "Read the issue",
   "first": false,
-  "week": "Week of October 12, 2026"
+  "week": "Week of October 12, 2026",
+  "lede": "Copilot learns the law, an ERP Leader nod, and faster access shut-off"
  }
 ]

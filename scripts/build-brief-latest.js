@@ -28,7 +28,7 @@ const EDITION_SLUG = {
   'Retail & Consumer Goods': 'retail',
   'Energy & Utilities': 'energy',
   'Professional Services': 'professional-services',
-  'State & Local Government and Education': 'state-local-edu',
+  'State, Local & Education': 'state-local-edu',
   'Federal Government': 'federal',
   'Defense Industry': 'defense',
 };
@@ -36,6 +36,8 @@ const EDITION_SLUG = {
 const NAME_FIX = {
   'Telecommunications & Media': 'Telecom & Media',
   'Telecom & Media': 'Telecom & Media',
+  'State & Local Government and Education': 'State, Local & Education',
+  'State, Local & Education': 'State, Local & Education',
 };
 function fixName(s) {
   if (!s) return s;
@@ -103,6 +105,27 @@ function escAttr(s) {
   return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
 }
 
+// P45: the k3 "must-read" headlines (and occasionally the lede) are short,
+// hand-written strings that were previously only ever rendered inside a
+// <script> block (the archive's embedded ISSUES array) — invisible to the
+// product-name check, so they were never nbsp-protected. Now that this page
+// renders them as real visible text, protect any known product name the
+// same way every other visible page does (same list as
+// tools/product-name-check.js) rather than hand-editing the source data.
+const PROTECTED_NAMES = [
+  'Dynamics 365', 'Microsoft 365', 'Microsoft Copilot', 'Copilot Studio',
+  'Copilot Cowork', 'Agent 365', 'Power Platform', 'Power Apps', 'Power Automate',
+  'Power BI', 'Microsoft Teams', 'Microsoft Fabric', 'Business Central',
+  'Contact Center', 'Customer Service', 'Supply Chain Management', 'Field Service',
+];
+function protectNames(s) {
+  let out = String(s);
+  for (const name of PROTECTED_NAMES) {
+    out = out.split(name).join(name.replace(/ /g, '\u00A0'));
+  }
+  return out;
+}
+
 function regeneratePreviews(newest) {
   const results = [];
   // All Industries -> preview/all.html
@@ -155,33 +178,140 @@ function rebuildBriefLatestIframeMode(allIssue, oldHtml) {
   html = html.replace('</head>', `<link rel="canonical" href="https://nfratello.github.io/microsoft-brief/issues/${allIssue.url}"></head>`);
   html = html.replace(/<meta property="og:title" content="[^"]*">/, `<meta property="og:title" content="This week's All Industries Brief">`);
   html = html.replace(/<meta property="og:description" content="[^"]*">/, `<meta property="og:description" content="${escAttr(allIssue.title)}">`);
-  html = html.replace(/<p>Nov \d[^<]*<\/p>/, `<p>${escAttr(allIssue.title)} &middot; ${niceDate(allIssue.date)}</p>`);
+  // P44/P45: use the issue's own Monday-based "week" label, not a re-derived
+  // send-date string, so this line can never drift from the issue page's own
+  // "Week of ..." text.
+  const weekShort = (allIssue.week || `Week of ${niceDate(allIssue.date)}`).replace(/^Week of /, '');
+  html = html.replace(/<p>Nov \d[^<]*<\/p>/, `<p>${escAttr(allIssue.title)} &middot; ${escAttr(weekShort)}</p>`);
   html = html.replace(/src="\.\.\/\.\.\/preview\/all\.html"/, `src="../../issues/${allIssue.url}"`);
   return html;
 }
 
+// P45: Option A — list with preview pane. Order: Hospitality & Travel first
+// (also the default-selected row), then the remaining core editions
+// alphabetically, with Defense Industry and Federal Government always last
+// (alphabetical between the two of them too). All editions present that
+// week are included here (unlike the front door card, which only shows
+// three and never Federal/Defense) — this is the full "Choose your
+// edition" destination, not a teaser.
+const LAST_EDITIONS = ['Defense Industry', 'Federal Government'];
+function orderEditionsForChooser(thisWeekIssues) {
+  const byEdition = {};
+  for (const i of thisWeekIssues) byEdition[i.edition] = i;
+  const names = Object.keys(byEdition);
+  const core = names
+    .filter((n) => n !== 'Hospitality & Travel' && !LAST_EDITIONS.includes(n))
+    .sort((a, b) => a.localeCompare(b));
+  const ordered = [];
+  if (byEdition['Hospitality & Travel']) ordered.push('Hospitality & Travel');
+  ordered.push(...core);
+  for (const n of LAST_EDITIONS) if (byEdition[n]) ordered.push(n);
+  return ordered.map((n) => byEdition[n]);
+}
+
+// Real, text-free, people-first "wide" hero photo already published on each
+// edition's own Brief page, reused here (same repo, relative path — no
+// cross-origin fetch needed). `pos` reuses that photo's own tuned CSS
+// object-position from its source page so people stay in view at the
+// preview card's 16:7 crop.
+const EDITION_HERO = {
+  'Hospitality & Travel': { file: 'hero-hospitality-wide.jpg', pos: '50% 40%', alt: 'People at work in travel' },
+  'Manufacturing & Mobility': { file: 'ind-manufacturing-wide.jpg', pos: '50% 20%', alt: 'People at work in manufacturing' },
+  'High Tech & Software': { file: 'ind-hightech-wide.jpg', pos: '50% 20%', alt: 'People at work in tech' },
+  'Telecom & Media': { file: 'ind-telecom-wide.jpg', pos: '50% 25%', alt: 'People at work in telecom and media' },
+  'Healthcare & Life Sciences': { file: 'ind-healthcare-wide.jpg', pos: '50% 20%', alt: 'People at work in healthcare' },
+  'Financial Services': { file: 'ind-finserv-wide.jpg', pos: '50% 20%', alt: 'People at work in financial services' },
+  'Retail & Consumer Goods': { file: 'ind-retail-wide.jpg', pos: '50% 20%', alt: 'People at work in retail' },
+  'Energy & Utilities': { file: 'ind-energy-wide.jpg', pos: '50% 20%', alt: 'People at work in energy' },
+  'Professional Services': { file: 'ind-profserv-wide.jpg', pos: '50% 10%', alt: 'People at work in professional services' },
+  'State, Local & Education': { file: 'ind-sle-wide.jpg', pos: '50% 20%', alt: 'People at work in public sector' },
+  'Defense Industry': { file: 'ind-defense-wide.jpg', pos: '50% 20%', alt: 'People at work in defense industry' },
+  'Federal Government': { file: 'ind-federal-wide.jpg', pos: '50% 0%', alt: 'People at work in federal government' },
+};
+
+function rowHtml(issue, idx, selected) {
+  const color = issue.c || issue.acc || '#0067b8';
+  const icon = issue.fi || issue.icon || 'grid';
+  return `<li><a class="lrow${selected ? ' sel' : ''}" href="../../issues/${issue.url}" data-idx="${idx}" aria-current="${selected ? 'true' : 'false'}" style="--c:${color}"><span class="ltile" style="background:${color}" data-fi="${icon}" aria-hidden="true"></span><span class="ltx"><b>${escAttr(issue.edition)}</b><span class="lrh">${escAttr(protectNames(issue.title))}</span></span><span class="lchev" aria-hidden="true">&rsaquo;</span></a></li>`;
+}
+
+function previewHtml(issue, idx, selected, featured) {
+  const color = issue.c || issue.acc || '#0067b8';
+  const hero = EDITION_HERO[issue.edition] || { file: 'ind-manufacturing-wide.jpg', pos: '50% 20%', alt: `People at work in ${issue.edition}` };
+  const k3 = (issue.k3 || []).map((h) => `<li>${escAttr(protectNames(h))}</li>`).join('');
+  const getLink = issue.get ? `../../${issue.get.replace(/^\.\.\//, '')}` : `../../${EDITION_SLUG[issue.edition] || ''}/#subscribe`;
+  return `<div class="lpv"${featured ? ' id="lfeatpv"' : ` data-idx="${idx}"${selected ? '' : ' hidden'}`}><div class="lpvcard" style="--c:${color}"><div class="lph"><img src="../../assets/img/${hero.file}" width="1280" height="560" loading="${idx === 0 ? 'eager' : 'lazy'}" style="object-position:${hero.pos}" alt="${escAttr(hero.alt)}"></div><div class="lpb"><p class="lpe" style="color:${color}">${escAttr(issue.edition.toUpperCase())} EDITION</p><h2 class="llh2">${escAttr(protectNames(issue.title))}</h2><div class="lmeta"><span>${escAttr(issue.label || '')}</span><span>${escAttr(issue.rt || '')}</span><span>${escAttr(issue.week || '')}</span></div><p class="lsum">${escAttr(protectNames(issue.lede || issue.title))}</p><div class="lmr"><span class="lmrl" style="background:${color}">3 MUST-READS</span><ol>${k3}</ol></div><div class="lact"><a class="btn lbtn" href="../../issues/${issue.url}">Read the full issue <span class="arr" aria-hidden="true">&rsaquo;</span></a><a class="lget" href="${getLink}">Get ${escAttr(issue.edition)} every week</a></div></div></div></div>`;
+}
+
+const LLP_STYLE = `<style id="llp-css">.lgrid{display:grid;grid-template-columns:480px 1fr;gap:36px;align-items:start}
+.lrows{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;max-width:none}
+.lrow{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #dfe5ee;border-radius:10px;padding:9px 12px;text-decoration:none;color:#0b1b33;min-block-size:54px;box-sizing:border-box;transition:box-shadow .15s ease,border-color .15s ease,background-color .15s ease}
+.lrow:hover{box-shadow:0 4px 14px rgba(7,26,51,.08)}
+.lrow:focus-visible{outline:2px solid var(--c);outline-offset:2px}
+.ltile{flex:none;inline-size:34px;block-size:34px;border-radius:8px;display:grid;place-items:center}
+.ltile .fic{display:block;inline-size:20px;block-size:20px;background:#fff;-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat}
+.ltx{display:flex;flex-direction:column;min-inline-size:0;flex:1;gap:1px}
+.ltx b{font-size:14px;color:var(--c);font-weight:700}
+.ltx .lrh{font-size:13px;color:#4b5563;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lchev{flex:none;color:#9aa3ad;font-size:20px;transition:transform .15s ease,color .15s ease}
+.lrow:hover .lchev,.lrow:focus-visible .lchev,.lrow.sel .lchev{color:var(--c);transform:translateX(2px)}
+.lrow.sel{border-color:var(--c);box-shadow:inset 4px 0 0 var(--c);background:color-mix(in srgb, var(--c) 6%, white)}
+.lstick{position:sticky;top:20px}
+.lpvcard{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(15,23,42,.10);border:1px solid #e5e7eb}
+.lph img{inline-size:100%;block-size:auto;aspect-ratio:16/7;object-fit:cover;display:block}
+.lpb{padding:22px 26px 24px}
+.lpe{font-size:12px;letter-spacing:.14em;font-weight:700;text-transform:uppercase;margin:0 0 8px}
+.lpvcard h2{font-size:28px!important;line-height:1.15!important;margin:0 0 10px}
+.lmeta{display:flex;gap:8px;flex-wrap:wrap;margin-block-end:12px}
+.lmeta span{font-size:12px;background:#eef4f6;color:#1d5d73;padding-block:4px;padding-inline:10px;border-radius:99px;font-weight:600}
+.lsum{color:#374151;line-height:1.5;margin:0 0 14px;font-size:15px}
+.lmr{border-block-start:1px solid #eee;padding-block-start:12px}
+.lmrl{font-size:11px;font-weight:700;letter-spacing:.1em;color:#fff;padding-block:4px;padding-inline:10px;border-radius:99px;text-transform:uppercase}
+.lmr ol{margin:10px 0 0;padding-inline-start:20px;line-height:1.7;font-size:15px}
+.lact{display:flex;align-items:center;gap:18px;margin-block-start:16px;flex-wrap:wrap}
+.lbtn{background:#1d4ed8;color:#fff;display:inline-flex;align-items:center;gap:6px;border:0;cursor:pointer;font-weight:700;font-size:15px;border-radius:999px;padding-block:11px;padding-inline:20px;text-decoration:none;transition:background-color .15s ease,transform .15s ease,box-shadow .15s ease}
+.lbtn:hover{background:#1e40af;transform:translateY(-1px);box-shadow:0 6px 16px -4px rgba(29,78,216,.6)}
+.lbtn:active{background:#1e3a8a;transform:translateY(0)}
+.lbtn:focus-visible{outline:2px solid #fff;box-shadow:0 0 0 2px #fff,0 0 0 4px #1d4ed8}
+.lbtn .arr{display:inline-block;transition:transform .15s ease}
+.lbtn:hover .arr,.lbtn:focus-visible .arr{transform:translateX(4px)}
+.lget{color:#1d4ed8;font-size:14px;font-weight:600;text-decoration:none}
+.lget:hover,.lget:focus-visible{text-decoration:underline}
+.lhint{font-size:12px;color:#6b7280;margin-block-start:10px;text-align:center}
+.llh1{font-size:40px!important;line-height:1.1!important;margin:0 0 8px}
+@media (prefers-reduced-motion:reduce){.lrow,.lchev,.lbtn,.lbtn .arr{transition:none}.lbtn:hover{transform:none}}
+.lfeat{display:none}
+@media (max-width:1023px){.lgrid{display:block}.lright .lstick{display:none}.lhint{display:none}.lfeat{display:block;margin-block-end:24px}.lfeat .lpe::before{content:"FEATURED \\00b7 "}}
+</style>`;
+
 function rebuildBriefLatestChooseEdition(thisWeekIssues, oldHtml) {
-  // Fallback: the newest send date has no All Industries issue. Show that
-  // week's issue list instead of an older All Industries issue.
+  // Fallback: the newest send date has no All Industries issue. Show a
+  // two-column list-with-preview-pane (P45 Option A) instead of an older
+  // All Industries issue.
+  const ordered = orderEditionsForChooser(thisWeekIssues);
   const date = thisWeekIssues[0].date;
-  const cards = thisWeekIssues
-    .slice()
-    .sort((a, b) => a.edition.localeCompare(b.edition))
-    .map(i => `<li><a class="cye" href="../../issues/${i.url}" style="--c:${i.c || '#0067b8'}"><span class="ced">${escAttr(i.edition)}</span><span class="ctt">${escAttr(i.title)}</span><span class="cgo" aria-hidden="true">&rarr;</span></a></li>`)
-    .join('');
+  const weekLabel = thisWeekIssues[0].week || `Week of ${niceDate(date)}`;
+
+  const rows = ordered.map((i, idx) => rowHtml(i, idx, idx === 0)).join('');
+  const previews = ordered.map((i, idx) => previewHtml(i, idx, idx === 0, false)).join('');
+  const featured = ordered.length ? previewHtml(ordered[0], 0, true, true) : '';
 
   let html = oldHtml;
   html = html.replace(/<title>[^<]*<\/title>/, `<title>Choose your edition: this week's Brief &middot; The Microsoft Brief</title>`);
   html = html.replace(/<meta property="og:title" content="[^"]*">/, `<meta property="og:title" content="This week's Microsoft Brief &mdash; choose your edition">`);
-  html = html.replace(/<meta property="og:description" content="[^"]*">/, `<meta property="og:description" content="Week of ${escAttr(niceDate(date))}">`);
+  html = html.replace(/<meta property="og:description" content="[^"]*">/, `<meta property="og:description" content="${escAttr(weekLabel)}">`);
   html = html.replace(/<link rel="canonical"[^>]*>\s*/, '');
-  html = html.replace('</head>', `<link rel="canonical" href="https://nfratello.github.io/microsoft-brief/brief/latest/"><style id="cye-css">.cye{display:flex;align-items:center;gap:14px;padding:16px 20px;background:#fff;border:1px solid #dfe5ee;border-left:4px solid var(--c);border-radius:12px;text-decoration:none;color:#0b1b33;transition:box-shadow .15s,transform .15s}.cye:hover{box-shadow:0 8px 20px rgba(7,26,51,.1);transform:translateY(-1px)}.cye:focus-visible{outline:2px solid var(--c);outline-offset:2px}.ced{flex:none;min-width:200px;font-weight:700;color:var(--c);font-size:14px}.ctt{flex:1;font-size:15px}.cgo{flex:none;color:var(--c);font-weight:700}@media (max-width:640px){.cye{flex-direction:column;align-items:flex-start;gap:4px}.ced{min-width:0}}</style></head>`);
+  // Remove any previously-injected cye/llp style blocks before adding a fresh one (idempotent re-runs).
+  html = html.replace(/<style id="cye-css">[\s\S]*?<\/style>/g, '');
+  html = html.replace(/<style id="llp-css">[\s\S]*?<\/style>/g, '');
+  html = html.replace(/<script id="llp-js">[\s\S]*?<\/script>/g, '');
+  html = html.replace('</head>', `<link rel="canonical" href="https://nfratello.github.io/microsoft-brief/brief/latest/">${LLP_STYLE}</head>`);
 
-  // Replace the whole <main>...</main> with a lightweight edition chooser.
+  // Replace the whole <main>...</main> with the list + preview pane layout.
   const mainStart = html.indexOf('<main>');
   const mainEnd = html.indexOf('</main>') + '</main>'.length;
   if (mainStart === -1 || mainEnd === -1) return html;
-  const newMain = `<main><section class="wrap" style="padding-block:40px"><p class="eyebrow" style="color:#0067b8;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px;margin:0 0 8px">Week of ${escAttr(niceDate(date))}</p><h1 style="margin:0 0 8px">Choose your edition</h1><p class="lede" style="margin:0 0 24px;color:#5b6b80">This week's Brief went out by industry. Pick yours to read it.</p><ul style="list-style:none;margin:0;padding:0;display:grid;gap:12px;max-width:720px">${cards}</ul></section></main>`;
+  const newMain = `<main><section class="wrap" style="padding-block:40px"><div class="lgrid"><div class="lleft"><p class="eyebrow" style="color:#0067b8;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px;margin:0 0 8px">${escAttr(weekLabel)}</p><h1 class="llh1" style="margin:0 0 8px">Choose your edition</h1><p class="lede" style="margin:0 0 24px;color:#5b6b80">Pick an industry to preview it. Open it to read the full issue.</p><div class="lfeat">${featured}</div><ul class="lrows" role="list">${rows}</ul></div><div class="lright"><div class="lstick"><div class="lpv-wrap" aria-live="polite">${previews}</div><p class="lhint">Preview updates as you hover or tap an edition.</p></div></div></div></section></main><script id="llp-js">(function(){var rows=[].slice.call(document.querySelectorAll('.lrow'));var pvs=[].slice.call(document.querySelectorAll('.lpv[data-idx]'));function select(idx){rows.forEach(function(r){var on=r.dataset.idx===idx;r.classList.toggle('sel',on);r.setAttribute('aria-current',on?'true':'false')});pvs.forEach(function(p){p.hidden=p.dataset.idx!==idx})}rows.forEach(function(r){r.addEventListener('mouseenter',function(){select(r.dataset.idx)});r.addEventListener('focus',function(){select(r.dataset.idx)})});var B='../../icons/';[].forEach.call(document.querySelectorAll('.ltile[data-fi]'),function(el){var u=B+el.dataset.fi+'_24_filled.svg',im=new Image();im.onload=function(){var sp=document.createElement('span');sp.className='fic';sp.style.setProperty('--m','url("'+u+'")');el.appendChild(sp)};im.src=u})})();</script>`;
   html = html.slice(0, mainStart) + newMain + html.slice(mainEnd);
   return html;
 }
