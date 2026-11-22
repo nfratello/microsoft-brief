@@ -17,7 +17,7 @@ a{color:var(--acc)}.wrap{max-inline-size:var(--page-max);margin-inline:auto;padd
 .hero .wrap{position:relative;z-index:1;inline-size:100%;display:flex;justify-content:flex-end}.hero .in{max-inline-size:520px;padding-block:34px}
 .pill{display:inline-flex;gap:6px;align-items:center;font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:6px 14px;border-radius:999px;color:var(--ink);background:linear-gradient(135deg,var(--gold2),var(--gold))}
 h1{font-size:clamp(34px,4.8vw,54px);line-height:1.05;margin:16px 0 14px;letter-spacing:-1px}.hero p.sub{font-size:19px;color:#d9e2ec;margin:0 0 24px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;text-decoration:none;font-size:16px;border:0;cursor:pointer;font-family:inherit}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;text-decoration:none;font-size:16px;border:0;cursor:pointer;font-family:inherit}.btn .arr{display:inline-block;transition:transform .15s ease}.btn:hover .arr{transform:translateX(4px)}.btn:focus-visible .arr{transform:translateX(4px)}@media (prefers-reduced-motion:reduce){.btn .arr{transition:none}.btn:hover .arr{transform:none}.btn:focus-visible .arr{transform:none}}
 .btn.pri{background:linear-gradient(135deg,var(--gold2),var(--gold));color:var(--ink);box-shadow:0 8px 24px rgba(200,161,101,.35)}.btn.ghost{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.4)}
 .trust{display:flex;gap:16px;flex-wrap:wrap;margin-top:22px;font-size:13px;color:#c9d6e3}.trust span::before{content:"✓ ";color:var(--gold2);font-weight:800}
 section{padding-block:64px}h2{font-size:clamp(26px,3vw,34px);letter-spacing:-.5px;margin:0 0 8px}.lede{color:var(--muted);font-size:17px;margin:0 0 28px;max-inline-size:660px}
@@ -116,7 +116,7 @@ section.first{padding-block:26px 56px}section.first .lede{margin-block-end:20px}
 <header class="hero"><img class="bg" src="../assets/img/hero-executive-wide.jpg?v=e81c29b1" alt="" width="1936" height="816"><div class="wrap"><div class="in">
 <span class="pill">Executive edition</span><h1>Three moves. Three minutes. Every other&nbsp;week.</h1>
 <p class="sub">For C-suite leaders: what changed at Microsoft, what it's worth in revenue, cost, risk and talent, and one question to take to your team.</p>
-<div class="hb"><a class="btn pri" href="#subscribe">Subscribe free →</a><a class="btn ghost" href="#listen">▶ Listen to the latest</a></div></div></div></header>
+<div class="hb"><a class="btn pri" href="#subscribe">Subscribe free →</a><a class="btn ghost" href="#listen">▶ Listen to the latest <span class="arr" aria-hidden="true">›</span></a></div></div></div></header>
 <main>
 <div class="wrap trustbar" role="list" aria-label="What you get"><span role="listitem">Read or listen</span><span role="listitem">Tailored to your industry and role</span><span role="listitem">Public information only</span><span role="listitem">Opt out anytime</span></div>
 <section class="wrap first"><div class="eyebrow">Built for the C-suite</div><h2>Every edition answers four&nbsp;questions</h2><p class="lede">No product tours. No jargon. Just the decisions in front of&nbsp;you.</p>
