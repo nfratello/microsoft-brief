@@ -1,0 +1,33 @@
+Static px-line-height-in-<style> scan: clean.
+
+index.html @ 1920px:
+  [H1] line-height 58.2px smaller than font-size 56.0px across 4 lines (will overlap) "What's new from Microsoft,and why it matters to you."
+
+index.html @ 1440px:
+  [H1] line-height 58.2px smaller than font-size 56.0px across 4 lines (will overlap) "What's new from Microsoft,and why it matters to you."
+
+index.html @ 1024px:
+  [H1] line-height 46.9px smaller than font-size 45.1px across 4 lines (will overlap) "What's new from Microsoft,and why it matters to you."
+
+index.html @ 768px:
+  [H1] line-height 35.4px smaller than font-size 34.0px across 4 lines (will overlap) "What's new from Microsoft,and why it matters to you."
+
+index.html @ 390px:
+  [H1] line-height 35.4px smaller than font-size 34.0px across 6 lines (will overlap) "What's new from Microsoft,and why it matters to you."
+
+brief/index.html @ 1024px:
+  [BODY] horizontal overflow (1389px content in 1024px viewport)
+
+brief/index.html @ 768px:
+  [BODY] horizontal overflow (1380px content in 768px viewport)
+
+brief/index.html @ 390px:
+  [BODY] horizontal overflow (1368px content in 390px viewport)
+
+hospitality/index.html @ 390px:
+  [BODY] horizontal overflow (393px content in 390px viewport)
+
+telecom-media/index.html @ 390px:
+  [BODY] horizontal overflow (393px content in 390px viewport)
+
+10 rendered overlap/clip issue(s) across 8 page(s) at 5 widths; 0 unexempted px line-height(s) in <style> blocks.

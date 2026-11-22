@@ -12,6 +12,7 @@ const CHECKS = [
   ['numbers (advisory)', 'numbers-check.js'],
   ['contrast', 'contrast-check.js'],
   ['orphan (rendered)', 'orphan-check.js'],
+  ['overlap (rendered)', 'overlap-check.js'],
 ];
 
 const results = [];

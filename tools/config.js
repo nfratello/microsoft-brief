@@ -13,7 +13,8 @@ module.exports = {
     'hospitality/index.html',
     'telecom-media/index.html',
     'issues/index.html',
+    'issues/2026-11-18-manufacturing-002.html',
     'brief/latest/index.html',
   ],
-  widths: [1920, 1440, 1240, 1024, 390],
+  widths: [1920, 1440, 1024, 768, 390],
 };

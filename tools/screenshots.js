@@ -1,7 +1,9 @@
 #!/usr/bin/env node
-/* tools/screenshots.js — captures configured pages at 1920/1440/1240/1024/390
- * px into tools/screenshots/ (gitignored, never published). Uses the local
- * static server + playwright-core/msedge (no browser download).
+/* tools/screenshots.js — captures configured pages at every tools/config.js
+ * width (390/768/1024/1440/1920) into a dated tools/screenshots/<date>/
+ * folder (gitignored, never published) so each sweep is kept distinct from
+ * the last. Uses the local static server + playwright-core/msedge (no
+ * browser download).
  * Usage: node tools/screenshots.js [path/to/page.html ...] */
 'use strict';
 const fs = require('fs');
@@ -11,7 +13,8 @@ const config = require('./config');
 
 async function main() {
   const pages = process.argv.slice(2).length ? process.argv.slice(2) : config.pages;
-  const outDir = path.join(__dirname, 'screenshots');
+  const dateStamp = new Date().toISOString().slice(0, 10);
+  const outDir = path.join(__dirname, 'screenshots', dateStamp);
   fs.mkdirSync(outDir, { recursive: true });
   const { server, port } = await startStaticServer();
   const browser = await launchBrowser();
