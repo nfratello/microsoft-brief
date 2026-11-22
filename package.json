@@ -1,11 +1,16 @@
 {
   "name": "microsoft-brief",
   "private": true,
-  "description": "Static site scripts for The Microsoft Brief (P39: automated 'This week' rebuild).",
+  "description": "Static site scripts for The Microsoft Brief (P39: automated 'This week' rebuild; P41: tools/ checks).",
   "scripts": {
     "build:issues": "node scripts/build-issues-manifest.js",
     "build:latest": "node scripts/build-brief-latest.js",
     "check:staleness": "node scripts/check-staleness.js",
-    "rebuild": "npm run build:issues && npm run build:latest && npm run check:staleness"
+    "rebuild": "npm run build:issues && npm run build:latest && npm run check:staleness",
+    "check-all": "node tools/check-all.js",
+    "deploy": "node tools/deploy.js"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.65.1"
   }
 }
