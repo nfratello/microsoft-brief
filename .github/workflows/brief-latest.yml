@@ -1,0 +1,54 @@
+name: Rebuild Brief "This week"
+
+# P39: regenerates the issues manifest (issues/issues.json), the archive's
+# LATEST tags, every /brief/latest/ and /<edition>/latest/ "This week" view,
+# and the edition preview snapshots (preview/*.html) from the newest issue
+# files — never by hand. Fails (and keeps the previous published version)
+# if the staleness check fails, so a half-built site is never deployed.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'issues/**'
+      - 'scripts/**'
+  schedule:
+    # 06:00 America/New_York. GitHub Actions cron is UTC; 06:00 ET is
+    # 11:00 UTC during EST (Nov-Mar) and 10:00 UTC during EDT (Mar-Nov).
+    # Run both and let the staleness/no-op check make the extra run a no-op.
+    - cron: '0 11 * * *'
+    - cron: '0 10 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Rebuild issues manifest, This week and edition previews
+        run: npm run build:issues && npm run build:latest
+
+      - name: Staleness check
+        run: npm run check:staleness
+
+      - name: Commit regenerated files
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add issues/issues.json issues/index.html brief/latest/index.html preview/*.html
+          if git diff --cached --quiet; then
+            echo "Nothing to commit — already up to date."
+          else
+            git commit -m "Auto: rebuild This week from issues manifest [skip ci]"
+            git push
+          fi

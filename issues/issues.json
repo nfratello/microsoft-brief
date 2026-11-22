@@ -1,296 +1,1683 @@
 [
  {
-  "date": "2026-11-18",
-  "edition": "Telecommunications, Media & Gaming",
-  "no": 2,
+  "url": "2026-11-18-telecom-media-002.html",
   "title": "Network agents that learn from experts, and a win for press freedom",
-  "url": "2026-11-18-telecom-media-002.html"
+  "edition": "Telecom & Media",
+  "date": "2026-11-18",
+  "nice": "Nov 18, 2026",
+  "label": "Issue No. 2",
+  "exec": false,
+  "acc": "#a21caf",
+  "deep": "#2a0f3a",
+  "icon": "tv",
+  "emoji": "📡",
+  "q": [
+   "How did KT cut network fault detection to 2 to 3 minutes?",
+   "What did the Fourth Circuit say about journalists' data?",
+   "How is Publicis building agents with Microsoft?"
+  ],
+  "prods": [
+   "Microsoft Foundry",
+   "Security",
+   "Copilot Studio",
+   "Dynamics 365"
+  ],
+  "rt": "3½ min read",
+  "get": "../telecom-media/#subscribe",
+  "img": "em-telecom-media-hero-002.jpg",
+  "ind": "Telecom & Media",
+  "c": "#a21caf",
+  "fi": "tv",
+  "em": "📺",
+  "kind": "Issue No. 2",
+  "mon": "NOV",
+  "day": 18,
+  "k3": [
+   "KT's AI agents find network faults in minutes",
+   "Court limits secret demands for journalists' data",
+   "500 AI projects in, here is what works"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-18",
-  "edition": "State & Local Government and Education",
-  "no": 2,
+  "url": "2026-11-18-state-local-edu-002.html",
   "title": "A new classroom hub, a university deal and Cowork for government",
-  "url": "2026-11-18-state-local-edu-002.html"
+  "edition": "State & Local Government and Education",
+  "date": "2026-11-18",
+  "nice": "Nov 18, 2026",
+  "label": "Issue No. 2",
+  "exec": false,
+  "acc": "#4f46e5",
+  "deep": "#0b2a4a",
+  "icon": "building_government",
+  "emoji": "🏛️",
+  "q": [
+   "What is Microsoft Classroom?",
+   "What is Ohio State building with Microsoft?",
+   "Can agencies use Copilot Cowork in GCC?"
+  ],
+  "prods": [
+   "Microsoft Copilot",
+   "Azure",
+   "Microsoft Foundry"
+  ],
+  "rt": "3 min read",
+  "get": "../state-local-edu/#subscribe",
+  "img": "em-state-local-edu-hero-002.jpg",
+  "ind": "State, Local & Education",
+  "c": "#4f46e5",
+  "fi": "building_government",
+  "em": "🏛",
+  "kind": "Issue No. 2",
+  "mon": "NOV",
+  "day": 18,
+  "k3": [
+   "Microsoft Classroom brings teaching tools together",
+   "Ohio State and Microsoft sign five-year deal",
+   "Copilot Cowork goes live in GCC"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-18",
-  "edition": "Retail & Consumer Goods",
-  "no": 2,
+  "url": "2026-11-18-retail-002.html",
   "title": "Consumer brands put AI on the factory floor and the budget sheet",
-  "url": "2026-11-18-retail-002.html"
+  "edition": "Retail & Consumer Goods",
+  "date": "2026-11-18",
+  "nice": "Nov 18, 2026",
+  "label": "Issue No. 2",
+  "exec": false,
+  "acc": "#be123c",
+  "deep": "#3a1020",
+  "icon": "cart",
+  "emoji": "🛍️",
+  "q": [
+   "What is Unilever's digital twin doing?",
+   "Which AI tool cost least for the same work?",
+   "What do Frontier Firms do differently?"
+  ],
+  "prods": [
+   "Microsoft Copilot",
+   "Dynamics 365",
+   "Copilot Studio"
+  ],
+  "rt": "3 min read",
+  "get": "../retail/#subscribe",
+  "img": "em-retail-hero-002.jpg",
+  "ind": "Retail & Consumer Goods",
+  "c": "#be123c",
+  "fi": "cart",
+  "em": "🛒",
+  "kind": "Issue No. 2",
+  "mon": "NOV",
+  "day": 18,
+  "k3": [
+   "Inside Unilever's AI factory work",
+   "Same AI work, very different monthly bills",
+   "Frontier Firms see 4x returns on AI"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-18",
-  "edition": "Professional Services",
-  "no": 2,
+  "url": "2026-11-18-professional-services-002.html",
   "title": "Firms turn their know-how into AI that serves clients",
-  "url": "2026-11-18-professional-services-002.html"
+  "edition": "Professional Services",
+  "date": "2026-11-18",
+  "nice": "Nov 18, 2026",
+  "label": "Issue No. 2",
+  "exec": false,
+  "acc": "#a16207",
+  "deep": "#2a2006",
+  "icon": "briefcase",
+  "emoji": "💼",
+  "q": [
+   "How is Publicis turning expertise into AI skills?",
+   "Can Copilot draft from Moody's and FactSet data?",
+   "What does AI at work really cost?"
+  ],
+  "prods": [
+   "Microsoft Copilot",
+   "Copilot Studio"
+  ],
+  "rt": "3 min read",
+  "get": "../professional-services/#subscribe",
+  "img": "em-professional-services-hero-002.jpg",
+  "ind": "Professional Services",
+  "c": "#a16207",
+  "fi": "briefcase",
+  "em": "💼",
+  "kind": "Issue No. 2",
+  "mon": "NOV",
+  "day": 18,
+  "k3": [
+   "Publicis builds agents on its own expertise",
+   "Copilot taps Moody's, LSEG and FactSet data",
+   "Same AI work, very different monthly bills"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-18",
-  "edition": "Manufacturing & Mobility",
-  "no": 2,
+  "url": "2026-11-18-manufacturing-002.html",
   "title": "Engineers in the lab and on the line: AI gets to work in industry",
-  "url": "2026-11-18-manufacturing-002.html"
+  "edition": "Manufacturing & Mobility",
+  "date": "2026-11-18",
+  "nice": "Nov 18, 2026",
+  "label": "Issue No. 2",
+  "exec": false,
+  "acc": "#a16207",
+  "deep": "#10233f",
+  "icon": "building_factory",
+  "emoji": "🏭",
+  "q": [
+   "How did Saint-Gobain build a year's research base in hours?",
+   "What are 3M and Unilever building with Microsoft engineers?",
+   "What do Frontier Firms do that others don't?"
+  ],
+  "prods": [
+   "Azure",
+   "Microsoft Copilot",
+   "Copilot Studio"
+  ],
+  "rt": "3½ min read",
+  "get": "../manufacturing/#subscribe",
+  "img": "em-manufacturing-hero-002.jpg",
+  "ind": "Manufacturing & Mobility",
+  "c": "#a16207",
+  "fi": "building_factory",
+  "em": "🏭",
+  "kind": "Issue No. 2",
+  "mon": "NOV",
+  "day": 18,
+  "k3": [
+   "AI helps Saint-Gobain chase a lower-carbon cement",
+   "Inside Unilever's and 3M's AI projects",
+   "Frontier Firms see 4x returns on AI"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-18",
-  "edition": "Hospitality & Travel",
-  "no": 2,
+  "url": "2026-11-18-hospitality-002.html",
   "title": "AI moves from pilot to payback for travel and hotel brands",
-  "url": "2026-11-18-hospitality-002.html"
+  "edition": "Hospitality & Travel",
+  "date": "2026-11-18",
+  "nice": "Nov 18, 2026",
+  "label": "Issue No. 2",
+  "exec": false,
+  "acc": "#0e7490",
+  "deep": "#0b2a4a",
+  "icon": "airplane",
+  "emoji": "✈️",
+  "q": [
+   "What do 200+ Frontier customers have in common?",
+   "Which AI tool cost least for the same work?",
+   "How do you get staff to keep using a new agent?"
+  ],
+  "prods": [
+   "Microsoft Copilot",
+   "Dynamics 365",
+   "Copilot Studio"
+  ],
+  "rt": "3½ min read",
+  "get": "../hospitality/#subscribe",
+  "img": "em-hospitality-hero-002.jpg",
+  "ind": "Hospitality & Travel",
+  "c": "#0e7490",
+  "fi": "airplane",
+  "em": "✈",
+  "kind": "Issue No. 2",
+  "mon": "NOV",
+  "day": 18,
+  "k3": [
+   "500 AI projects in, here is what works",
+   "Same AI work, very different monthly bills",
+   "Turning AI on is the start, not the finish"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-18",
-  "edition": "High Tech & Software",
-  "no": 2,
+  "url": "2026-11-18-high-tech-002.html",
   "title": "New silicon, agent PCs and the real cost of AI at work",
-  "url": "2026-11-18-high-tech-002.html"
+  "edition": "High Tech & Software",
+  "date": "2026-11-18",
+  "nice": "Nov 18, 2026",
+  "label": "Issue No. 2",
+  "exec": false,
+  "acc": "#6d28d9",
+  "deep": "#1a1240",
+  "icon": "laptop",
+  "emoji": "💻",
+  "q": [
+   "What is Microsoft building with Intel for Azure?",
+   "Why would an AI agent need its own PC?",
+   "Which AI tool cost least for the same tasks?"
+  ],
+  "prods": [
+   "Azure",
+   "Microsoft Copilot",
+   "Copilot Studio"
+  ],
+  "rt": "3½ min read",
+  "get": "../high-tech/#subscribe",
+  "img": "em-high-tech-hero-002.jpg",
+  "ind": "High Tech & Software",
+  "c": "#6d28d9",
+  "fi": "laptop",
+  "em": "💻",
+  "kind": "Issue No. 2",
+  "mon": "NOV",
+  "day": 18,
+  "k3": [
+   "Microsoft and Intel expand their Azure deal",
+   "AI agents get their own managed Cloud PCs",
+   "Same AI work, very different monthly bills"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-18",
-  "edition": "Healthcare & Life Sciences",
-  "no": 2,
+  "url": "2026-11-18-healthcare-002.html",
   "title": "AI moves into hospital safety reviews and the clinician's workflow",
-  "url": "2026-11-18-healthcare-002.html"
+  "edition": "Healthcare & Life Sciences",
+  "date": "2026-11-18",
+  "nice": "Nov 18, 2026",
+  "label": "Issue No. 2",
+  "exec": false,
+  "acc": "#0f766e",
+  "deep": "#0b3140",
+  "icon": "heart_pulse",
+  "emoji": "🩺",
+  "q": [
+   "What is Ohio State moving to Azure?",
+   "How does Apollo close 60% of safety cases in three days?",
+   "What can clinicians now ask Dragon Copilot?"
+  ],
+  "prods": [
+   "Azure",
+   "Microsoft Foundry",
+   "Microsoft Copilot"
+  ],
+  "rt": "3 min read",
+  "get": "../healthcare/#subscribe",
+  "img": "em-healthcare-hero-002.jpg",
+  "ind": "Healthcare & Life Sciences",
+  "c": "#0f766e",
+  "fi": "heart_pulse",
+  "em": "🩺",
+  "kind": "Issue No. 2",
+  "mon": "NOV",
+  "day": 18,
+  "k3": [
+   "Ohio State and Microsoft sign five-year deal",
+   "Apollo's AI agent speeds patient safety reviews",
+   "Dragon Copilot can now search your work files"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-18",
-  "edition": "Financial Services",
-  "no": 2,
+  "url": "2026-11-18-financial-services-002.html",
   "title": "From pilots to production: how six financial firms run AI with control",
-  "url": "2026-11-18-financial-services-002.html"
+  "edition": "Financial Services",
+  "date": "2026-11-18",
+  "nice": "Nov 18, 2026",
+  "label": "Issue No. 2",
+  "exec": false,
+  "acc": "#1d4ed8",
+  "deep": "#0a2540",
+  "icon": "building_bank",
+  "emoji": "🏦",
+  "q": [
+   "How did ABN AMRO cut financial crime queries by 90%?",
+   "Can Copilot use Moody's and LSEG data?",
+   "What return do Frontier Firms see on AI?"
+  ],
+  "prods": [
+   "Microsoft Foundry",
+   "Microsoft Copilot",
+   "Azure"
+  ],
+  "rt": "3 min read",
+  "get": "../financial-services/#subscribe",
+  "img": "em-financial-services-hero-002.jpg",
+  "ind": "Financial Services",
+  "c": "#1d4ed8",
+  "fi": "building_bank",
+  "em": "🏦",
+  "kind": "Issue No. 2",
+  "mon": "NOV",
+  "day": 18,
+  "k3": [
+   "Six financial firms show AI in production",
+   "Copilot taps Moody's, LSEG and FactSet data",
+   "Frontier Firms see 4x returns on AI"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-18",
-  "edition": "Federal Government",
-  "no": 2,
+  "url": "2026-11-18-federal-002.html",
   "title": "A veteran-built agent and Cowork arrives in GCC",
-  "url": "2026-11-18-federal-002.html"
+  "edition": "Federal Government",
+  "date": "2026-11-18",
+  "nice": "Nov 18, 2026",
+  "label": "Issue No. 2",
+  "exec": false,
+  "acc": "#9f1239",
+  "deep": "#101c33",
+  "icon": "building_government",
+  "emoji": "🦅",
+  "q": [
+   "How did a VA analyst build an AI agent for veterans?",
+   "Can agencies use Copilot Cowork in GCC?",
+   "How fast should agencies patch now?"
+  ],
+  "prods": [
+   "Copilot Studio",
+   "Microsoft Copilot",
+   "Security"
+  ],
+  "rt": "3 min read",
+  "get": "../federal/#subscribe",
+  "img": "em-federal-hero-002.jpg",
+  "ind": "Federal Government",
+  "c": "#9f1239",
+  "fi": "flag",
+  "em": "🏛",
+  "kind": "Issue No. 2",
+  "mon": "NOV",
+  "day": 18,
+  "k3": [
+   "A VA analyst builds a benefits agent for veterans",
+   "Copilot Cowork goes live in GCC",
+   "Patch faster as AI finds more flaws"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-18",
-  "edition": "Energy & Utilities",
-  "no": 2,
+  "url": "2026-11-18-energy-002.html",
   "title": "AI for carbon removal and the data behind energy operations",
-  "url": "2026-11-18-energy-002.html"
- },
- {
+  "edition": "Energy & Utilities",
   "date": "2026-11-18",
-  "edition": "Defense Industry",
-  "no": 2,
+  "nice": "Nov 18, 2026",
+  "label": "Issue No. 2",
+  "exec": false,
+  "acc": "#15803d",
+  "deep": "#14280f",
+  "icon": "flash",
+  "emoji": "⚡",
+  "q": [
+   "How could AI make carbon removal cheaper to verify?",
+   "What do Frontier Firms do differently?",
+   "Which AI tool cost least for the same work?"
+  ],
+  "prods": [
+   "Azure",
+   "Microsoft Copilot"
+  ],
+  "rt": "3 min read",
+  "get": "../energy/#subscribe",
+  "img": "th-energy-002.jpg",
+  "ind": "Energy & Utilities",
+  "c": "#15803d",
+  "fi": "flash",
+  "em": "⚡",
+  "kind": "Issue No. 2",
+  "mon": "NOV",
+  "day": 18,
+  "k3": [
+   "An AI model to measure carbon removal",
+   "Frontier Firms see 4x returns on AI",
+   "Same AI work, very different monthly bills"
+  ],
+  "cta": "Read the issue",
+  "first": false
+ },
+ {
+  "url": "2026-11-18-defense-002.html",
   "title": "Cloud and AI at the tactical edge, with control kept local",
-  "url": "2026-11-18-defense-002.html"
+  "edition": "Defense Industry",
+  "date": "2026-11-18",
+  "nice": "Nov 18, 2026",
+  "label": "Issue No. 2",
+  "exec": false,
+  "acc": "#4d7c0f",
+  "deep": "#1b2420",
+  "icon": "shield",
+  "emoji": "🛡️",
+  "q": [
+   "Can AI run without a cloud connection?",
+   "How fast should defense IT patch now?",
+   "When does Cowork reach GCC High?"
+  ],
+  "prods": [
+   "Azure",
+   "Security",
+   "Microsoft Copilot"
+  ],
+  "rt": "3 min read",
+  "get": "../defense/#subscribe",
+  "img": "em-defense-hero-002.jpg",
+  "ind": "Defense Industry",
+  "c": "#4d7c0f",
+  "fi": "shield",
+  "em": "🛡",
+  "kind": "Issue No. 2",
+  "mon": "NOV",
+  "day": 18,
+  "k3": [
+   "Running cloud and AI at the mission edge",
+   "Patch faster as AI finds more flaws",
+   "Copilot Cowork goes live in GCC"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-17",
-  "edition": "Telecommunications, Media & Gaming",
-  "no": 0,
+  "url": "2026-11-17-telecom-media-ignite-recap.html",
   "title": "Ignite 2026 recap: what it means for telecom and media",
-  "url": "2026-11-17-telecom-media-ignite-recap.html"
+  "edition": "Telecom & Media",
+  "date": "2026-11-17",
+  "nice": "Nov 17, 2026",
+  "label": "Issue No. 0",
+  "exec": false,
+  "acc": "#a21caf",
+  "deep": "#2a0f3a",
+  "icon": "tv",
+  "emoji": "📡",
+  "q": [
+   "Dynamics 365 in Copilot. Contact Center Intelligence layers AI agents on existing contact centers, so care teams can handle more without replacing platforms.",
+   "Microsoft Perception is generally available. Security agents that triage about 80% of alerts help protect large networks and subscriber data around the clock.",
+   "Copilot becomes the place work gets done. Marketing, content and care teams can work across Word, Excel and PowerPoint inside one Copilot home."
+  ],
+  "prods": [
+   "Dynamics 365",
+   "Security",
+   "Microsoft Copilot",
+   "Azure"
+  ],
+  "rt": "3½ min read",
+  "get": "../telecom-media/#subscribe",
+  "img": "th-telecom-media-ignite.jpg",
+  "ind": "Telecom & Media",
+  "c": "#a21caf",
+  "fi": "tv",
+  "em": "📺",
+  "kind": "Ignite 2026 recap",
+  "mon": "NOV",
+  "day": 17,
+  "k3": [
+   "Dynamics 365 in Copilot",
+   "Microsoft Perception is generally available",
+   "Copilot becomes the place work gets done"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-17",
-  "edition": "State & Local Government and Education",
-  "no": 0,
+  "url": "2026-11-17-state-local-edu-ignite-recap.html",
   "title": "Ignite 2026 recap: what it means for public sector",
-  "url": "2026-11-17-state-local-edu-ignite-recap.html"
- },
- {
-  "date": "2026-11-17",
-  "edition": "Retail & Consumer Goods",
-  "no": 0,
-  "title": "Ignite 2026 recap: what it means for retail",
-  "url": "2026-11-17-retail-ignite-recap.html"
- },
- {
-  "date": "2026-11-17",
-  "edition": "Professional Services",
-  "no": 0,
-  "title": "Ignite 2026 recap: what it means for professional services",
-  "url": "2026-11-17-professional-services-ignite-recap.html"
- },
- {
-  "date": "2026-11-17",
-  "edition": "Manufacturing & Mobility",
-  "no": 0,
-  "title": "Ignite 2026 recap: what it means for manufacturing",
-  "url": "2026-11-17-manufacturing-ignite-recap.html"
- },
- {
-  "date": "2026-11-17",
-  "edition": "Hospitality & Travel",
-  "no": 0,
-  "title": "Ignite 2026 recap: what it means for travel",
-  "url": "2026-11-17-hospitality-ignite-recap.html"
- },
- {
-  "date": "2026-11-17",
-  "edition": "High Tech & Software",
-  "no": 0,
-  "title": "Ignite 2026 recap: what it means for tech",
-  "url": "2026-11-17-high-tech-ignite-recap.html"
- },
- {
-  "date": "2026-11-17",
-  "edition": "Healthcare & Life Sciences",
-  "no": 0,
-  "title": "Ignite 2026 recap: what it means for healthcare",
-  "url": "2026-11-17-healthcare-ignite-recap.html"
- },
- {
-  "date": "2026-11-17",
-  "edition": "Financial Services",
-  "no": 0,
-  "title": "Ignite 2026 recap: what it means for financial services",
-  "url": "2026-11-17-financial-services-ignite-recap.html"
- },
- {
-  "date": "2026-11-17",
-  "edition": "Federal Government",
-  "no": 0,
-  "title": "Ignite 2026 recap: what it means for federal",
-  "url": "2026-11-17-federal-ignite-recap.html"
- },
- {
-  "date": "2026-11-17",
-  "edition": "Energy & Utilities",
-  "no": 0,
-  "title": "Ignite 2026 recap: what it means for energy",
-  "url": "2026-11-17-energy-ignite-recap.html"
- },
- {
-  "date": "2026-11-17",
-  "edition": "Defense Industry",
-  "no": 0,
-  "title": "Ignite 2026 recap: what it means for defense industry",
-  "url": "2026-11-17-defense-ignite-recap.html"
- },
- {
-  "date": "2026-11-17",
-  "edition": "All Industries",
-  "no": 0,
-  "title": "Ignite 2026 recap: what was announced, and why it matters",
-  "url": "2026-11-17-ignite-recap.html"
- },
- {
-  "date": "2026-11-09",
-  "edition": "Telecommunications, Media & Gaming",
-  "no": 1,
-  "title": "Networks and audience data become the AI growth play",
-  "url": "2026-11-09-telecom-media-001.html"
- },
- {
-  "date": "2026-11-09",
   "edition": "State & Local Government and Education",
-  "no": 1,
-  "title": "Safer student AI and what the best cities do differently",
-  "url": "2026-11-09-state-local-edu-001.html"
+  "date": "2026-11-17",
+  "nice": "Nov 17, 2026",
+  "label": "Issue No. 0",
+  "exec": false,
+  "acc": "#4f46e5",
+  "deep": "#0b2a4a",
+  "icon": "building_government",
+  "emoji": "🏛️",
+  "q": [
+   "Copilot becomes the place work gets done. Staff can create, edit and summarize documents inside Copilot, freeing time for residents and students.",
+   "Agent 365: FinOps for AI. Agencies and schools can see and control AI spend with policies, limits and alerts.",
+   "Microsoft Perception is generally available. Security agents that triage alerts help small security teams protect public systems."
+  ],
+  "prods": [
+   "Microsoft Copilot",
+   "Security",
+   "Copilot Studio"
+  ],
+  "rt": "3½ min read",
+  "get": "../state-local-edu/#subscribe",
+  "img": "th-state-local-edu-ignite.jpg",
+  "ind": "State, Local & Education",
+  "c": "#4f46e5",
+  "fi": "building_government",
+  "em": "🏛",
+  "kind": "Ignite 2026 recap",
+  "mon": "NOV",
+  "day": 17,
+  "k3": [
+   "Copilot becomes the place work gets done",
+   "Agent 365: FinOps for AI",
+   "Microsoft Perception is generally available"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-09",
+  "url": "2026-11-17-retail-ignite-recap.html",
+  "title": "Ignite 2026 recap: what it means for retail",
   "edition": "Retail & Consumer Goods",
-  "no": 1,
-  "title": "Consumer brands connect their data and gear up for the holidays",
-  "url": "2026-11-09-retail-001.html"
+  "date": "2026-11-17",
+  "nice": "Nov 17, 2026",
+  "label": "Issue No. 0",
+  "exec": false,
+  "acc": "#be123c",
+  "deep": "#3a1020",
+  "icon": "cart",
+  "emoji": "🛍️",
+  "q": [
+   "Dynamics 365 in Copilot. Contact Center Intelligence and the Customer Service plugin help service teams handle holiday peaks without new platforms.",
+   "Copilotforce: Salesforce in Copilot, Teams and Fabric. Brands on Salesforce can query Fabric data from Data 360 without copying it, for sharper segments and service.",
+   "Copilot becomes the place work gets done. Merchandising and store teams can build trackers and dashboards in plain language."
+  ],
+  "prods": [
+   "Dynamics 365",
+   "Copilot",
+   "Microsoft Copilot",
+   "Copilot Studio"
+  ],
+  "rt": "3½ min read",
+  "get": "../retail/#subscribe",
+  "img": "th-retail-ignite.jpg",
+  "ind": "Retail & Consumer Goods",
+  "c": "#be123c",
+  "fi": "cart",
+  "em": "🛒",
+  "kind": "Ignite 2026 recap",
+  "mon": "NOV",
+  "day": 17,
+  "k3": [
+   "Dynamics 365 in Copilot",
+   "Copilotforce: Salesforce in Copilot, Teams and Fabric",
+   "Copilot becomes the place work gets done"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-09",
+  "url": "2026-11-17-professional-services-ignite-recap.html",
+  "title": "Ignite 2026 recap: what it means for professional services",
   "edition": "Professional Services",
-  "no": 1,
-  "title": "Copilot learns law and accounting, inside Word and Excel",
-  "url": "2026-11-09-professional-services-001.html"
+  "date": "2026-11-17",
+  "nice": "Nov 17, 2026",
+  "label": "Issue No. 0",
+  "exec": false,
+  "acc": "#a16207",
+  "deep": "#2a2006",
+  "icon": "briefcase",
+  "emoji": "💼",
+  "q": [
+   "Copilot becomes the place work gets done. Home, Workspaces and Autopilot let teams draft, analyze and keep client projects moving in one shared space.",
+   "Dynamics 365 in Copilot. Project, finance and sales skills in Copilot help partners plan accounts and track work without switching apps.",
+   "Agent 365: FinOps for AI. Firms can see AI cost by practice and measure the value it adds to billable work."
+  ],
+  "prods": [
+   "Microsoft Copilot",
+   "Dynamics 365",
+   "Copilot"
+  ],
+  "rt": "3½ min read",
+  "get": "../professional-services/#subscribe",
+  "img": "th-professional-services-ignite.jpg",
+  "ind": "Professional Services",
+  "c": "#a16207",
+  "fi": "briefcase",
+  "em": "💼",
+  "kind": "Ignite 2026 recap",
+  "mon": "NOV",
+  "day": 17,
+  "k3": [
+   "Copilot becomes the place work gets done",
+   "Dynamics 365 in Copilot",
+   "Agent 365: FinOps for AI"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-09",
+  "url": "2026-11-17-manufacturing-ignite-recap.html",
+  "title": "Ignite 2026 recap: what it means for manufacturing",
   "edition": "Manufacturing & Mobility",
-  "no": 1,
-  "title": "Machines as a subscription, supplier slips caught by agents, and agents that start themselves",
-  "url": "2026-11-09-manufacturing-mobility-001.html"
+  "date": "2026-11-17",
+  "nice": "Nov 17, 2026",
+  "label": "Issue No. 0",
+  "exec": false,
+  "acc": "#a16207",
+  "deep": "#10233f",
+  "icon": "building_factory",
+  "emoji": "🏭",
+  "q": [
+   "Dynamics 365 in Copilot. 39+ ERP skills bring purchase requisitions, requests for quotes and purchase orders into Copilot and Excel, where planners already work.",
+   "Microsoft IQ and better agents. Agents grounded in your specs, maintenance history and supplier data can answer like an experienced engineer.",
+   "Copilot becomes the place work gets done. Plant and supply chain teams can build their own trackers and dashboards in plain language."
+  ],
+  "prods": [
+   "Dynamics 365",
+   "Copilot Studio",
+   "Microsoft Copilot",
+   "Azure"
+  ],
+  "rt": "3½ min read",
+  "get": "../manufacturing/#subscribe",
+  "img": "th-manufacturing-ignite.jpg",
+  "ind": "Manufacturing & Mobility",
+  "c": "#a16207",
+  "fi": "building_factory",
+  "em": "🏭",
+  "kind": "Ignite 2026 recap",
+  "mon": "NOV",
+  "day": 17,
+  "k3": [
+   "Dynamics 365 in Copilot",
+   "Microsoft IQ and better agents",
+   "Copilot becomes the place work gets done"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-09",
+  "url": "2026-11-17-hospitality-ignite-recap.html",
+  "title": "Ignite 2026 recap: what it means for travel",
   "edition": "Hospitality & Travel",
-  "no": 1,
-  "title": "Executive: AI agents in the reservations center, the booking path and guest data",
-  "url": "2026-11-09-hospitality-travel-001-executive.html"
+  "date": "2026-11-17",
+  "nice": "Nov 17, 2026",
+  "label": "Issue No. 0",
+  "exec": false,
+  "acc": "#0e7490",
+  "deep": "#0b2a4a",
+  "icon": "airplane",
+  "emoji": "✈️",
+  "q": [
+   "Dynamics 365 in Copilot. Contact Center Intelligence adds AI agents on top of the contact center you already run, so peak-season call spikes need fewer handoffs.",
+   "Copilot becomes the place work gets done. Revenue, loyalty and operations teams can build trackers and dashboards in plain language, without waiting on IT.",
+   "Agent 365: FinOps for AI. As agents take on rebooking and guest requests, leaders can see what they cost and what they deliver per property or route."
+  ],
+  "prods": [
+   "Dynamics 365",
+   "Microsoft Copilot",
+   "Copilot Studio"
+  ],
+  "rt": "3½ min read",
+  "get": "../hospitality/#subscribe",
+  "img": "th-hospitality-ignite.jpg",
+  "ind": "Hospitality & Travel",
+  "c": "#0e7490",
+  "fi": "airplane",
+  "em": "✈",
+  "kind": "Ignite 2026 recap",
+  "mon": "NOV",
+  "day": 17,
+  "k3": [
+   "Dynamics 365 in Copilot",
+   "Copilot becomes the place work gets done",
+   "Agent 365: FinOps for AI"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-09",
-  "edition": "Hospitality & Travel",
-  "no": 1,
-  "title": "AI agents in the reservations center, the booking path and guest data",
-  "url": "2026-11-09-hospitality-travel-001.html"
- },
- {
-  "date": "2026-11-09",
+  "url": "2026-11-17-high-tech-ignite-recap.html",
+  "title": "Ignite 2026 recap: what it means for tech",
   "edition": "High Tech & Software",
-  "no": 1,
-  "title": "The engine behind Microsoft's Copilots opens up to builders",
-  "url": "2026-11-09-high-tech-001.html"
+  "date": "2026-11-17",
+  "nice": "Nov 17, 2026",
+  "label": "Issue No. 0",
+  "exec": false,
+  "acc": "#6d28d9",
+  "deep": "#1a1240",
+  "icon": "laptop",
+  "emoji": "💻",
+  "q": [
+   "Microsoft IQ and better agents. Foundry's evaluation and agent optimizer let product teams measure and improve agent quality before customers notice.",
+   "Copilot becomes the place work gets done. Copilot Code and Autopilot let every team, not just engineering, build tools and delegate ongoing work.",
+   "Copilotforce: Salesforce in Copilot, Teams and Fabric. Sales teams running Salesforce get pipeline, close planning and deal reviews inside Copilot."
+  ],
+  "prods": [
+   "Copilot Studio",
+   "Microsoft Copilot",
+   "Copilot",
+   "Azure"
+  ],
+  "rt": "3½ min read",
+  "get": "../high-tech/#subscribe",
+  "img": "th-high-tech-ignite.jpg",
+  "ind": "High Tech & Software",
+  "c": "#6d28d9",
+  "fi": "laptop",
+  "em": "💻",
+  "kind": "Ignite 2026 recap",
+  "mon": "NOV",
+  "day": 17,
+  "k3": [
+   "Microsoft IQ and better agents",
+   "Copilot becomes the place work gets done",
+   "Copilotforce: Salesforce in Copilot, Teams and Fabric"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-09",
+  "url": "2026-11-17-healthcare-ignite-recap.html",
+  "title": "Ignite 2026 recap: what it means for healthcare",
   "edition": "Healthcare & Life Sciences",
-  "no": 1,
-  "title": "AI moves into the clinical core, from trials to the EHR",
-  "url": "2026-11-09-healthcare-001.html"
+  "date": "2026-11-17",
+  "nice": "Nov 17, 2026",
+  "label": "Issue No. 0",
+  "exec": false,
+  "acc": "#0f766e",
+  "deep": "#0b3140",
+  "icon": "heart_pulse",
+  "emoji": "🩺",
+  "q": [
+   "Copilot becomes the place work gets done. Home and the Office apps in Copilot can cut the paperwork that pulls clinicians and staff away from patients.",
+   "Agent 365: FinOps for AI. Leaders can see which agents run, what they cost and what they deliver, which matters in regulated settings.",
+   "Microsoft Perception is generally available. Security agents that triage alerts and investigate attacks help protect patient data and keep systems running."
+  ],
+  "prods": [
+   "Microsoft Copilot",
+   "Security",
+   "Copilot Studio"
+  ],
+  "rt": "3½ min read",
+  "get": "../healthcare/#subscribe",
+  "img": "th-healthcare-ignite.jpg",
+  "ind": "Healthcare & Life Sciences",
+  "c": "#0f766e",
+  "fi": "heart_pulse",
+  "em": "🩺",
+  "kind": "Ignite 2026 recap",
+  "mon": "NOV",
+  "day": 17,
+  "k3": [
+   "Copilot becomes the place work gets done",
+   "Agent 365: FinOps for AI",
+   "Microsoft Perception is generally available"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-09",
+  "url": "2026-11-17-financial-services-ignite-recap.html",
+  "title": "Ignite 2026 recap: what it means for financial services",
   "edition": "Financial Services",
-  "no": 1,
-  "title": "Agents take on onboarding and claims, with humans signing off",
-  "url": "2026-11-09-financial-services-001.html"
+  "date": "2026-11-17",
+  "nice": "Nov 17, 2026",
+  "label": "Issue No. 0",
+  "exec": false,
+  "acc": "#1d4ed8",
+  "deep": "#0a2540",
+  "icon": "building_bank",
+  "emoji": "🏦",
+  "q": [
+   "Agent 365: FinOps for AI. FinOps for AI and new governance tools show what each agent costs, does and delivers, with an audit trail.",
+   "Dynamics 365 in Copilot. Relationship managers can plan accounts, prep for meetings and track deals in Copilot.",
+   "Microsoft Perception is generally available. Security agents that triage about 80% of alerts help security teams keep up with faster attacks."
+  ],
+  "prods": [
+   "Dynamics 365",
+   "Security",
+   "Copilot"
+  ],
+  "rt": "3½ min read",
+  "get": "../financial-services/#subscribe",
+  "img": "th-financial-services-ignite.jpg",
+  "ind": "Financial Services",
+  "c": "#1d4ed8",
+  "fi": "building_bank",
+  "em": "🏦",
+  "kind": "Ignite 2026 recap",
+  "mon": "NOV",
+  "day": 17,
+  "k3": [
+   "Agent 365: FinOps for AI",
+   "Dynamics 365 in Copilot",
+   "Microsoft Perception is generally available"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-09",
+  "url": "2026-11-17-federal-ignite-recap.html",
+  "title": "Ignite 2026 recap: what it means for federal",
   "edition": "Federal Government",
-  "no": 1,
-  "title": "Government clouds catch up on Copilot, and Azure isolates sensitive work",
-  "url": "2026-11-09-federal-001.html"
+  "date": "2026-11-17",
+  "nice": "Nov 17, 2026",
+  "label": "Issue No. 0",
+  "exec": false,
+  "acc": "#9f1239",
+  "deep": "#101c33",
+  "icon": "building_government",
+  "emoji": "🦅",
+  "q": [
+   "Microsoft Perception is generally available. Agency security teams can keep pace with faster, AI-driven attacks on mission systems.",
+   "Agent 365: FinOps for AI. New governance tools surface inactive or ownerless agents and show what each one costs and does.",
+   "Microsoft IQ and better agents. Agents grounded in your own mission data and policies, within existing permissions."
+  ],
+  "prods": [
+   "Security",
+   "Copilot Studio",
+   "Azure"
+  ],
+  "rt": "3 min read",
+  "get": "../federal/#subscribe",
+  "img": "th-federal-ignite.jpg",
+  "ind": "Federal Government",
+  "c": "#9f1239",
+  "fi": "flag",
+  "em": "🏛",
+  "kind": "Ignite 2026 recap",
+  "mon": "NOV",
+  "day": 17,
+  "k3": [
+   "Microsoft Perception is generally available",
+   "Agent 365: FinOps for AI",
+   "Microsoft IQ and better agents"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-09",
+  "url": "2026-11-17-energy-ignite-recap.html",
+  "title": "Ignite 2026 recap: what it means for energy",
   "edition": "Energy & Utilities",
-  "no": 1,
-  "title": "Governed energy data meets your analytics, and leaks get prevented",
-  "url": "2026-11-09-energy-001.html"
+  "date": "2026-11-17",
+  "nice": "Nov 17, 2026",
+  "label": "Issue No. 0",
+  "exec": false,
+  "acc": "#15803d",
+  "deep": "#14280f",
+  "icon": "flash",
+  "emoji": "⚡",
+  "q": [
+   "Dynamics 365 in Copilot. 39+ ERP skills bring purchasing and finance work into Copilot and Excel, and CRM skills help with commercial and customer work.",
+   "Agent 365: FinOps for AI. Leaders can set AI spending limits by team and measure the value each agent delivers, before scaling.",
+   "Copilot becomes the place work gets done. Engineers and field teams can build their own trackers and dashboards in plain language."
+  ],
+  "prods": [
+   "Dynamics 365",
+   "Microsoft Copilot",
+   "Azure"
+  ],
+  "rt": "3½ min read",
+  "get": "../energy/#subscribe",
+  "img": "th-energy-ignite.jpg",
+  "ind": "Energy & Utilities",
+  "c": "#15803d",
+  "fi": "flash",
+  "em": "⚡",
+  "kind": "Ignite 2026 recap",
+  "mon": "NOV",
+  "day": 17,
+  "k3": [
+   "Dynamics 365 in Copilot",
+   "Agent 365: FinOps for AI",
+   "Copilot becomes the place work gets done"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-09",
+  "url": "2026-11-17-defense-ignite-recap.html",
+  "title": "Ignite 2026 recap: what it means for defense industry",
   "edition": "Defense Industry",
-  "no": 1,
+  "date": "2026-11-17",
+  "nice": "Nov 17, 2026",
+  "label": "Issue No. 0",
+  "exec": false,
+  "acc": "#4d7c0f",
+  "deep": "#1b2420",
+  "icon": "shield",
+  "emoji": "🛡️",
+  "q": [
+   "Microsoft Perception is generally available. Red, blue and green team security agents help find and fix weaknesses before attackers do.",
+   "Agent 365: FinOps for AI. Governance across every agent, with cost controls, supports programs with strict compliance needs.",
+   "Dynamics 365 in Copilot. ERP skills in Copilot and Excel help program, finance and supply chain teams work faster."
+  ],
+  "prods": [
+   "Security",
+   "Dynamics 365",
+   "Azure"
+  ],
+  "rt": "3½ min read",
+  "get": "../defense/#subscribe",
+  "img": "th-defense-ignite.jpg",
+  "ind": "Defense Industry",
+  "c": "#4d7c0f",
+  "fi": "shield",
+  "em": "🛡",
+  "kind": "Ignite 2026 recap",
+  "mon": "NOV",
+  "day": 17,
+  "k3": [
+   "Microsoft Perception is generally available",
+   "Agent 365: FinOps for AI",
+   "Dynamics 365 in Copilot"
+  ],
+  "cta": "Read the issue",
+  "first": false
+ },
+ {
+  "url": "2026-11-17-ignite-recap.html",
+  "title": "Ignite 2026 recap: what was announced, and why it matters",
+  "edition": "All Industries",
+  "date": "2026-11-17",
+  "nice": "Nov 17, 2026",
+  "label": "Issue No. 0",
+  "exec": false,
+  "acc": "#0067b8",
+  "deep": "#0b2a4a",
+  "icon": "globe",
+  "emoji": "🌐",
+  "q": [
+   "Copilot is now one home for Chat, Cowork, Code and Autopilot, with the Office apps built in.",
+   "Dynamics 365 in Copilot brings 57+ CRM skills for sales and service, plus 39+ ERP skills, to where people already work.",
+   "Agent 365 shows what AI costs and what it delivers, so you can scale it with confidence."
+  ],
+  "prods": [
+   "Microsoft Copilot",
+   "Dynamics 365",
+   "Copilot",
+   "Copilot Studio"
+  ],
+  "rt": "4½ min read",
+  "get": "../#editions",
+  "img": "ignite-official.jpg",
+  "ind": "All industries",
+  "c": "#0067b8",
+  "fi": "globe",
+  "em": "🌐",
+  "kind": "Ignite 2026 recap",
+  "mon": "NOV",
+  "day": 17,
+  "k3": [
+   "Copilot becomes the place work gets done",
+   "Dynamics 365 in Copilot",
+   "Copilotforce: Salesforce in Copilot, Teams and Fabric"
+  ],
+  "cta": "Read the issue",
+  "first": false
+ },
+ {
+  "url": "2026-11-09-telecom-media-001.html",
+  "title": "Networks and audience data become the AI growth play",
+  "edition": "Telecom & Media",
+  "date": "2026-11-09",
+  "nice": "Nov 9, 2026",
+  "label": "Issue No. 1",
+  "exec": false,
+  "acc": "#a21caf",
+  "deep": "#2a0f3a",
+  "icon": "tv",
+  "emoji": "📡",
+  "q": [
+   "Is your network now part of every customer's AI project?",
+   "Is your audience data connected, or just collected?",
+   "How did AT&T make care agents a third faster?"
+  ],
+  "prods": [
+   "Azure",
+   "Microsoft Foundry"
+  ],
+  "rt": "3 min read",
+  "get": "../telecom-media/#subscribe",
+  "img": "em-telecom-media-hero.jpg",
+  "ind": "Telecom & Media",
+  "c": "#a21caf",
+  "fi": "tv",
+  "em": "📺",
+  "kind": "Issue No. 1",
+  "mon": "NOV",
+  "day": 9,
+  "k3": [
+   "Media's real problem is scattered data, not too little",
+   "Lumen and Microsoft team up on AI-ready networks",
+   "AT&T scales governed AI coworkers to 100,000+ employees"
+  ],
+  "cta": "Read the issue",
+  "first": false
+ },
+ {
+  "url": "2026-11-09-state-local-edu-001.html",
+  "title": "Safer student AI and what the best cities do differently",
+  "edition": "State & Local Government and Education",
+  "date": "2026-11-09",
+  "nice": "Nov 9, 2026",
+  "label": "Issue No. 1",
+  "exec": false,
+  "acc": "#4f46e5",
+  "deep": "#0b2a4a",
+  "icon": "building_government",
+  "emoji": "🏛️",
+  "q": [
+   "Can student AI stay focused on learning?",
+   "What do cities getting double the AI return do differently?",
+   "How are Broward teachers getting 6–7 hours back a week?"
+  ],
+  "prods": [
+   "Microsoft Copilot",
+   "Copilot Studio"
+  ],
+  "rt": "2½ min read",
+  "get": "../state-local-edu/#subscribe",
+  "img": "em-state-local-edu-hero.jpg",
+  "ind": "State, Local & Education",
+  "c": "#4f46e5",
+  "fi": "building_government",
+  "em": "🏛",
+  "kind": "Issue No. 1",
+  "mon": "NOV",
+  "day": 9,
+  "k3": [
+   "Schools can soon lock Copilot into tutor mode",
+   "Cities that put residents first earn double AI returns",
+   "A Florida district runs a record K-12 Copilot rollout"
+  ],
+  "cta": "Read the issue",
+  "first": false
+ },
+ {
+  "url": "2026-11-09-retail-001.html",
+  "title": "Consumer brands connect their data and gear up for the holidays",
+  "edition": "Retail & Consumer Goods",
+  "date": "2026-11-09",
+  "nice": "Nov 9, 2026",
+  "label": "Issue No. 1",
+  "exec": false,
+  "acc": "#be123c",
+  "deep": "#3a1020",
+  "icon": "cart",
+  "emoji": "🛍️",
+  "q": [
+   "What happens when 80 years of consumer data meets AI?",
+   "Is your service desk ready for the holiday rush?",
+   "How did Vera Bradley cut chat escalations by 25%?"
+  ],
+  "prods": [
+   "Microsoft Copilot",
+   "Copilot Studio",
+   "Dynamics 365"
+  ],
+  "rt": "2½ min read",
+  "get": "../retail/#subscribe",
+  "img": "em-retail-hero.jpg",
+  "ind": "Retail & Consumer Goods",
+  "c": "#be123c",
+  "fi": "cart",
+  "em": "🛒",
+  "kind": "Issue No. 1",
+  "mon": "NOV",
+  "day": 9,
+  "k3": [
+   "Estée Lauder puts Microsoft AI across its beauty brands",
+   "Build customer service agents for voice and chat",
+   "Vera Bradley cuts escalations with a self-service agent"
+  ],
+  "cta": "Read the issue",
+  "first": false
+ },
+ {
+  "url": "2026-11-09-professional-services-001.html",
+  "title": "Copilot learns law and accounting, inside Word and Excel",
+  "edition": "Professional Services",
+  "date": "2026-11-09",
+  "nice": "Nov 9, 2026",
+  "label": "Issue No. 1",
+  "exec": false,
+  "acc": "#a16207",
+  "deep": "#2a2006",
+  "icon": "briefcase",
+  "emoji": "💼",
+  "q": [
+   "What changes when legal AI lives inside Word?",
+   "Could busy season close faster with an audit trail?",
+   "How did PwC save $150M of time with Copilot?"
+  ],
+  "prods": [
+   "Microsoft Copilot",
+   "Copilot Studio"
+  ],
+  "rt": "2½ min read",
+  "get": "../professional-services/#subscribe",
+  "img": "em-professional-services-hero.jpg",
+  "ind": "Professional Services",
+  "c": "#a16207",
+  "fi": "briefcase",
+  "em": "💼",
+  "kind": "Issue No. 1",
+  "mon": "NOV",
+  "day": 9,
+  "k3": [
+   "Copilot for legal is now generally available",
+   "New Copilot skills for accountants and deal teams",
+   "PwC brings Copilot to its global workforce"
+  ],
+  "cta": "Read the issue",
+  "first": false
+ },
+ {
+  "url": "2026-11-09-manufacturing-mobility-001.html",
+  "title": "Machines as a subscription, supplier slips caught by agents, and agents that start themselves",
+  "edition": "Manufacturing & Mobility",
+  "date": "2026-11-09",
+  "nice": "Nov 9, 2026",
+  "label": "Issue No. 1",
+  "exec": false,
+  "acc": "#a16207",
+  "deep": "#10233f",
+  "icon": "building_factory",
+  "emoji": "🏭",
+  "q": [
+   "Could your machines become a subscription business?",
+   "What if an agent caught a supplier slip before you did?",
+   "Can agents keep plant work moving overnight?"
+  ],
+  "prods": [
+   "Copilot Studio",
+   "Dynamics 365",
+   "Power Platform",
+   "Security"
+  ],
+  "rt": "4 min read",
+  "get": "../manufacturing/#subscribe",
+  "img": "em-manufacturing-hero.jpg",
+  "ind": "Manufacturing & Mobility",
+  "c": "#a16207",
+  "fi": "building_factory",
+  "em": "🏭",
+  "kind": "Issue No. 1",
+  "mon": "NOV",
+  "day": 9,
+  "k3": [
+   "Agents that remember and start work on their own",
+   "Your machines can become a subscription business",
+   "An ERP agent that spots at-risk orders before you do"
+  ],
+  "cta": "Read the issue",
+  "first": false
+ },
+ {
+  "url": "2026-11-09-hospitality-travel-001.html",
+  "title": "AI agents in the reservations center, the booking path and guest data",
+  "edition": "Hospitality & Travel",
+  "date": "2026-11-09",
+  "nice": "Nov 9, 2026",
+  "label": "Issue No. 1",
+  "exec": false,
+  "acc": "#0e7490",
+  "deep": "#0b2a4a",
+  "icon": "airplane",
+  "emoji": "✈️",
+  "q": [
+   "Could month-end close take days less with Copilot?",
+   "Can your reservations center add AI agents without a rip-and-replace?",
+   "Do you know which AI agents can reach guest and payment data?"
+  ],
+  "prods": [
+   "Microsoft Copilot",
+   "Copilot Studio",
+   "Dynamics 365",
+   "Security"
+  ],
+  "rt": "4 min read",
+  "get": "../hospitality/#subscribe",
+  "img": "em-hospitality-hero.jpg",
+  "ind": "Hospitality & Travel",
+  "c": "#0e7490",
+  "fi": "airplane",
+  "em": "✈",
+  "kind": "Issue No. 1",
+  "mon": "NOV",
+  "day": 9,
+  "k3": [
+   "Month-end close with Copilot doing the legwork",
+   "Agents that remember and start work on their own",
+   "Add AI agents to your reservations center without replacing it"
+  ],
+  "cta": "Read the issue",
+  "first": false
+ },
+ {
+  "url": "2026-11-09-high-tech-001.html",
+  "title": "The engine behind Microsoft's Copilots opens up to builders",
+  "edition": "High Tech & Software",
+  "date": "2026-11-09",
+  "nice": "Nov 9, 2026",
+  "label": "Issue No. 1",
+  "exec": false,
+  "acc": "#6d28d9",
+  "deep": "#1a1240",
+  "icon": "laptop",
+  "emoji": "💻",
+  "q": [
+   "Could your developers ship more with the same AI models?",
+   "Why build your own agent engine when Microsoft's is open?",
+   "How did Marlabs make HR answers 60% faster?"
+  ],
+  "prods": [
+   "GitHub Copilot",
+   "Microsoft Foundry",
+   "Microsoft Copilot",
+   "Copilot Studio"
+  ],
+  "rt": "3 min read",
+  "get": "../high-tech/#subscribe",
+  "img": "em-high-tech-hero.jpg",
+  "ind": "High Tech & Software",
+  "c": "#6d28d9",
+  "fi": "laptop",
+  "em": "💻",
+  "kind": "Issue No. 1",
+  "mon": "NOV",
+  "day": 9,
+  "k3": [
+   "Visual Studio's Copilot gets a new, smarter engine",
+   "Build agents on the engine behind GitHub Copilot",
+   "An AI-first services firm practises what it sells"
+  ],
+  "cta": "Read the issue",
+  "first": false
+ },
+ {
+  "url": "2026-11-09-healthcare-001.html",
+  "title": "AI moves into the clinical core, from trials to the EHR",
+  "edition": "Healthcare & Life Sciences",
+  "date": "2026-11-09",
+  "nice": "Nov 9, 2026",
+  "label": "Issue No. 1",
+  "exec": false,
+  "acc": "#0f766e",
+  "deep": "#0b3140",
+  "icon": "heart_pulse",
+  "emoji": "🩺",
+  "q": [
+   "Could AI patient twins shrink clinical trial control groups?",
+   "What does a children's hospital do before it adds AI?",
+   "How did Brown Health build 24+ AI agents?"
+  ],
+  "prods": [
+   "Azure",
+   "Copilot Studio"
+  ],
+  "rt": "2½ min read",
+  "get": "../healthcare/#subscribe",
+  "img": "em-healthcare-hero.jpg",
+  "ind": "Healthcare & Life Sciences",
+  "c": "#0f766e",
+  "fi": "heart_pulse",
+  "em": "🩺",
+  "kind": "Issue No. 1",
+  "mon": "NOV",
+  "day": 9,
+  "k3": [
+   "Top children's hospital makes Azure its primary cloud",
+   "Digital patient twins could make drug trials faster",
+   "Brown Health hands clinicians time back with ambient AI"
+  ],
+  "cta": "Read the issue",
+  "first": false
+ },
+ {
+  "url": "2026-11-09-financial-services-001.html",
+  "title": "Agents take on onboarding and claims, with humans signing off",
+  "edition": "Financial Services",
+  "date": "2026-11-09",
+  "nice": "Nov 9, 2026",
+  "label": "Issue No. 1",
+  "exec": false,
+  "acc": "#1d4ed8",
+  "deep": "#0a2540",
+  "icon": "building_bank",
+  "emoji": "🏦",
+  "q": [
+   "What if client onboarding prep took days, not weeks?",
+   "Is governance an AI brake for insurers, or the accelerator?",
+   "How did a bank lift its NPS by 114%?"
+  ],
+  "prods": [
+   "Azure",
+   "Microsoft Foundry",
+   "Dynamics 365",
+   "Copilot Studio"
+  ],
+  "rt": "2½ min read",
+  "get": "../financial-services/#subscribe",
+  "img": "em-financial-services-hero.jpg",
+  "ind": "Financial Services",
+  "c": "#1d4ed8",
+  "fi": "building_bank",
+  "em": "🏦",
+  "kind": "Issue No. 1",
+  "mon": "NOV",
+  "day": 9,
+  "k3": [
+   "Four places AI agents can change insurance",
+   "Northern Trust cuts onboarding data prep from weeks to days",
+   "A bank's cloud move unlocks agents and happier customers"
+  ],
+  "cta": "Read the issue",
+  "first": false
+ },
+ {
+  "url": "2026-11-09-federal-001.html",
+  "title": "Government clouds catch up on Copilot, and Azure isolates sensitive work",
+  "edition": "Federal Government",
+  "date": "2026-11-09",
+  "nice": "Nov 9, 2026",
+  "label": "Issue No. 1",
+  "exec": false,
+  "acc": "#9f1239",
+  "deep": "#101c33",
+  "icon": "building_government",
+  "emoji": "🦅",
+  "q": [
+   "Is your agency still on an older AI model than commercial?",
+   "Do you need a custom build for every sensitive workload?",
+   "How did Sandia save 3 minutes on every question?"
+  ],
+  "prods": [
+   "Microsoft Copilot",
+   "Azure",
+   "Microsoft Foundry"
+  ],
+  "rt": "2½ min read",
+  "get": "../federal/#subscribe",
+  "img": "em-federal-hero.jpg",
+  "ind": "Federal Government",
+  "c": "#9f1239",
+  "fi": "flag",
+  "em": "🏛",
+  "kind": "Issue No. 1",
+  "mon": "NOV",
+  "day": 9,
+  "k3": [
+   "Government clouds get commercial-grade Copilot models",
+   "Azure Enclave launches for sensitive government work",
+   "A federal lab rolls out secure AI chat to ~17,000"
+  ],
+  "cta": "Read the issue",
+  "first": false
+ },
+ {
+  "url": "2026-11-09-energy-001.html",
+  "title": "Governed energy data meets your analytics, and leaks get prevented",
+  "edition": "Energy & Utilities",
+  "date": "2026-11-09",
+  "nice": "Nov 9, 2026",
+  "label": "Issue No. 1",
+  "exec": false,
+  "acc": "#15803d",
+  "deep": "#14280f",
+  "icon": "flash",
+  "emoji": "⚡",
+  "q": [
+   "Is your subsurface data ready for the tools your analysts like?",
+   "Can you stop methane leaks before they start?",
+   "Could a nuclear permit take months instead of years?"
+  ],
+  "prods": [
+   "Azure"
+  ],
+  "rt": "2½ min read",
+  "get": "../energy/#subscribe",
+  "img": "em-energy-hero.jpg",
+  "ind": "Energy & Utilities",
+  "c": "#15803d",
+  "fi": "flash",
+  "em": "⚡",
+  "kind": "Issue No. 1",
+  "mon": "NOV",
+  "day": 9,
+  "k3": [
+   "Stop methane leaks before they start",
+   "Use governed energy data in your analytics tools",
+   "Nuclear permits in months, not years"
+  ],
+  "cta": "Read the issue",
+  "first": false
+ },
+ {
+  "url": "2026-11-09-defense-001.html",
   "title": "A 90-day plan for governing AI in GCC High",
-  "url": "2026-11-09-defense-001.html"
+  "edition": "Defense Industry",
+  "date": "2026-11-09",
+  "nice": "Nov 9, 2026",
+  "label": "Issue No. 1",
+  "exec": false,
+  "acc": "#4d7c0f",
+  "deep": "#1b2420",
+  "icon": "shield",
+  "emoji": "🛡️",
+  "q": [
+   "Can you show an auditor who approved every AI agent?",
+   "Could your program teams get an isolated workspace without a custom build?",
+   "How did Textron cut troubleshooting from 20 minutes to 2?"
+  ],
+  "prods": [
+   "Azure",
+   "Security",
+   "Microsoft Foundry"
+  ],
+  "rt": "2½ min read",
+  "get": "../defense/#subscribe",
+  "img": "em-defense-hero.jpg",
+  "ind": "Defense Industry",
+  "c": "#4d7c0f",
+  "fi": "shield",
+  "em": "🛡",
+  "kind": "Issue No. 1",
+  "mon": "NOV",
+  "day": 9,
+  "k3": [
+   "Isolated cloud workspaces for defense programs",
+   "A 90-day AI governance plan for defense contractors",
+   "An AI assistant speeds aircraft maintenance"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-11-02",
-  "edition": "All Industries",
-  "label": "Week in review \u00b7 Nov 2\u20138, 2026",
+  "url": "2026-11-09-hospitality-travel-001-executive.html",
+  "title": "AI agents in the reservations center, the booking path and guest data",
+  "edition": "Hospitality & Travel",
+  "date": "2026-11-09",
+  "nice": "Nov 9, 2026",
+  "label": "Issue No. 1",
+  "exec": true,
+  "acc": "#0e7490",
+  "deep": "#0b2a4a",
+  "icon": "airplane",
+  "emoji": "✈️",
+  "q": [],
+  "prods": [
+   "Dynamics 365",
+   "Security"
+  ],
+  "rt": "2½ min read",
+  "get": "../executive/",
+  "img": "em-executive-hero.jpg",
+  "ind": "Hospitality & Travel",
+  "c": "#0e7490",
+  "fi": "airplane",
+  "em": "✈",
+  "kind": "Executive · Issue No. 1",
+  "mon": "NOV",
+  "day": 9,
+  "k3": [
+   "Add AI agents to your reservations center without replacing it",
+   "Can a traveler's AI agent actually book with you?",
+   "See every AI agent that can reach guest data"
+  ],
+  "cta": "Read the 90-second brief",
+  "first": false
+ },
+ {
+  "url": "2026-11-02-all-industries-week-in-review.html",
   "title": "Agents that remember, carbon in your ERP, and tighter limits on what agents can do",
-  "url": "2026-11-02-all-industries-week-in-review.html"
+  "edition": "All Industries",
+  "date": "2026-11-02",
+  "nice": "Nov 2, 2026",
+  "label": "Week in review · Nov 2–8, 2026",
+  "exec": false,
+  "acc": "#0067b8",
+  "deep": "#0b2a4a",
+  "icon": "globe",
+  "emoji": "🌐",
+  "q": [
+   "Agents that remember and start work on their own.",
+   "Carbon data moves next to your finance data.",
+   "Give every agent only the access its task needs."
+  ],
+  "prods": [
+   "Copilot",
+   "Dynamics 365",
+   "Azure",
+   "Security"
+  ],
+  "rt": "2 min read",
+  "get": "../#editions",
+  "img": "wir-2026-11-02-card.jpg",
+  "ind": "All industries",
+  "c": "#0067b8",
+  "fi": "globe",
+  "em": "🌐",
+  "kind": "Week in review",
+  "mon": "NOV",
+  "day": 2,
+  "k3": [
+   "Agents that remember and start work on their own",
+   "Carbon data moves next to your finance data",
+   "Production-ready building blocks for reliable agents"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-10-26",
-  "edition": "All Industries",
-  "label": "Week in review \u00b7 Oct 26 \u2013 Nov 1, 2026",
+  "url": "2026-10-26-all-industries-week-in-review.html",
   "title": "Copilot closes the books, CRM opens to agents, and shadow AI comes into view",
-  "url": "2026-10-26-all-industries-week-in-review.html"
+  "edition": "All Industries",
+  "date": "2026-10-26",
+  "nice": "Oct 26, 2026",
+  "label": "Week in review · Oct 26 – Nov 1, 2026",
+  "exec": false,
+  "acc": "#0067b8",
+  "deep": "#0b2a4a",
+  "icon": "globe",
+  "emoji": "🌐",
+  "q": [
+   "A Copilot built for month-end close.",
+   "Your CRM, ready for any agent.",
+   "Find the AI agents already on your laptops."
+  ],
+  "prods": [
+   "Copilot",
+   "Dynamics 365",
+   "Azure",
+   "Security"
+  ],
+  "rt": "2 min read",
+  "get": "../#editions",
+  "img": "em-all-industries-hero.jpg",
+  "ind": "All industries",
+  "c": "#0067b8",
+  "fi": "globe",
+  "em": "🌐",
+  "kind": "Week in review",
+  "mon": "OCT",
+  "day": 26,
+  "k3": [
+   "A Copilot built for month-end close",
+   "Your CRM, ready for any agent",
+   "The engine behind Copilot, now yours to build on"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-10-19",
-  "edition": "All Industries",
-  "label": "Week in review \u00b7 Oct 19\u201325, 2026",
+  "url": "2026-10-19-all-industries-week-in-review.html",
   "title": "Anyone can build an app, agents get an ID badge, and Copilot reads your business data",
-  "url": "2026-10-19-all-industries-week-in-review.html"
+  "edition": "All Industries",
+  "date": "2026-10-19",
+  "nice": "Oct 19, 2026",
+  "label": "Week in review · Oct 19–25, 2026",
+  "exec": false,
+  "acc": "#0067b8",
+  "deep": "#0b2a4a",
+  "icon": "globe",
+  "emoji": "🌐",
+  "q": [
+   "Describe an app, get an app.",
+   "Copilot now understands your business apps.",
+   "Treat every agent like a new insider."
+  ],
+  "prods": [
+   "Copilot",
+   "Power Platform",
+   "Azure",
+   "Security"
+  ],
+  "rt": "2½ min read",
+  "get": "../#editions",
+  "img": "wir-2026-10-19-card.jpg",
+  "ind": "All industries",
+  "c": "#0067b8",
+  "fi": "globe",
+  "em": "🌐",
+  "kind": "Week in review",
+  "mon": "OCT",
+  "day": 19,
+  "k3": [
+   "Describe an app, get an app",
+   "Copilot now understands your business apps",
+   "Agents that can use any website"
+  ],
+  "cta": "Read the issue",
+  "first": false
  },
  {
-  "date": "2026-10-12",
-  "edition": "All Industries",
-  "label": "Week in review \u00b7 Oct 12\u201318, 2026",
+  "url": "2026-10-12-all-industries-week-in-review.html",
   "title": "Copilot learns the law, an ERP Leader nod, and faster access shut-off",
-  "url": "2026-10-12-all-industries-week-in-review.html"
+  "edition": "All Industries",
+  "date": "2026-10-12",
+  "nice": "Oct 12, 2026",
+  "label": "Week in review · Oct 12–18, 2026",
+  "exec": false,
+  "acc": "#0067b8",
+  "deep": "#0b2a4a",
+  "icon": "globe",
+  "emoji": "🌐",
+  "q": [
+   "Copilot now speaks fluent contract.",
+   "An outside vote for Microsoft's AI-enabled ERP.",
+   "Cut off risky devices in near real time."
+  ],
+  "prods": [
+   "Copilot",
+   "Dynamics 365",
+   "Azure",
+   "Security"
+  ],
+  "rt": "2½ min read",
+  "get": "../#editions",
+  "img": "wir-2026-10-12-card.jpg",
+  "ind": "All industries",
+  "c": "#0067b8",
+  "fi": "globe",
+  "em": "🌐",
+  "kind": "Week in review",
+  "mon": "OCT",
+  "day": 12,
+  "k3": [
+   "Copilot now speaks fluent contract",
+   "An outside vote for Microsoft's AI-enabled ERP",
+   "More AI capacity behind Copilot and Foundry"
+  ],
+  "cta": "Read the issue",
+  "first": false
  }
 ]

@@ -35,16 +35,43 @@ This site and the weekly email are produced by a small team of AI agents in **Mi
 
 ```
 index.html                 Home page and subscribe
-issues/index.html          Searchable archive
-issues/issues.json         Archive index (one entry per issue)
+issues/index.html          Searchable archive (reads issues/issues.json)
+issues/issues.json         Generated issues manifest (one entry per issue) — never hand-edit
 issues/YYYY-MM-DD-<edition>-NNN.html   Full issues
+brief/latest/              "This week" (All Industries) — generated
+<edition>/latest/          "This week" per industry edition — generated
+preview/<edition>.html     Sample-issue snapshots used by the homepage edition picker — generated
+scripts/build-issues-manifest.js   Regenerates issues/issues.json
+scripts/build-brief-latest.js      Regenerates brief/latest/, preview/*.html
+scripts/check-staleness.js         Fails if the newest issue is >8 days old
+.github/workflows/brief-latest.yml GitHub Actions workflow (see below)
 ```
 
 ## Publishing a new issue
 
-1. Add the issue page to `issues/` using the naming pattern above.
-2. Add one entry to `issues/issues.json` **and** to the `ISSUES` list at the bottom of `issues/index.html`.
-3. Commit. The site updates in about a minute.
+1. Add the issue page(s) to `issues/` using the naming pattern above (one file per edition per send).
+2. Commit and push to `main`.
+3. **"This week" updates itself** (P39): a GitHub Actions workflow (`.github/workflows/brief-latest.yml`)
+   runs on every push to `main` and once a day at 06:00 ET, and:
+   - Regenerates `issues/issues.json` from the issue files (never hand-edited).
+   - Regenerates `brief/latest/` to show the newest All Industries issue — or, if the newest send
+     date has no All Industries issue, a "Choose your edition" list of that week's issues instead of
+     an older issue.
+   - Regenerates every `<edition>/latest/` to the newest issue for that edition.
+   - Regenerates `preview/<edition>.html` (the homepage edition-picker samples) from the newest issue.
+   - Fixes the "LATEST" tag in the archive to the newest issue per edition.
+   - Runs a staleness check that **fails the workflow** (keeping the previously published site live)
+     if `/brief/latest/` would be more than 8 days older than the newest issue in the manifest — so a
+     stale or half-built "This week" is never silently published.
+   - Commits the regenerated files back to `main` if anything changed.
+4. To run the rebuild locally instead of waiting for Actions: `npm run rebuild` (runs the manifest
+   build, the latest/preview rebuild, then the staleness check, in that order).
+5. After sending a weekly issue, confirm `/brief/latest/` shows the new date with a fresh (not
+   cached) page load before telling subscribers it's live.
+
+**Never hand-edit** `issues/issues.json`, `brief/latest/index.html`, `<edition>/latest/index.html` or
+`preview/*.html` — they are generated and will be overwritten by the next workflow run or local
+`npm run rebuild`. Only the issue files themselves and `scripts/*.js` are hand-maintained.
 
 ---
 
