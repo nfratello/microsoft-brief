@@ -135,7 +135,7 @@ q.addEventListener('input',render);
 const u=new URLSearchParams(location.search).get('edition');if(u){const b=P.find(x=>x.dataset.ed===u);if(b)b.click()}
 const sn=document.querySelector('.fw-bar');if(sn)document.documentElement.style.setProperty('--snav-h',sn.offsetHeight+'px');
 render()})();
-(function(){const B='https://cdn.jsdelivr.net/npm/@fluentui/svg-icons@1.1.341/icons/';const cache={};
+(function(){const B='../icons/';const cache={};
 window.fiPaint=function(root){(root||document).querySelectorAll('[data-fi]:not([data-fd])').forEach(el=>{el.setAttribute('data-fd','1');const n=el.dataset.fi,u=B+n+'_24_regular.svg';
  const ok=()=>{const s=document.createElement('span');s.className='fic';s.style.setProperty('--m','url('+u+')');el.textContent='';el.appendChild(s)};
  if(cache[u]===true)return ok();if(cache[u]===false)return;const im=new Image();im.onload=()=>{cache[u]=true;ok()};im.onerror=()=>{cache[u]=false};im.src=u})};

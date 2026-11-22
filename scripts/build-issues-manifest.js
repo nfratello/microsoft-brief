@@ -13,8 +13,8 @@ const issues = JSON.parse(m[1]);
 // Normalize edition display names to the one name used everywhere (P37):
 // the archive/ISSUES data carries older long-form names in some fields.
 const EDITION_NAME_FIX = {
-  'Telecommunications, Media & Gaming': 'Telecom & Media',
-  'Telecom, Media & Gaming': 'Telecom & Media',
+  'Telecommunications & Media': 'Telecom & Media',
+  'Telecom & Media': 'Telecom & Media',
 };
 for (const issue of issues) {
   if (EDITION_NAME_FIX[issue.edition]) issue.edition = EDITION_NAME_FIX[issue.edition];

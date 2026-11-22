@@ -6,7 +6,7 @@
 //    date; otherwise falls back to a "Choose your edition" list of that
 //    week's issues instead of an older All Industries issue.
 //  - Normalizes the "Telecom & Media" edition name wherever a stale long form
-//    ("Telecommunications, Media & Gaming" / "Telecom, Media & Gaming")
+//    ("Telecommunications & Media" / "Telecom & Media")
 //    appears in generated output.
 //
 // Never hand-edit the files this script writes. Run:
@@ -34,8 +34,8 @@ const EDITION_SLUG = {
 };
 
 const NAME_FIX = {
-  'Telecommunications, Media & Gaming': 'Telecom & Media',
-  'Telecom, Media & Gaming': 'Telecom & Media',
+  'Telecommunications & Media': 'Telecom & Media',
+  'Telecom & Media': 'Telecom & Media',
 };
 function fixName(s) {
   if (!s) return s;
