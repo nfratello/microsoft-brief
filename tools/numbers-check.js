@@ -10,7 +10,7 @@ const { listHtmlFiles, visibleTextLines, REPO_ROOT } = require('./lib');
 const UNIT_WORDS = ['px', 'percent', 'minutes', 'minute', 'hours', 'hour', 'seconds', 'second',
   'guests', 'days', 'day', 'weeks', 'week', 'issues', 'scenarios', 'seats'];
 const unitAlt = UNIT_WORDS.join('|');
-const re = new RegExp(`\\b(\\d[\\d,]*)\\s(${unitAlt})\\b`, 'gi');
+const re = new RegExp(`\\b(\\d[\\d,]*)[ \\t](${unitAlt})\\b`, 'gi');
 
 let hits = 0;
 for (const file of listHtmlFiles()) {
