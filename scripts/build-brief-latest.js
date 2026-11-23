@@ -306,6 +306,12 @@ function rebuildBriefLatestChooseEdition(thisWeekIssues, oldHtml) {
   html = html.replace(/<style id="cye-css">[\s\S]*?<\/style>/g, '');
   html = html.replace(/<style id="llp-css">[\s\S]*?<\/style>/g, '');
   html = html.replace(/<script id="llp-js">[\s\S]*?<\/script>/g, '');
+  // FH47: the choose-edition layout has no #lf subscribe form, #lfr iframe or
+  // #lsb sticky bar — those only exist in the single-issue iframe-mode
+  // template this file is sometimes rebuilt from. Strip that dead script so
+  // it can't throw "Cannot read properties of null (reading
+  // 'addEventListener')" wiring up elements this layout doesn't render.
+  html = html.replace(/<script id="latest-js">[\s\S]*?<\/script>/g, '');
   html = html.replace('</head>', `<link rel="canonical" href="https://nfratello.github.io/microsoft-brief/brief/latest/">${LLP_STYLE}</head>`);
 
   // Replace the whole <main>...</main> with the list + preview pane layout.
