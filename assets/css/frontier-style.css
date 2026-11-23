@@ -53,8 +53,7 @@ html{scroll-padding-top:112px}
   .gh .lock{gap:8px}
   .gh .gnav{gap:0}
   .gh .gnav a{padding-inline:8px}
-  .gh .gnav .fw-bar .fwt{display:none}
-  .gh .gnav .fw-bar .fwdiv{display:none}
+  .gh .gnav .fw-bar{display:none}
   .gh a.cta{margin-inline-start:8px;padding-inline:10px}
 }
 .gh .lock{display:flex;align-items:center;gap:14px;text-decoration:none;color:#242424;min-width:0}

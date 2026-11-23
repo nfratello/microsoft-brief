@@ -14,6 +14,7 @@
 //   node scripts/build-brief-latest.js      (regenerates latest/preview pages)
 const fs = require('fs');
 const path = require('path');
+const { shortName } = require('./edition-names');
 
 const ROOT = path.join(__dirname, '..');
 const issuesDir = path.join(ROOT, 'issues');
@@ -232,7 +233,7 @@ const EDITION_HERO = {
 function rowHtml(issue, idx, selected) {
   const color = issue.c || issue.acc || '#0067b8';
   const icon = issue.fi || issue.icon || 'grid';
-  return `<li><a class="lrow${selected ? ' sel' : ''}" href="../../issues/${issue.url}" data-idx="${idx}" aria-current="${selected ? 'true' : 'false'}" style="--c:${color}"><span class="ltile" style="background:${color}" data-fi="${icon}" aria-hidden="true"></span><span class="ltx"><b>${escAttr(issue.edition)}</b><span class="lrh">${escAttr(protectNames(issue.title))}</span></span><span class="lchev" aria-hidden="true">&rsaquo;</span></a></li>`;
+  return `<li><a class="lrow${selected ? ' sel' : ''}" href="../../issues/${issue.url}" data-idx="${idx}" aria-current="${selected ? 'true' : 'false'}" style="--c:${color}"><span class="ltile" style="background:${color}" data-fi="${icon}" aria-hidden="true"></span><span class="ltx"><b>${escAttr(shortName(issue.edition))}</b><span class="lrh">${escAttr(protectNames(issue.title))}</span></span><span class="lchev" aria-hidden="true">&rsaquo;</span></a></li>`;
 }
 
 function previewHtml(issue, idx, selected, featured) {
@@ -240,7 +241,7 @@ function previewHtml(issue, idx, selected, featured) {
   const hero = EDITION_HERO[issue.edition] || { file: 'ind-manufacturing-wide.jpg', pos: '50% 20%', alt: `People at work in ${issue.edition}` };
   const k3 = (issue.k3 || []).map((h) => `<li>${escAttr(protectNames(h))}</li>`).join('');
   const getLink = issue.get ? `../../${issue.get.replace(/^\.\.\//, '')}` : `../../${EDITION_SLUG[issue.edition] || ''}/#subscribe`;
-  return `<div class="lpv"${featured ? ' id="lfeatpv"' : ` data-idx="${idx}"${selected ? '' : ' hidden'}`}><div class="lpvcard" style="--c:${color}"><div class="lph"><img src="../../assets/img/${hero.file}" width="1280" height="560" loading="${idx === 0 ? 'eager' : 'lazy'}" style="object-position:${hero.pos}" alt="${escAttr(hero.alt)}"></div><div class="lpb"><p class="lpe" style="color:${color}">${escAttr(issue.edition.toUpperCase())} EDITION</p><h2 class="llh2">${escAttr(protectNames(issue.title))}</h2><div class="lmeta"><span>${escAttr(issue.label || '')}</span><span>${escAttr(issue.rt || '')}</span><span>${escAttr(issue.week || '')}</span></div><p class="lsum">${escAttr(protectNames(issue.lede || issue.title))}</p><div class="lmr"><span class="lmrl" style="background:${color}">3 MUST-READS</span><ol>${k3}</ol></div><div class="lact"><a class="btn lbtn" href="../../issues/${issue.url}">Read the full issue <span class="arr" aria-hidden="true">&rsaquo;</span></a><a class="lget" href="${getLink}">Get ${escAttr(issue.edition)} every week</a></div></div></div></div>`;
+  return `<div class="lpv"${featured ? ' id="lfeatpv"' : ` data-idx="${idx}"${selected ? '' : ' hidden'}`}><div class="lpvcard" style="--c:${color}"><div class="lph"><img src="../../assets/img/${hero.file}" width="1280" height="560" loading="${idx === 0 ? 'eager' : 'lazy'}" style="object-position:${hero.pos}" alt="${escAttr(hero.alt)}"></div><div class="lpb"><p class="lpe" style="color:${color}">${escAttr(shortName(issue.edition).toUpperCase())} EDITION</p><h2 class="llh2">${escAttr(protectNames(issue.title))}</h2><div class="lmeta"><span>${escAttr(issue.label || '')}</span><span>${escAttr(issue.rt || '')}</span><span>${escAttr(issue.week || '')}</span></div><p class="lsum">${escAttr(protectNames(issue.lede || issue.title))}</p><div class="lmr"><span class="lmrl" style="background:${color}">3 MUST-READS</span><ol>${k3}</ol></div><div class="lact"><a class="btn lbtn" href="../../issues/${issue.url}">Read the full issue <span class="arr" aria-hidden="true">&rsaquo;</span></a><a class="lget" href="${getLink}">Get ${escAttr(issue.edition)} every week</a></div></div></div></div>`;
 }
 
 const LLP_STYLE = `<style id="llp-css">.lgrid{display:grid;grid-template-columns:480px 1fr;gap:36px;align-items:start}
