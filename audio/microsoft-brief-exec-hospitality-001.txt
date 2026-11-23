@@ -17,5 +17,5 @@ Guest: That's the scale question answered. It's already working in airlines.
 Host: And here's a question to take to your team this week.
 Guest: If a traveler's AI assistant tried to book with us tonight, would it succeed, and would we even know?
 Host: Good one. If you want to go deeper, reply to the email and request a thirty-minute executive briefing with Microsoft.
-Guest: And a fun fact: this Brief was assembled by AI agents in Microsoft Copilot Cowork, then reviewed by a person before it went out.
+Guest: And a fun fact: this Brief was assembled by AI agents in Microsoft 365 Copilot Cowork, then reviewed by a person before it went out.
 Host: That's the Brief. See you next edition.

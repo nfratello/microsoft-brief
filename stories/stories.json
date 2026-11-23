@@ -26,7 +26,7 @@
   "industry": "state-local-edu",
   "industry_source": "page",
   "product": "copilot",
-  "label": "Microsoft Copilot",
+  "label": "Microsoft 365 Copilot",
   "number": "",
   "number_label": "",
   "headline": "Student pass rates up 15%",
@@ -206,7 +206,7 @@
   "industry": "professional-services",
   "industry_source": "page",
   "product": "copilot",
-  "label": "Microsoft Copilot",
+  "label": "Microsoft 365 Copilot",
   "number": "",
   "number_label": "",
   "headline": "Email drafting time cut nearly 50%",
@@ -247,7 +247,7 @@
   "number": "",
   "number_label": "",
   "headline": "Audit planning time cut 20%",
-  "summary": "Audit agents built in Copilot Studio and used in Microsoft Copilot cut planning-phase audit time 20% and matrix creation from days to seconds.",
+  "summary": "Audit agents built in Copilot Studio and used in Microsoft 365 Copilot cut planning-phase audit time 20% and matrix creation from days to seconds.",
   "pages": [
    "retail"
   ]
@@ -370,7 +370,7 @@
   "industry": "energy",
   "industry_source": "page",
   "product": "copilot",
-  "label": "Microsoft Copilot",
+  "label": "Microsoft 365 Copilot",
   "number": "",
   "number_label": "",
   "headline": "Frontline AI adoption jumps above 90%",
@@ -392,7 +392,7 @@
   "number": "12+ hrs",
   "number_label": "saved per engaged user each month",
   "headline": "",
-  "summary": "The 48 colleagues who finished pladis's 'Steal Back 10 Hours' program reported saving 580 hours a month with Microsoft Copilot, just over 12 hours each.",
+  "summary": "The 48 colleagues who finished pladis's 'Steal Back 10 Hours' program reported saving 580 hours a month with Microsoft 365 Copilot, just over 12 hours each.",
   "pages": [
    "products/copilot"
   ]
