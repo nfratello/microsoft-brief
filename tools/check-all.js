@@ -14,6 +14,7 @@ const CHECKS = [
   ['contrast', 'contrast-check.js'],
   ['orphan (rendered)', 'orphan-check.js'],
   ['overlap (rendered)', 'overlap-check.js'],
+  ['this-week freshness', 'thisweek-check.js'],
 ];
 
 const results = [];

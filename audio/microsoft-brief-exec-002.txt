@@ -1,0 +1,20 @@
+The Microsoft Brief Executive, Issue No. 2
+
+Host: Welcome to The Microsoft Brief, Executive edition. Issue number two, Tuesday, November 24. Four decisions for leaders, in about two minutes.
+Guest: And the big picture this week: AI is moving from pilots to payroll. Microsoft showed how to measure what AI returns, how to manage agents like colleagues, and how to cap what they cost.
+Host: Let's start with value. Microsoft's own IT team now tracks something it calls return on token spend.
+Guest: Right. It's business value delivered, divided by the AI usage it took. Usage-based AI bills grow with enthusiasm, not headcount, so this keeps spend pointed at outcomes.
+Host: So the decision there?
+Guest: Pick the two or three outcomes your AI spend must move this year.
+Host: Second, agents and the workforce. Microsoft is rolling out Autopilot, its personal agent, in phases.
+Guest: And each personal agent gets its own identity, mailbox and storage, and it reports to the employee who sponsors it. Agents are showing up in the org chart.
+Host: Which means leaders should decide who may sponsor an agent, and how often each one gets reviewed.
+Guest: Third, cost. Microsoft Foundry now shows what each agent costs by project and model, explains why spend changed, and in preview can cap budgets down to a single conversation.
+Host: So a costly change gets caught the same day, not on the month-end invoice.
+Guest: Exactly. The decision: require a cost-per-outcome target and a budget cap for every production agent.
+Host: And fourth, security and governance. Copilot and agents can now work with Dynamics 365 and Power Platform data.
+Guest: But only within each user's existing permissions. Agents gain business context without anyone getting access they didn't already have.
+Host: The decision there is to name an owner for each business process an agent may act on.
+Guest: One proof point: Docusign runs its AI workloads on Microsoft Foundry and reports ninety percent lower AI processing costs.
+Host: And a question to take to your team this week: which three outcomes should our AI spend move this year, and how will we know?
+Guest: Every story links to its public Microsoft source in the written edition. Thanks for listening.

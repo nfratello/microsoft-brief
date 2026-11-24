@@ -36,6 +36,7 @@ const EDITION_SLUG = {
 
 const NAME_FIX = {
   'Telecommunications & Media': 'Telecom & Media',
+  'Telecommunications, Media & Gaming': 'Telecom & Media',
   'Telecom & Media': 'Telecom & Media',
   'State & Local Government and Education': 'State, Local & Education',
   'State, Local & Education': 'State, Local & Education',
@@ -57,6 +58,18 @@ function readIssues() {
 function newestPerEdition(list) {
   const byEdition = {};
   for (const it of list) {
+    // FH54 root-cause fix: Executive issues are published with whatever
+    // "edition" string the issue happened to carry in the archive (e.g. this
+    // week's Executive issue is tagged edition:"All Industries", last
+    // cycle's was tagged "Hospitality & Travel") — that field is never read
+    // for the Executive page itself (regenerateExecutiveLatest keys off the
+    // `exec` flag directly), but letting an exec-flagged issue win a slot in
+    // this per-edition map makes the automation mistake a brand-new
+    // Executive issue for that week's "All Industries" (or any other)
+    // edition issue, hijacking brief/latest/ and the per-edition /latest/
+    // pages. Always exclude exec issues here so "newest per edition" can
+    // only ever be a real edition issue, dynamically, from issues.json.
+    if (it.exec) continue;
     const cur = byEdition[it.edition];
     if (!cur || it.date > cur.date || (it.date === cur.date && (it.no || 0) > (cur.no || 0))) {
       byEdition[it.edition] = it;
@@ -366,7 +379,13 @@ function regenerateExecutiveLatest(issues) {
 function regenerateBriefLatest(newest, issues) {
   const briefLatestPath = path.join(ROOT, 'brief', 'latest', 'index.html');
   const oldHtml = fs.readFileSync(briefLatestPath, 'utf-8');
-  const allDates = [...new Set(issues.map(i => i.date))].sort().reverse();
+  // FH54: Executive issues are never a candidate "All Industries" issue, and
+  // never belong in the "choose your edition" fallback list — exclude them
+  // here too (see newestPerEdition's comment for why), so the newest *real*
+  // send date and the edition rows shown always come from issues.json's
+  // actual industry/all-industries issues, dynamically, every publish.
+  const nonExecIssues = issues.filter(i => !i.exec);
+  const allDates = [...new Set(nonExecIssues.map(i => i.date))].sort().reverse();
   const globalNewestDate = allDates[0];
   const allIssue = newest['All Industries'];
   const hasAllAtNewest = allIssue && allIssue.date === globalNewestDate;
@@ -376,13 +395,60 @@ function regenerateBriefLatest(newest, issues) {
     next = rebuildBriefLatestIframeMode(allIssue, oldHtml);
     mode = 'all-industries-issue';
   } else {
-    const thisWeek = issues.filter(i => i.date === globalNewestDate);
+    const thisWeek = nonExecIssues.filter(i => i.date === globalNewestDate);
     next = rebuildBriefLatestChooseEdition(thisWeek, oldHtml);
     mode = 'choose-your-edition-fallback';
   }
   const changed = next !== oldHtml;
   if (changed) fs.writeFileSync(briefLatestPath, next, 'utf-8');
   return { mode, changed, date: globalNewestDate };
+}
+
+// --- Step 4: regenerate each /<edition>/latest/index.html -------------------
+// FH54: these 12 per-edition "This week" pages had no automated regenerator
+// at all (unlike brief/latest/ and executive/latest/), so they silently
+// kept iframing whatever issue they last pointed to. Fix at the source: pull
+// the newest real (non-exec) issue per edition from issues.json here too,
+// and only touch the handful of fields that are issue-specific — title/meta,
+// the headline + issue-number line, the iframe src, and the "Past issues"
+// list — leaving the rest of the hand-built page exactly as published (B9).
+function pastIssuesForEdition(issues, edition, limit) {
+  return issues
+    .filter((i) => i.edition === edition && !i.exec)
+    .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : (b.no || 0) - (a.no || 0)))
+    .slice(0, limit);
+}
+
+function regenerateEditionLatest(newest, issues) {
+  const results = [];
+  for (const [edition, slug] of Object.entries(EDITION_SLUG)) {
+    const issue = newest[edition];
+    const latestPath = path.join(ROOT, slug, 'latest', 'index.html');
+    if (!issue || !fs.existsSync(latestPath)) {
+      results.push({ edition, changed: false, reason: !issue ? 'no-issue' : 'missing-file' });
+      continue;
+    }
+    const oldHtml = fs.readFileSync(latestPath, 'utf-8');
+    let html = oldHtml;
+
+    html = html.replace(/<meta property="og:description" content="[^"]*">/, `<meta property="og:description" content="${escAttr(protectNames(issue.lede || issue.title))}">`);
+    html = html.replace(
+      /(<h1>This week's Brief<\/h1><p>)[^<]*(<\/p>)/,
+      (_m, pre, post) => `${pre}${escAttr(protectNames(issue.title))} \u00b7 ${escAttr(issue.label || `Issue No. ${issue.no || ''}`)}${post}`
+    );
+    html = html.replace(/src="\.\.\/\.\.\/issues\/[^"]*"(\s+title="This week's)/, `src="../../issues/${issue.url}"$1`);
+
+    const past = pastIssuesForEdition(issues, edition, 3);
+    const pastLis = past
+      .map((i) => `<li><a href="../../issues/${i.url}">${escAttr(protectNames(i.title))}<span>${escAttr(i.date)}</span></a></li>`)
+      .join('');
+    html = html.replace(/(<div class="more"><h2>[^<]*<\/h2><ul>)[\s\S]*?(<\/ul>)/, (_m, pre, post) => `${pre}${pastLis}${post}`);
+
+    const changed = html !== oldHtml;
+    if (changed) fs.writeFileSync(latestPath, html, 'utf-8');
+    results.push({ edition, changed, url: issue.url });
+  }
+  return results;
 }
 
 // --- main --------------------------------------------------------------
@@ -403,6 +469,12 @@ function main() {
   console.log('\nRegenerating executive/latest/index.html (exec === true)...');
   const execResult = regenerateExecutiveLatest(issues);
   console.log(`  changed=${execResult.changed} date=${execResult.date || ''} url=${execResult.url || ''} reason=${execResult.reason || ''}`);
+
+  console.log('\nRegenerating /<edition>/latest/index.html for every edition...');
+  const editionResults = regenerateEditionLatest(newest, issues);
+  for (const r of editionResults) {
+    console.log(`  ${r.changed ? 'UPDATED' : 'unchanged'}  ${r.edition}  ${r.url ? `<-  issues/${r.url}` : `(${r.reason})`}`);
+  }
 
   console.log('\nDone.');
 }

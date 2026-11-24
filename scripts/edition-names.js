@@ -19,6 +19,8 @@ const SHORT_NAME = {
   'High Tech & Software': 'High Tech',
   'Telecom & Media': 'Telecom & Media',
   'Telecommunications & Media': 'Telecom & Media', // stale long form, normalized
+  'Telecommunications, Media & Gaming': 'Telecom & Media', // stale long form, normalized (FH54)
+  'Telecom, Media & Gaming': 'Telecom & Media', // stale long form, normalized (FH54)
   'Healthcare & Life Sciences': 'Healthcare',
   'Financial Services': 'Financial Services',
   'Retail & Consumer Goods': 'Retail & CPG',

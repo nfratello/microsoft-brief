@@ -3,6 +3,7 @@
 // `node scripts/build-issues-manifest.js` — never hand-edit issues.json.
 const fs = require('fs');
 const path = require('path');
+const { shortName } = require('./edition-names');
 
 const indexPath = path.join(__dirname, '..', 'issues', 'index.html');
 const html = fs.readFileSync(indexPath, 'utf-8');
@@ -21,6 +22,12 @@ const EDITION_NAME_FIX = {
 for (const issue of issues) {
   if (EDITION_NAME_FIX[issue.edition]) issue.edition = EDITION_NAME_FIX[issue.edition];
   if (EDITION_NAME_FIX[issue.ind]) issue.ind = EDITION_NAME_FIX[issue.ind];
+  // FH54 Section B: the archive card's pill (.bcind) shows `ind` verbatim —
+  // shorten it to the same short edition name used everywhere else (This
+  // week page, scripts/edition-names.js) so long names never overlap the
+  // date tile. `edition` stays the long canonical form (used for grouping
+  // and sentences elsewhere) — only the display field `ind` is shortened.
+  if (issue.ind) issue.ind = shortName(issue.ind);
 }
 
 // P44: add a "week" label to every issue — "Week of <Month> <Day>, <Year>"
