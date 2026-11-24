@@ -1,5 +1,47 @@
 [
  {
+  "url": "2026-11-24-all-industries-003.html",
+  "title": "Copilot that remembers, reads your business apps, and shows what agents cost",
+  "edition": "All Industries",
+  "date": "2026-11-24",
+  "nice": "Nov 24, 2026",
+  "label": "Issue No. 3",
+  "exec": false,
+  "acc": "#0067b8",
+  "deep": "#0b2a4a",
+  "icon": "globe",
+  "emoji": "🌐",
+  "q": [
+   "Can Copilot remember how your team works?",
+   "What can Copilot do with your business apps?",
+   "What does each of your agents really cost?"
+  ],
+  "prods": [
+   "Microsoft 365 Copilot",
+   "Dynamics 365",
+   "Microsoft Foundry"
+  ],
+  "rt": "3 min read",
+  "get": "../#editions",
+  "img": "th-all-industries-003.jpg",
+  "ind": "All industries",
+  "c": "#0067b8",
+  "fi": "globe",
+  "em": "🌐",
+  "kind": "Issue No. 3",
+  "mon": "NOV",
+  "day": 24,
+  "k3": [
+   "Copilot now remembers how you work",
+   "Copilot can now read your business apps",
+   "See what every agent costs, and cap it"
+  ],
+  "cta": "Read the issue",
+  "first": false,
+  "week": "Week of November 23, 2026",
+  "lede": "This week Copilot gets a memory, reaches into your business apps, and Microsoft shows how to see and cap what every agent costs."
+ },
+ {
   "url": "2026-11-24-telecom-media-003.html",
   "title": "Copilot that remembers, and a faster path off legacy CRM",
   "edition": "Telecommunications, Media & Gaming",
