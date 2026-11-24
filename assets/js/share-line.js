@@ -9,29 +9,7 @@
     if (navigator.clipboard && window.isSecureContext) {
       return navigator.clipboard.writeText(text);
     }
-    return new Promise(function (resolve, reject) {
-      var ta = document.createElement('textarea');
-      ta.value = text;
-      ta.setAttribute('readonly', '');
-      ta.style.position = 'fixed';
-      ta.style.opacity = '0';
-      document.body.appendChild(ta);
-      ta.select();
-      try {
-        document.execCommand('copy') ? resolve() : reject(new Error('copy command failed'));
-      } catch (e) {
-        reject(e);
-      }
-      document.body.removeChild(ta);
-    });
-  }
-
-  function selectButtonText(btn) {
-    var range = document.createRange();
-    range.selectNodeContents(btn);
-    var sel = window.getSelection();
-    sel.removeAllRanges();
-    sel.addRange(range);
+    return Promise.reject(new Error('clipboard unavailable'));
   }
 
   function wire(btn) {
@@ -63,8 +41,9 @@
           }, 1600);
         },
         function () {
-          // Clipboard blocked: select the text so the user can copy manually.
-          selectButtonText(btn);
+          // Clipboard missing/blocked/rejected: fall back to a prompt so the
+          // user can copy the link manually (Design standards v2.1 — Step 2).
+          window.prompt('Copy this link', url);
         }
       );
     }
