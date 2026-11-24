@@ -11,6 +11,7 @@
     "deploy": "node tools/deploy.js"
   },
   "devDependencies": {
+    "jimp": "^1.6.1",
     "playwright-core": "^1.65.1"
   }
 }
