@@ -8,6 +8,7 @@ const path = require('path');
 
 const CHECKS = [
   ['validate-html', 'validate-html.js'],
+  ['shared-header', 'header-check.js'],
   ['product-name', 'product-name-check.js'],
   ['numbers (advisory)', 'numbers-check.js'],
   ['contrast', 'contrast-check.js'],
