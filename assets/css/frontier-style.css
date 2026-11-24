@@ -25,14 +25,14 @@ h1,h2,h3,h4,.eb,.lede,.card h3,.btn,button{text-wrap:balance}
 p,li,figcaption,blockquote,q{text-wrap:pretty}
 
 /* ---- 0b. Share line (Design standards v2.1) ----- */
-.fw-bar{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#6b7280;white-space:nowrap;line-height:1}
+.fw-bar{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#737373;white-space:nowrap;line-height:1}
 .fw-bar .fwdiv{display:inline-block;width:1px;align-self:stretch;min-height:16px;background:#d1d5db}
 .fw-bar .fwt{display:inline-flex;align-items:center;gap:5px}
 .fw-bar .fwt img{width:14px;height:14px;display:block}
-.fw-bar button.aka{display:inline-flex;align-items:center;gap:5px;background:none;border:0;padding:0;margin:0;font:inherit;font-size:13px;color:#6b7280;cursor:pointer}
+.fw-bar button.aka{display:inline-flex;align-items:center;gap:5px;background:none;border:0;padding:0;margin:0;font:inherit;font-size:13px;color:#737373;cursor:pointer}
 .fw-bar button.aka svg.akl-i{inline-size:14px;block-size:14px;flex:none}
 .fw-bar button.aka:hover,.fw-bar button.aka:focus-visible{color:#0f6cbd;text-decoration:underline;outline:none}
-.fw-bar button.aka.done{color:#107c41;text-decoration:none}
+.fw-bar button.aka.done{color:#107c10;text-decoration:none}
 footer .fw-bar button.aka:hover,footer .fw-bar button.aka:focus-visible{color:#50e6ff}
 footer .fw-bar button.aka.done{color:#6ee7a8}
 .gh .gnav .fw-bar{margin-inline-start:32px}

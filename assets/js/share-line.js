@@ -38,7 +38,7 @@
             if (label) label.textContent = original;
             var cur = btn.querySelector('svg.akl-i');
             if (cur && originalIcon) cur.outerHTML = originalIcon;
-          }, 1600);
+          }, 2000);
         },
         function () {
           // Clipboard missing/blocked/rejected: fall back to a prompt so the
