@@ -1,16 +1,16 @@
 {
-  "_comment": "FH51. Roster for /events/convergence/'s 'Meet the Microsoft AI Business Process GBBs at Convergence' grid. Source: the GBBs-at-Convergence Teams chat opt-in list (complete, 11 people). Order: Ted Kempf (GBB leader) first, then alphabetical by last name. Fields: name, role (card role line), linkedin (profile URL or null if not supplied), photo (path under assets/img/people/ or null to render initials). To add a future GBB, append an object here -- the page's inline script re-renders the grid from this file, no HTML edit needed.",
+  "_comment": "FH51. Roster for /events/convergence/'s 'Meet the Microsoft AI Business Process GBBs at Convergence' grid. Source: the GBBs-at-Convergence Teams chat opt-in list (complete, 11 people). Order: Ted Kempf (GBB leader) first, then alphabetical by last name. Fields: name, role (card role line), linkedin (profile URL or null if not supplied), photo (path under assets/img/people/ or null to render initials). To add a future GBB, append an object here -- the page's inline script re-renders the grid from this file, no HTML edit needed. FH55: added real Teams directory photos (432x432, round-cropped via CSS) for all 11 people and Nick Fratello's LinkedIn URL. Misty Allen's photo is her Teams photo for now -- she asked for her LinkedIn photo but hadn't sent one yet; swap when she does.",
   "gbbs": [
-    { "name": "Ted Kempf", "role": "GBB leader, AI Business Process", "linkedin": "https://www.linkedin.com/in/ted-kempf/", "photo": null },
-    { "name": "Misty Allen", "role": "AI Business Process GBB", "linkedin": null, "photo": null },
-    { "name": "Alessandro Brunitti", "role": "AI Business Process GBB", "linkedin": "https://www.linkedin.com/in/alessandro-brunitti/", "photo": null },
-    { "name": "Katie Dalton", "role": "AI Business Process GBB", "linkedin": "https://www.linkedin.com/in/katiejdalton/", "photo": null },
-    { "name": "Nick Fratello", "role": "AI Business Process GBB", "linkedin": null, "photo": null },
-    { "name": "Jamie Hall", "role": "AI Business Process GBB", "linkedin": "https://www.linkedin.com/in/jamiehall1975", "photo": null },
-    { "name": "Esa Javier", "role": "AI Business Process GBB", "linkedin": "https://www.linkedin.com/in/esa-javier-20888556/", "photo": null },
-    { "name": "Matthew Mead", "role": "AI Business Process GBB", "linkedin": "https://www.linkedin.com/in/matthewdmead", "photo": null },
-    { "name": "Matt Petersen", "role": "AI Business Process GBB", "linkedin": "https://www.linkedin.com/in/matthewmpetersen/", "photo": null },
-    { "name": "James Wang", "role": "AI Business Process GBB", "linkedin": "https://www.linkedin.com/in/jameschiwang/", "photo": null },
-    { "name": "Rich Wilson", "role": "AI Business Process GBB", "linkedin": "https://www.linkedin.com/in/thebigdealplaybook/", "photo": null }
+    { "name": "Ted Kempf", "role": "GBB leader, AI Business Process", "linkedin": "https://www.linkedin.com/in/ted-kempf/", "photo": "../../assets/img/people/gbb-ted-kempf.jpg" },
+    { "name": "Misty Allen", "role": "AI Business Process GBB", "linkedin": null, "photo": "../../assets/img/people/gbb-misty-allen.jpg" },
+    { "name": "Alessandro Brunitti", "role": "AI Business Process GBB", "linkedin": "https://www.linkedin.com/in/alessandro-brunitti/", "photo": "../../assets/img/people/gbb-alessandro-brunitti.jpg" },
+    { "name": "Katie Dalton", "role": "AI Business Process GBB", "linkedin": "https://www.linkedin.com/in/katiejdalton/", "photo": "../../assets/img/people/gbb-katie-dalton.jpg" },
+    { "name": "Nick Fratello", "role": "AI Business Process GBB", "linkedin": "https://www.linkedin.com/in/nickfratello", "photo": "../../assets/img/people/gbb-nick-fratello.jpg" },
+    { "name": "Jamie Hall", "role": "AI Business Process GBB", "linkedin": "https://www.linkedin.com/in/jamiehall1975", "photo": "../../assets/img/people/gbb-jamie-hall.jpg" },
+    { "name": "Esa Javier", "role": "AI Business Process GBB", "linkedin": "https://www.linkedin.com/in/esa-javier-20888556/", "photo": "../../assets/img/people/gbb-esa-javier.jpg" },
+    { "name": "Matthew Mead", "role": "AI Business Process GBB", "linkedin": "https://www.linkedin.com/in/matthewdmead", "photo": "../../assets/img/people/gbb-matthew-mead.jpg" },
+    { "name": "Matt Petersen", "role": "AI Business Process GBB", "linkedin": "https://www.linkedin.com/in/matthewmpetersen/", "photo": "../../assets/img/people/gbb-matt-petersen.jpg" },
+    { "name": "James Wang", "role": "AI Business Process GBB", "linkedin": "https://www.linkedin.com/in/jameschiwang/", "photo": "../../assets/img/people/gbb-james-wang.jpg" },
+    { "name": "Rich Wilson", "role": "AI Business Process GBB", "linkedin": "https://www.linkedin.com/in/thebigdealplaybook/", "photo": "../../assets/img/people/gbb-rich-wilson.jpg" }
   ]
 }
