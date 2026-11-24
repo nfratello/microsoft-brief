@@ -23,7 +23,7 @@
   ],
   "rt": "3 min read",
   "get": "../telecom-media/#subscribe",
-  "img": "em-telecom-media-hero-003.jpg",
+  "img": "th-telecom-media-003.jpg",
   "ind": "Telecom, Media & Gaming",
   "c": "#a21caf",
   "fi": "tv",
@@ -39,7 +39,7 @@
   "cta": "Read the issue",
   "first": false,
   "week": "Week of November 23, 2026",
-  "lede": "Copilot that remembers, and a faster path off legacy CRM"
+  "lede": "For telecom and media leaders, this week's news covers a more personal Copilot, a guided CRM move and governance for agent fleets."
  },
  {
   "url": "2026-11-24-state-local-edu-003.html",
@@ -63,7 +63,7 @@
   ],
   "rt": "3½ min read",
   "get": "../state-local-edu/#subscribe",
-  "img": "em-state-local-edu-hero-003.jpg",
+  "img": "th-state-local-edu-003.jpg",
   "ind": "State, Local & Education",
   "c": "#4f46e5",
   "fi": "building_government",
@@ -79,7 +79,7 @@
   "cta": "Read the issue",
   "first": false,
   "week": "Week of November 23, 2026",
-  "lede": "Tutoring-mode Copilot for students and faster Copilot for government"
+  "lede": "For public sector leaders, this week's news brings a student-safe Copilot setting, faster Copilot in government clouds and a way to measure AI return."
  },
  {
   "url": "2026-11-24-retail-003.html",
@@ -104,7 +104,7 @@
   ],
   "rt": "3 min read",
   "get": "../retail/#subscribe",
-  "img": "em-retail-hero-003.jpg",
+  "img": "th-retail-003.jpg",
   "ind": "Retail & Consumer Goods",
   "c": "#be185d",
   "fi": "cart",
@@ -120,7 +120,7 @@
   "cta": "Read the issue",
   "first": false,
   "week": "Week of November 23, 2026",
-  "lede": "Copilot that remembers, commerce skills in ERP, and AI return"
+  "lede": "For retail and consumer goods leaders, this week's news brings ERP skills for commerce and procurement and a sharper way to measure AI value."
  },
  {
   "url": "2026-11-24-professional-services-003.html",
@@ -146,7 +146,7 @@
   ],
   "rt": "3 min read",
   "get": "../professional-services/#subscribe",
-  "img": "em-professional-services-hero-003.jpg",
+  "img": "th-professional-services-003.jpg",
   "ind": "Professional Services",
   "c": "#a16207",
   "fi": "briefcase",
@@ -162,7 +162,7 @@
   "cta": "Read the issue",
   "first": false,
   "week": "Week of November 23, 2026",
-  "lede": "New models, agents that draft the plan, and AI return"
+  "lede": "For professional services leaders, this week's news brings new models, agents grounded in business apps, and a way to price AI by results."
  },
  {
   "url": "2026-11-24-manufacturing-003.html",
@@ -188,7 +188,7 @@
   ],
   "rt": "3½ min read",
   "get": "../manufacturing/#subscribe",
-  "img": "em-manufacturing-hero-003.jpg",
+  "img": "th-manufacturing-003.jpg",
   "ind": "Manufacturing & Mobility",
   "c": "#b45309",
   "fi": "building_factory",
@@ -204,7 +204,7 @@
   "cta": "Read the issue",
   "first": false,
   "week": "Week of November 23, 2026",
-  "lede": "Copilot reads your ERP, and a guided path off SAP ECC"
+  "lede": "For manufacturing leaders, this week's news brings ERP data into Copilot, a guided move off legacy ERP, and new models for everyday work."
  },
  {
   "url": "2026-11-24-hospitality-003.html",
@@ -230,7 +230,7 @@
   ],
   "rt": "3 min read",
   "get": "../hospitality/#subscribe",
-  "img": "em-hospitality-hero-003.jpg",
+  "img": "th-hospitality-003.jpg",
   "ind": "Hospitality & Travel",
   "c": "#0e7490",
   "fi": "airplane",
@@ -246,7 +246,7 @@
   "cta": "Read the issue",
   "first": false,
   "week": "Week of November 23, 2026",
-  "lede": "Copilot that remembers, and how an airline tests its agents"
+  "lede": "For hospitality leaders, this week's news is about AI that knows your business and agents tested before guests ever meet them."
  },
  {
   "url": "2026-11-24-high-tech-003.html",
@@ -271,7 +271,7 @@
   ],
   "rt": "3 min read",
   "get": "../high-tech/#subscribe",
-  "img": "em-high-tech-hero-003.jpg",
+  "img": "th-high-tech-003.jpg",
   "ind": "High Tech & Software",
   "c": "#6d28d9",
   "fi": "laptop",
@@ -287,7 +287,7 @@
   "cta": "Read the issue",
   "first": false,
   "week": "Week of November 23, 2026",
-  "lede": "Personal agents with IDs, and agent costs you can see"
+  "lede": "For tech leaders, this week's news covers running personal agents at scale, seeing what every agent costs, and governing an agent fleet."
  },
  {
   "url": "2026-11-24-healthcare-003.html",
@@ -312,7 +312,7 @@
   ],
   "rt": "3 min read",
   "get": "../healthcare/#subscribe",
-  "img": "em-healthcare-hero-003.jpg",
+  "img": "th-healthcare-003.jpg",
   "ind": "Healthcare & Life Sciences",
   "c": "#0d9488",
   "fi": "heart_pulse",
@@ -328,7 +328,7 @@
   "cta": "Read the issue",
   "first": false,
   "week": "Week of November 23, 2026",
-  "lede": "Ambient AI for more nurses, and agents that follow your rules"
+  "lede": "For healthcare leaders, this week's news brings ambient documentation to more nurses and business data into Copilot with permissions intact."
  },
  {
   "url": "2026-11-24-financial-services-003.html",
@@ -353,7 +353,7 @@
   ],
   "rt": "3 min read",
   "get": "../financial-services/#subscribe",
-  "img": "em-financial-services-hero-003.jpg",
+  "img": "th-financial-services-003.jpg",
   "ind": "Financial Services",
   "c": "#1e40af",
   "fi": "building_bank",
@@ -369,7 +369,7 @@
   "cta": "Read the issue",
   "first": false,
   "week": "Week of November 23, 2026",
-  "lede": "Stronger models, agent cost controls and one governance view"
+  "lede": "For financial services leaders, this week's news brings new models to Copilot and the cost and governance controls regulated firms need for agents."
  },
  {
   "url": "2026-11-24-federal-003.html",
@@ -395,7 +395,7 @@
   ],
   "rt": "3 min read",
   "get": "../federal/#subscribe",
-  "img": "em-federal-hero-003.jpg",
+  "img": "th-federal-003.jpg",
   "ind": "Federal Government",
   "c": "#9f1239",
   "fi": "flag",
@@ -411,7 +411,7 @@
   "cta": "Read the issue",
   "first": false,
   "week": "Week of November 23, 2026",
-  "lede": "Faster Copilot in government clouds, and agents with real identities"
+  "lede": "For federal leaders, this week's news brings faster Copilot in government clouds, identity for personal agents and governance for agent fleets."
  },
  {
   "url": "2026-11-24-energy-003.html",
@@ -438,7 +438,7 @@
   ],
   "rt": "3 min read",
   "get": "../energy/#subscribe",
-  "img": "em-energy-hero-003.jpg",
+  "img": "th-energy-003.jpg",
   "ind": "Energy & Utilities",
   "c": "#15803d",
   "fi": "flash",
@@ -454,7 +454,7 @@
   "cta": "Read the issue",
   "first": false,
   "week": "Week of November 23, 2026",
-  "lede": "Shift handovers with Copilot, and governance for agent fleets"
+  "lede": "For energy leaders, this week's news brings operational apps into Copilot for shift handovers and governance for growing agent fleets."
  },
  {
   "url": "2026-11-24-defense-003.html",
@@ -479,7 +479,7 @@
   ],
   "rt": "3 min read",
   "get": "../defense/#subscribe",
-  "img": "em-defense-hero-003.jpg",
+  "img": "th-defense-003.jpg",
   "ind": "Defense Industry",
   "c": "#4d7c0f",
   "fi": "shield",
@@ -495,7 +495,7 @@
   "cta": "Read the issue",
   "first": false,
   "week": "Week of November 23, 2026",
-  "lede": "Copilot in DoD clouds, and controls for agent fleets"
+  "lede": "For defense industry leaders, this week's news covers Copilot progress in GCC High and DoD and the controls needed to govern agents and their costs."
  },
  {
   "url": "2026-11-24-executive-002.html",
@@ -518,7 +518,7 @@
   ],
   "rt": "3 min read",
   "get": "../executive/",
-  "img": "em-executive-hero-002.jpg",
+  "img": "th-executive-002.jpg",
   "ind": "All industries",
   "c": "#0067b8",
   "fi": "globe",
