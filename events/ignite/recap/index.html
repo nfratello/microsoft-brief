@@ -6,6 +6,11 @@
 *,*::before,*::after{box-sizing:border-box}html,body{margin:0;overflow-x:clip}
 body{font-family:"Segoe UI",SegoeUI,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;color:#0b1b33;background:#eef2f7;-webkit-font-smoothing:antialiased}
 .wrap{max-inline-size:1100px;margin-inline:auto;padding-inline:clamp(16px,3vw,32px)}
+.lockup{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:12px 20px}
+.lockup img{inline-size:32px;block-size:32px;display:block}
+.lockup b{font-size:20px;font-weight:600;color:#0f172a}
+.lockup .plus{color:#94a3b8;font-weight:600;font-size:20px}
+.pdsub{color:#5b6170;margin:10px 0 0;max-inline-size:640px}
 .lh{background:linear-gradient(180deg,#f5f7fa,#eef2f7);border-block-end:1px solid #dfe5ee;padding-block:clamp(18px,2.6vw,30px)}
 .lhi{display:flex;align-items:center;justify-content:space-between;gap:18px 32px;flex-wrap:wrap}
 .ed{display:flex;align-items:center;gap:14px;min-inline-size:0}
@@ -48,6 +53,7 @@ a.ib{text-decoration:none;transition:transform .15s}a.ib:hover{transform:scale(1
   <div class="done" id="ldone"><b>Almost done: hit Send.</b> Your sign-up email just opened. <a id="lagain" href="#">Didn't open? Click here</a></div>
  </div></div></section>
 <div class="sb" id="lsb" aria-hidden="false"><div class="wrap sbi"><span>Like this? Get the Brief every Tuesday, tailored to your industry.</span><button class="btn" type="button" id="lsbb">Subscribe <span aria-hidden="true">&rarr;</span></button></div></div>
+<section class="blk wrap" id="pd365" style="padding-block:20px 0"><div class="lockup" aria-label="Microsoft Copilot plus Dynamics 365"><img src="../../../assets/icons/copilot.png?v=6429fb16" alt="" width="32" height="32"><b>Copilot</b><span class="plus" aria-hidden="true">+</span><img src="../../../assets/icons/d365.png" alt="" width="32" height="32"><b>Dynamics 365</b></div><p class="pdsub">Copilot Cowork and Dynamics 365 working as one agentic layer across sales, service and operations.</p></section>
 <section class="rd"><div class="wrap">
  <div class="frame"><iframe id="lfr" src="../../../issues/2026-11-17-ignite-recap.html" title="Microsoft Ignite 2026 recap" loading="eager"></iframe></div>
  <div class="more"><div class="lks"><a class="back allp" href="../#editions">See all past Ignite recap issues <span aria-hidden="true">&rarr;</span></a><a class="back" href="../">Back to the Ignite page <span aria-hidden="true">&rarr;</span></a></div></div>
